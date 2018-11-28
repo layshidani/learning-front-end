@@ -1,0 +1,63 @@
+html {
+    background-color: #1f1f1f;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;  
+    width: 10px;
+    height: 10px;
+    top: 8%;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background: #f1f1f1;
+    left: 35%;
+    animation-timing-function: cubic-bezier(5, 0.25, 10, 0);
+}
+
+@keyframes moving {
+    0% {
+        right: 50%;
+     
+    }
+    25% {
+        right: 90%;
+    }
+    50% {
+        left: 16%;
+    }
+    100% {
+        right: 50%;
+    }
+}
+
+header {
+    padding: 10px 0px 10px 3px;
+}
+
+h1 {
+    font-family: "Raleway";
+    color: #f1f1f1;
+    text-transform: uppercase;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-bottom: 2px solid #f1f1f1;
+	width: 15%;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+    border: 20px;
+    margin: 10px;
+    float: left;
+    transition: all 1s;
+}
+
+img:hover {
+    transform: rotate(10deg);
+}

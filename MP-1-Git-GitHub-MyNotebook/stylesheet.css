@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Code+Pro|Raleway');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, serif;
+  text-align: justify;
+  background-color: #F56E1C;
+  display: block;
+}
+
+header {
+  background-color: #F56E1C;
+  background-size: cover;
+  align-content: stretch;
+  position: center;
+  padding: 0px;
+}
+
+#header_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#titulo_git {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 5em;
+}
+
+#notebook {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 120%;
+}
+
+body {
+  top: 0;
+  bottom: 0;
+  line-height: 1.5;
+  border: 10px;
+  margin: 0px;
+}
+
+section {
+  float: left;
+  width: 100%;
+  padding: 50px;
+}
+
+#sumario {
+  background-color: #152228;
+  color: #d7fbff;
+  position: relative;
+  padding-left: 200px;
+}
+
+#t_sumario {
+  font-size: 2em;
+  font-style: oblique;
+}
+
+.orange {
+  background-color: #F99D09;
+}
+
+.sea_serpent {
+  background-color: #4BC6B9;
+}
+
+.sheengreen {
+  background-color: #98CE00;
+}
+
+.teal_deer {
+  background-color: #A3F7B5;
+}
+
+.mindaro {
+  background-color: #D2FF96;
+}
+
+.lavender_grey {
+  background-color: #CEC4CE;
+}
+
+p {
+  text-indent: 1.25em;
+}
+
+h1 {
+  font-family: 'Shadows Into Light', serif;
+  text-align: center;
+  border: 2px dashed #000000;
+  padding: 10px;
+  margin: 30px 0px 20px 0px;
+}
+
+h2, h3 {
+  font-family: 'Shadows Into Light', serif;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+}
+
+code {
+  background: #333;
+  padding: 20px 20px 20px 20px;
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(190, 185, 185);
+  margin: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  padding: 0px;
+}
+
+
+blockquote {
+  position:  relative;
+  display: block;
+  background: #eee;
+  padding: 40px 30px 30px 60px;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  text-align: justify;
+  
+  box-shadow: 1px 1px 1px #999,
+              2px 2px 1px #999,
+              3px 3px 1px #999;
+  transition-duration: .3s;
+}
+
+#txt_centralizado {
+  text-align: center;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+	color:#d7fbff; 
+  }
+  
+a:hover {text-decoration: underline;  
+	color:#ffff80; 
+	font-size:150%; 
+	}

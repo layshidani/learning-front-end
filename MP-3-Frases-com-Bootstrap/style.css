@@ -1,0 +1,34 @@
+body {
+    background-color: #252525;
+}
+
+.bground1 {
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.img-fluid {
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+    border: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center
+    transition: all 1s;
+
+}
+
+.img-fluid:hover {
+    transform:translateY(20px);
+}
+
+.nav nav-pills flex-column flex-sm-row {
+    background-color: #606060;
+}
+
+.jumbotron, .my-4 {
+    background-color: #252525;
+    color: #ebebeb;
+}

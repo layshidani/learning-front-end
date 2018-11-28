@@ -1,0 +1,84 @@
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    background-color: #021420;
+    color: #F4F7BE;
+    
+}
+
+.nav {
+	color: #F4F7BE;
+	list-style: none;
+	display: flex;
+    padding: 1rem;
+}
+
+.heading {
+	font-size: 1.5rem;
+	font-weight: 900;
+	text-align: center;
+}
+
+.intro {
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+    text-align: center;  
+}
+
+#projects {
+    color: #F4F7BE;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#pjlist {
+    list-style: none;
+}
+
+a {
+	text-decoration: none;
+	padding: 1rem;
+	color: #F4F7BE;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #1B998B;
+	transition: 0.1s;
+}
+
+.tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.icons i {
+	font-size: 3em;
+    color: #F4F7BE;
+    padding: 10px;
+}
+
+.icons i:hover {
+	color: #1B998B;
+	transform: scale(1.1);
+	transition: 0.5s;
+	text-shadow: 5px 5px 8px #888888;9eddfe
+}
+
+footer {
+    margin: 60px;
+    text-align: center;
+}
+
+.fas fa-envelope {
+	color: #7EA16B;
+}

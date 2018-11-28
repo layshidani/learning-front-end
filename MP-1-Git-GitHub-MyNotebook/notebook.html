@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notebook do Curso</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<img id="header_img" src="img/code.png" width="8%" height="8%">
+	</header>
+	<section>
+			<h1 id="titulo_git">GIT e GITHUB</h1>
+			<p id="notebook">
+				Meu Notebook
+			</p>
+	</section>
+	<p id="t_sumario">
+		<i class="far fa-star"></i>  Lays Marie Hidani
+	</p>
+	<section id="sumario">
+			<p>
+				Sumário
+			</p>
+			<ul>
+				<li>
+					<a href="#o_que"># O que é Git e Github</a>
+					<ul>
+						<li><a href="#git">Mais sobre o Git</a></li>
+						<ul>
+							<li><a href="#git">Terminal</a></li>
+							<li><a href="#git">GUI</a></li>
+						</ul>
+						<li><a href="#github">Mais sobre o GitHub</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#repo"># Como funciona o repositório</a>
+					<ul>
+						<li><a href="#estados">Principais estados do git</a></li>
+						<ul>
+							<li><a href="#estados">Untracked (sem rastro/não traçado)</a></li>
+							<li><a href="#estados">Staged ("palco"/área de preparo)</a></li>
+							<li><a href="#estados">Commit (Consolidar)</a></li>
+							<li><a href="#estados">Modified (Modificado)</a></li>
+						</ul>						
+					</ul>
+				</li>
+				<li>
+					<a href="#comandos_terminal"># Comandos Terminal</a>
+				</li>
+				<li>
+					<a href="#config_inicial"># Configuração inicial/preparatória</a>
+					<ul>
+						<li><a href="#config_user">Configurar usuário</a></li>
+						<li><a href="#config_email">Configurar email</a></li>
+						<li><a href="#config_ver">Verificar configuração</a></li>
+						<li><a href="#config_change_user">Trocar nome de usuário ou email</a></li>
+						<li><a href="#config_del_user">Apagar nome de usuário</a></li>
+						<li><a href="#config_del_email">Apagar e-mail</a></li>
+						<li><a href="#config_dir">Diretório do repositório</a></li>
+						<li><a href="#ver_arq_oculto">Visualizar o arquivo oculto do Git</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#status_dir"># Status do diretório</a>
+					<ul>
+						<li><a href="#status_pasta">Status dentro de pastas do diretório</a></li>
+						<li><a href="#git_init">Iniciar um Git</a></li>
+						<li><a href="#git_off">Desligar Git no repositório</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#github_ssh"># GitHub: cadastrar chave SSH. Autenticação</a>	
+				</li>
+				<li>
+					<a href="#parentesco"># Sobre o parentesco entre commits</a>
+					<ul>
+						<li><a href="#parents">Visualizar pais</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#utilizando_git"># Utilizando o Git</a>
+					<ul>
+						<li><a href="#add">[add] Adicionar arquivos ao STAGED :::de UNTRACKED ou de MODIFIED para STAGED:::</a></li>
+						<li><a href="#commit_sc">[commit] :::de STAGED para COMMITED:::</a></li>	
+						<li><a href="#atalho_add">Atalho para add e commit de uma vez</a></li>
+						<li><a href="#change_editor">Modificar o editor de texto padrão do Git</a></li>
+						<li><a href="#recapitulando_utilizando_git">Recapitulando...</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#git_log">Visualizar alterações (git log)</a>
+					<ul>
+						<li><a href="#git_log_oneline">Visualizar Commits resumidos em 1 linha</a></li>
+						<li><a href="#git_log_ultimos">Visualizar últimos commits</a></li>
+						<li><a href="#git_log_alt">Visualizar alterações em todas as branchs resumidas em uma linha</a></li>
+						<li><a href="#git_log_graph">Visualizar graficamente</a></li>
+						<li><a href="#git_log_det">Visualizar detalhes de um commit específico</a></li>
+						<li><a href="#git_log_diff">[diff] Histórico de diferença entre modificações</a></li>
+						<li><a href="#git_log_hist_format">ver histórico com formatação específica (hash abreviada, autor, data e comentário)</a></li>
+						<li><a href="#git_log_hist_caminho">Visualizar histórico de um arquivo específico pelo caminho</a></li>
+						<li><a href="#git_log_hist_palavra">Visualizar histórico de um arquivo específico que contêm uma determinada palavra</a></li>
+						<li><a href="#git_log_hist_param">Exibir histórico modificação de um arquivo com parâmetros</a></li>
+						<li><a href="#git_log_autor">Visualizar commits de determinado autor</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#gitignore">[gitignore] Ignorar determinados arquivos na hora de commitar</a>
+					<ul>
+						<li><a href="#gitignore_atalho"></li>>ATALHO gitignore: todos os arquivos de mesma extensão</a></li>
+						<li><a href="#gitignore_add"></li>>Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#git_diff">Git diff</a>
+					<ul>
+						<li><a href="#git_diff_mod">Visualizar últimas atualizações que estão em :::modified:::</a></li>
+						<li><a href="#git_diff_arq">Visualizar últimas modificações em um arquivo específico</a></li>
+						<li><a href="#git_diff_stg">Visualizar últimas atualizações que estão em :::staged:::</a></li>
+						<li><a href="#git_diff_comparar">comparar modificações entre commits</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#desf_alteracoes">#  Desfazer alterações</a>
+					<ul>
+						<li><a href="#desf_alteracoes_untracked">Desfazer alterações: arquivo em :::untracked:::</a></li>
+						<li><a href="#desf_alteracoes_modif">Desfazer alterações: arquivos em :::modified::: (já feito add, mas não commit)</a></li>
+						<li><a href="#desf_alteracoes_comm">Desfazer alterações: arquivos já commitados</a></li>
+						<li><a href="#desf_alteracoes_revert">Reverter alterações</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#arq_del_local"># Arquivo deletado manualmente pelo OS, como commitar</a>
+				</li>
+				<li>
+					<a href="#desf_del_local"># Desfazer: arquivo deletado da máquina</a>
+				</li>
+				<li>
+					<a href="#del_git"># Remover arquivo/pasta pelo Git</a>
+					<ul>
+						<li><a href="#del_git_arq">Remover arquivo</a></li>
+						<li><a href="#del_git_folder">Remover pasta</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#renomear">Renomear arquivo local</a>
+					<ul>
+						<li><a href="#renomear_local">1ª opção: renomear pelo computador</a></li>
+						<li><a href="#renomear_git">2ª opção: pelo Git</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#conectar_github">1ª vez conectar conta do Github</a>
+					<ul>
+						<li><a href="#gerar_ssh">Gerar chaves SSH</a></li>
+						<li><a href="#add_ssh">Adicionar chave SSH</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#remote_add">[remote add] Repositório local para remoto - da sua máquina para Github</a>
+					<ul>
+						<li><a href="#verif_conec">Verificar se está conectado</a></li>
+						<li><a href="#verif_det"></a>Verificar detalhes do repositório no Github</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#push">push: sincronizar alterações locais para o repositório do Github</a>
+				</li>
+				<li>
+					<a href="git_clone">clone: trazer repositório remoto para o arquivo local</a>
+				</li>
+				<li>
+					<a href="#pull">pull: sincronizar alterações do repositótio remoto para o local</a>
+				</li>
+				<li>
+					<a href="#outros_repo">Trabalhando com repositórios de outras pessoas</a>
+					<ul>
+						<li><a href="colab">Modo Colaborador</a></li>
+						<li><a href="pull_request">Pull request</a></li>
+						<li><a href="fork">FORK, uma cópia de outros repositórios para o seu repositório</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#branches">BRANCHES (ramificação)</a>
+					<ul>
+						<li><a href="#branches_new">Criar uma nova branch</a></li>
+						<li><a href="#branches_efet">Efetivar branch através do commit</a></li>
+						<li><a href="#branches_new_remote">Criar branch no repositório remoto</a></li>
+						<li><a href="branches_new_trc">Criar branch já trackeada ao repositório remoto</a></li>
+						<li><a href="#branches_view">Visualizar Branchs</a></li>
+						<li><a href="#branches_change">Mudar de branch, commitar entre branchs</a></li>
+						<li><a href="#branches_del">Deletar uma branch</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#mesclar">Mesclar branches: merge e rebase</a>
+					<ul>
+						<li><a href="#merge">:::merge::: para Mesclar branches</a></li>
+						<li><a href="#rebase">:::rebase::: para Mesclar branches</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#corrigir_conflitos">Corrigir conflitos</a>
+					<ul>
+						<li><a href="#corrigir_conflitos">Conflitos e abortar merge</a></li>	<li><a href="#corrigir_conflitos">:::rebase::: para Mesclar branches</a></li>
+						<li><a href="#corrigir_conflitos">Conflitos e abortar rebase</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#tracking">Tracking: rastreando branchs entre repositório local e remoto</a>
+				</li>
+			</ul>
+		</section>
+		<section class="orange">
+		<h1 id="o_que">O que é: Git e GitHub</h1>
+		<p>
+			Git e GitHub são duas coisas diferentes.
+		</p>
+		<p>
+			Git é um sistema de controle de versões. Todo o trabalho acontece na sua máquina (computador)
+		</p>	
+		<p>
+			Já o GitHub é uma plataforma de hospedagem, controle de versão e colaboração. Funciona como uma espécie de "rede social" colaborativa dos programadores. Podendo visualizar o seu código e de toda a comunidade dentro da plataforma, clonar, etc.
+			<br>
+
+			<a href="https://git-scm.com/downloads" target="_blank">Faça o download do Git</a>
+			<br>
+			<a href="https://github.com/">Acesse o GitHub</a>
+		</p>
+	<h2 id="git">Mais sobre o Git</h2>
+		<img src="img/git1.png" width="20%" height="20%">
+		<blockquote>
+			É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux, mas foi adotado por muitos outros projetos.
+			<br>
+			Cada diretório de trabalho do Git é um repositório com um histórico completo e habilidade total de acompanhamento das revisões, não dependente de acesso a uma rede ou a um servidor central.
+			<br>-Wikipedia-
+		</blockquote>
+		<blockquote>
+			O workflow básico do Git pode ser descrito assim:
+			<ol>
+				<li>Você modifica arquivos no seu diretório de trabalho.</li>
+				<li>Você seleciona os arquivos, adicionando snapshots deles para sua área de preparação.</li>
+				<li>Você faz um commit, que leva os arquivos como eles estão na sua área de preparação e os armazena permanentemente no seu diretório Git.</li>
+			</ol>
+			<br> - GIT -
+		</blockquote>
+		<p>
+			<a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git">Saiba mais</a>
+		</p>
+	<h3>Terminal</h3>
+		<p>
+			Os comandos e interação do Git se dá pelo terminal (prompt de comando/shell/etc), após a instalação, também serão adicionados dois novos terminais a sua máquina (built-in do Git): o Git CMD (padrão Windows) e o Git Bash (padrão MacOs e Linux).
+		</p>
+		<p>
+			Mesmo que seu OS seja Windows, Mac ou Linux, você pode optar por usar qualquer um dos terminais GitCMD ou Git Bash.
+		</p>
+		<p>
+			Você pode optar por usar o terminal de sua própria máquina, ou os terminais do Git, ou mesmo qualquer outro de sua preferência.
+		</p>
+	<h3>GUI</h3>
+		<p>
+			Você poderá ainda usar o GUI ("Graphical User Interface"), onde, ao invés de executar os comandos via terminal, você poderá usar uma interface gráfica. O próprio Git já vem com um GUI na instalação (built-in): o Git GUI, mas existem outros para
+			baixar conforme a sua preferência. Acesse o link abaixo para fazer o download:
+			<a href="https://git-scm.com/downloads/guis">GUIs</a>
+		</p>
+	<h2 id="github">Mais sobre o GitHub</h2>
+		<img src="img/github.png" width="30%" height="30%">
+		<blockquote>
+			<p>
+				GitHub é uma plataforma de hospedagem de código-fonte com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo. GitHub é amplamente utilizado por programadores para divulgação de seus trabalhos ou para que outros programadores contribuam com o projeto, além de promover fácil comunicação através de recursos que relatam problemas ou mesclam repositórios remotos (issues, pull request).
+				<br>-Wikipedia-
+			</p>
+			<p>
+				O GitHub é uma plataforma de hospedagem de código para controle de versão e colaboração. Ele permite que você e outros trabalhem juntos em projetos de qualquer lugar.
+				<br> -GitHub-
+				<a href="https://guides.github.com/">Saiba mais</a>
+			</p>
+		</blockquote>
+		<p>
+			Basta acessar o site do <a href="https://github.com/">GitHub</a> e se cadastrar para começar a usar o site.
+		</p>
+	</section>
+	<section class="sea_serpent">
+	<h1 id="repo">Como funciona o repositório</h1>
+		<img src="img/7.png" alt="repositório" width="50%" height="50%">
+	<h2 id="estados">Principais estados do git</h2>
+		<ul>
+			<li>Preparado (staged/index)</li>
+			<li>Modificado (modified)</li>
+			<li>Consolidado (comitted)</li>
+		</ul>
+		<ul>
+			<li><bold>Clone:</bold> copiar do repositório para seu arquivo local</li>
+			<li><bold>Push:</bold> copiar do arquivo local para o repositório</li>
+			<li><bold>Add:</bold> comando para que o Git passe a "olhar" seus arquivos. Os arquivos passam de "Untracked" para "Staged" antes do 1º commit, e de "Modified" para "Staged", do 1º commit em diante</li>
+			<li><bold>Commit:</bold> consolidar todas as mudanças</li>
+			<li><bold>Pull:</bold> salvar commits do servidor para seu arquivo local</li>
+		</ul>
+	<h3>Untracked (sem rastro/não traçado)</h3>
+		<p>
+			É o primeiro estado do arquivo. Os arquivos estão na sua máquina, mas não estão aos cuidados do Git. Uma vez adicionado (add) ao Git, ele não volta mais ao estado de untracked.
+			<br><img src="img/1.png" width="50%" height="50%">
+		</p>
+	<h3>Staged ("palco"/área de preparo)</h3>
+		<p>
+			Depois de dar o comando "add" ao Git, os arquivos passam para a área "staged", onde o git já está cuidando dos arquivos e está de olho em todas as alterações que estão acontecendo.
+		</p>
+		<p>
+			Em uma definição livre, pode ser considerada uma área de preparo, uma espécie de "palco", onde o Git assiste da plateia todas as modificações :)
+		</p>
+		<p>
+			Não é um passo essencialmente obrigatório. Podendo simplesmente usar o atalho de adicionar juntamente com o commit, porém é muito útil para ter mais controle sobre as alterações antes de commitar. Dessa forma, é recomendada.
+			<br><img src="img/2.png" width="50%" height="50%">
+		</p>
+	<h3>Commit (Consolidar)</h3>
+		<p>
+			Depois que comitamos o arquivo ele passa para a área "commited", que em uma tradução livre, consolida todas as mudanças do arquivo, oficializa.
+			<br><img src="img/3.png" width="50%" height="50%">
+		</p>
+	<h3>Modified (Modificado)</h3>
+		<p>
+			Sempre que ocorrer uma modificação no arquivo, ele sairá de "commited" e passará para uma nova área chamada "modified".
+		</p>
+		<p>
+			Quando o arquivo é "add" pela primeira vez ele sai de "untracked" (não rastreado) e passa a ser rastreado pelo Git, dessa forma, ele não irá voltar a estar em "untracked".
+		</p>
+		<p>
+			Ao invés disso, sempre que houver uma modificação, ele sairá de
+			"commited" e passará para "modified", aguardando ser adicionado (add) a "staged" novamente e depois ser commitado.
+			<br><img src="img/4.png" width="50%" height="50%">
+			<br><img src="img/5.png" width="50%" height="50%">
+			<br><img src="img/6.png" width="50%" height="50%">
+		</p>
+	</section>
+	<section class="sheengreen">
+	<h1 id="comandos_terminal"># Comandos Terminal</h1>
+		<p>
+			Utilizaremos para esses exemplos o terminal Git Bash.
+		</p>		
+		<p>
+			Antes de executar os comandos de Git, o terminal deverá sempre estar configurado para a pasta do repositório em questão. Ver # Diretório do repositório
+		</p>
+	</section>
+	<section class="teal_deer">
+	<h1 id="config_inicial">Configuração inicial/preparatória</h1>
+		<p>
+			A configuração inicial deve ser feita somente quando inicia-se um novo repositório. Em repositórios já existentes, pula-se essa etapa.
+		</p>
+	<h2 id="config_user"># Configurar usuário</h2>
+		<p>
+			<div><code>git config --global user.name nome_de_usuario</code></div>
+			<br>(ex: git config --global user.name hlays)
+		</p>
+		<p>
+			Tipos de usuário:
+		</p>
+		<p>
+			<ul>
+				<li>Global: configuração para minha máquina
+				</li>
+				<li>System: todos os usuários dessa máquina vão usar o mesmo login</li>
+				<li>Local: para um repositório específico, caso específico. Por exemplo,uma pessoa usa sua máquina certa vez para commitar.</li>
+			</ul>
+		</p>			
+		<p>
+			Assim, pode-se configurar como global, local, ou system, dependendo do caso. Na maior parte das vezes, utiliza-se global.
+		</p>
+	<h2 id="config_email"># Configurar email</h2>
+		<p>
+			<div><code>git config --global user.email e-mail</code></div>
+		</p>		
+		<p>
+			ex: <code>git config --global user.email meuemail@gmail.com</code>
+		</p>
+	<h2 id="config_ver"># Verificar configuração</h2>
+		<p>
+			<div><code>git config --global --list</code></div>
+		</p>
+		<p>
+			Pode abreviar usando --l ao invés de --list
+			<br>ex: <code>git config --global --l</code>
+		</p>
+	<h2 id="config_change_user"># Trocar nome de usuário ou email</h2>
+		<p>
+			Basta executar o comando config de novo.
+		</p>
+	<h2 id="config_del_user"># Apagar nome de usuário</h2>
+		<p>
+			<div><code>git config --global --unset user.name</code></div>
+		</p>
+		<p>
+			Neste caso, levando em consideração que foi configurado usuário como global.
+		</p>
+	<h2 id="config_del_email"># Apagar e-mail</h2>
+		<p>
+			<div><code>git config --global --unset email</code></div>
+		</p>		
+		<p>
+			Neste caso, levando em consideração que foi configurado usuário como global.
+		</p>
+	<h2 id="config_dir"># Diretório do repositório</h2>
+		<p>
+			<div><code>cd caminho_da_pasta</code></div>
+		</p>
+		<p>
+			Dicas de abreviação/atalho
+			<ul>
+				<li>Para voltar uma pasta acima/pasta anterior. Digite: cd ..</li>
+				<li>Diretório principal: cd ~</li>
+				<li>Listar o conteúdo de um diretório. Dentro da pasta em questão digite: dir</li>
+				<li>Adicionar local padrão (Se você está sempre usando o mesmo diretório e deseja deixá-lo como padrão para sempre que abrir o terminal): basta clicar com o botão direito do mouse sobre o ícone do terminal do Git >>> Propriedades >>> Atalho >>>
+					Iniciar em: >>> coloque o caminho para o seu diretório padrão >>> Aplicar >>> ok
+					<br><img src="img/local_padrao.png" width="50%" height="50%">
+					<br><img src="img/local_padrao2.png" width="50%" height="50%">
+				</li>
+			</ul>
+		</p>		
+		<p>
+			ex:
+			<code>cd desktop/projetos/site</code></p>
+		</p>
+		<p>
+			Para listar os arquivos da pasta
+			<code>ls</code>
+		</p>
+	<h2 id="ver_arq_oculto"># Visualizar o arquivo oculto do Git</h2>
+		<p>
+			<code>cd .git <br>ls</code>
+		</p>
+	</section>
+	<section class="mindaro">
+	<h1 id="status_dir"># Status do diretório</h1>
+		<p>
+			Este comando será muito utilizado durante o uso do Git, por ele poderemos visualizar qual o status de nossos arquivos, se untracked, modified, staged, commited..
+			<code>git status</code>
+		</p>
+	<h2 id="status_pasta"># Status dentro de pastas do diretório</h2>
+		<p>
+			<code>git status -u</code>
+		</p>
+	<h2 id="git_init"># Iniciar um Git</h2>
+		<p>
+			<code>git init</code>
+		</p>
+	<h2 id="git_off"># Desligar Git no repositório</h2>
+		<p>
+			Se por algum motivo não deseja mais usar o controle de versões e deseja desligar o Git do repositório (esse comando irá remover/deletar o Git do repositório em questão):
+			<code>rm -rf .git/</code>
+		</p>
+	</section>
+	<section class="lavender_grey">
+	<h1 id="github_ssh">GitHub: cadastrar chave SSH. Autenticação</h1>
+		<p>
+			Na primeira vez que você for fazer push de um repositório de sua máquina para o GitHub (somente a primeira vez mesmo, os próximos repositórios não necessitarão dessa autenticação), você deverá gerar um conjunto de chaves SSH, uma pública e uma privada, elas servirão para autenticar seus gits no GitHub. Onde sua Chave pública do github será autenticada pela chave privada da sua máquina. Não se preoculpe que não é tão complicado quanto parece. Para acessar o passo-a-passo do próprio GitHub, basta acessar: <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank">link</a>
+		</p>
+	<h2>1º passo: Gerar as chaves</h2>
+		<p>
+			No terminal digite o comando abaixo. Você deverá informar o mesmo e-mail que está cadastrado no GitHub
+			<code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code>
+		</p>
+		<p>
+			O prompt irá informar que está gerando as chaves. depois disso irá perguntar onde você deseja salvar a chave privada, se quiser no local já sugerido pelo git, basta teclar ENTER.
+		</p>
+		<p>
+			Depois disso ele irá perguntar se você deseja salvar uma senha adicional, geralmente não é necessário, então basta teclar ENTER. caso for inserir senha, deve-se digitar a senha e depois confirmar a mesma.
+		</p>
+	<h2>2º passo: Adicionar sua chave SSH pública</h2>
+		<p>
+			Entre no diretório das chaves salvas:
+			<code>cd ~/.ssh/</code>
+		</p>
+		<p>
+			Depois irá mostrar o nome das chaves, a que interessa é a .pub, copie o nome dela. Pode usar o comando [cat] ou [more].
+			<br>Digite:	
+			<code>cat id_rsa.pub</code>
+		</p>
+		<p>
+			Irá aparecer sua chave pública no terminal..copie.
+		</p>
+		<p>
+			Vá no site do Github, clique em sua imagem de perfil <br>(botão verde no canto superior direito da tela) >>> settings (lado esquerdo da tela) >>> SSH and GPG keys >>> new SSH key (botão verde no canto superior direito da tela) >>> Digitar o
+			nome/titulo (geralmente coloca-se o nome do seu pc) e colar a chave >>> Add SSH Key.
+		</p>		
+	<h2>3º passo: adicionar repositório local para remoto</h2>
+		<ol>
+			<li>criar um repositório no Github e copiar o endereço SSH do repositório.</li>
+			<li>no terminal digitar o comando abaixo ((este nome origin pode ser o nome que você quiser, mas é mais comumente utilizado o origin):
+				<br><code>git remote add origin endereço_ssh</code></li>
+			<li>enviar arquivos para o GitHub:
+				<br><code>git push origin master</code></li>
+			<li>da primeira vez que conectar ao GitHub (seu primeiro repositório nesta máquina) irá pedir usuário e senha do Github, após informar, ele automaticamente irá fazer o push dos seus arquivos.</li>
+		</ol>
+		<p>
+			Quando quiser verificar se o repositório está conectado, digite:<br><code>git remote</code><br>(deverá aparecer: origin)
+		</p>
+		<p>
+			Para verificar detalhes: <br><code>git remote -v</code>
+		</p>
+	</section>
+	<section class="orange">
+	<h1 id="parentesco">Sobre o parentesco entre commits</h1>
+		<p>
+			Os commits aparecem da ordem de criação mais recente para a mais antiga, e dizemos que o commit mais recente é filho do mais antigo, sucessivamente.
+			<br />Ex:
+			<br />$ git log --oneline
+			<br /> a7b2440 (HEAD -> master) c4 - alterações
+			<br /> d6ec6be C3 - Acresc nome do curso e prof
+			<br /> 13e1d6c C2a - outro html chamado curso com o link do curso
+			<br /> bd5dcc8 C2 - add novo paragrafo
+			<br /> 98f7dd4 C1 - h1 e parágrafo
+			<br /> e0a52d7 C0 - Primeiro commit
+		</p>		
+		<p>
+			Então: C0 é pai de C1, C1 é pai de C2, C4 é filho de c3, etc.
+		</p>
+	<h2 id="parents">Visualizar pais</h2>
+		<p>
+			<code>git log --parents --oneline</code>
+		</p>
+	</section>
+	<section class="sea_serpent">
+	<h1 id="utilizando_git">Utilizando o Git</h1>
+	<h2 id="add">[add] Adicionar arquivos ao STAGED <br>:::de UNTRACKED ou de MODIFIED para STAGED:::</h2>
+		<p>
+			Adiciona o arquivo para os cuidados do git (stage: área do Git)
+			<code>git add nome do arquivo.extensão</code>
+		</p>		
+		<p>
+			Para adicionar todos os arquivos de uma vez:
+			<br><code>git add .</code>
+		</p>
+	<h2 id="commit_sc">[commit] <br /> :::de STAGED para COMMITED:::</h2>
+		<p>
+			Commitar (o git tira uma “foto” do estado atual do projeto p/ acompanhar as mudanças)
+			<br><code>git commit -m “mensagem de minha preferência”</code>
+		</p>		
+		<p>
+			Ex: <code>git commit -m “C0 - Primeiro commit do projeto”</code>
+		</p>		
+		<p>
+			Obs: *Se vc não colocar a mensagem, automaticamente ele irá abrir um editor de texto para que você digite a mensagem.
+		</p>
+		<p>
+			Neste caso, digite a mensagem no editor que irá abrir, crtl + S para salvar e depois feche o editor, ou digite q no git bash (se tiver aberto dentro do próprio prompt do git) para sair do editor.
+		</p>
+	<h2 id="atalho_add">Atalho para add e commit de uma vez</h2>
+		<p>
+			<code>git commit -am “mensagem de minha preferência”</code>
+		</p>
+	<h2 id="change_editor">Modificar o editor de texto padrão do Git</h2>
+		<p>
+			O editor de texto padrão do Git é o VIM, durante a instalação você também recebe um opção de alterar essa configuração. Mas se por algum motivo, depois de instalado, desejar mudar o editor padrão:
+			<br><code>git config --global core.editor nome do editor que deseja</code>
+		</p>
+	<h2 id="recapitulando_utilizando_git">Recapitulando...</h2>
+		<p>
+			Sempre que quiser atualizar uma mudança no repositório, repetir:
+			<ol>
+				<li><code>git add nome_do_arquivo_extensão</code></li>
+				<li><code>git commit + mudanças realizadas ex: git commit -m “C1 - Alterações na parte de css do código”)</code></li>
+			</ol>
+			<p>
+				Uma vez, que devemos passar os arquivos de MODIFIED para COMMITED novamente.
+			</p>
+		</p>
+		<p>
+			Sempre que ocorre alguma mudança em um arquivo, o Git inteligentemente irá mostrar no terminal todas as alterações sofridas pelo documento, com linhas na cor verde e sinal (+) para as linhas de código que são adicionadas ao arquivo e cor vermelha e sinal (-) para o que é retirado.
+		</p>
+	</section>
+	<section class="sheengreen">
+	<h1 id="git_log">Visualizar alterações (git log)</h1>	
+		<p>
+			Para visualizar todos os commits realizados Modo completo (tecle ENTER ou seta para baixo até chegar ao final (end).. para sair: tecle (q)
+			<code>git log</code>
+		</p>
+	<h2 id="git_log_oneline">Visualizar Commits resumidos em 1 linha</h2>
+		<p>
+			<code>git log --oneline</code>
+		</p>
+	<h2 id="git_log_ultimos">Visualizar últimos commits</h2>	
+		<p>
+			Para visualizar o ultimo commit em uma linha:
+			<br /><code>git log -1 --oneline</code>
+		</p>
+		<p>
+			Para visualizar os 2 últimos commits em uma linha:
+			<br /><code>git log -2 --oneline</code>
+		</p>
+		<p>
+			Assim, por diante, basta trocar o número. Para verificar não resumidos em uma linha, basta tirar o trecho de código --oneline.
+		</p>		
+		<h2 id="git_log_alt">Visualizar alterações em todas as branchs resumidas em uma linha</h2>
+		<p>
+			Você visualizar todos os commits realizados no repositório independentemente da branch, através do comando:
+			<br><code>git log --oneline --all</code>
+		</p>
+		<h2 id="git_log_graph">Visualizar graficamente</h2>
+		<p>
+			Ou para ficar ainda melhor, é possível verificar graficamente:
+			<br><code>git log --oneline --all --graph</code>
+		</p>
+	<h2 id="git_log_det">Visualizar detalhes de um commit específico</h2>
+		<p>
+			Visualização completa, contendo modificações realizadas:
+			<code>git show número_da_hash</code>
+		</p>
+		<p>
+			Você pode encontrar a hash de cada commit através do comando
+			<br /><code>git log --oneline</code>
+		</p>
+		<p>
+			>>> Por exemplo, quero informações sobre o commit C5, cuja hash é 574cc01.
+		</p>
+		<p>
+			<img src="img/hash.png">
+			<br />
+			Digito no terminal:
+
+			<code>git show 574cc01</code>
+		</p>
+		<p>
+			Para Visualização resumida (sem info sobre linhas de código modificadas):
+			<code>git log -1 stat</code>
+		</p>
+	<h2 id="git_log_diff">[diff] Histórico de diferença entre modificações</h2>
+		<p>
+			<code>git log -p -posição_do_commit</code>
+		</p>
+		<p>
+			Ex: Exibir histórico com diff das duas últimas alterações:
+			<code>git log -p -2</code>
+		</p>
+	<h2 id="git_log_hist_format">ver histórico com formatação específica (hash abreviada, autor, data e comentário)</h2>
+		<p>
+			<code>git log --pretty=format:"%h - %an, %ar : %s"</code>
+			<br>
+			Onde:
+			<ul>
+				<li>%h: Abreviação do hash;</li>
+				<li>%an: Nome do autor;</li>
+				<li>%ar: Data;</li>
+				<li>%s: Comentário.</li>
+			</ul>
+		</p>
+	<h2 id="git_log_hist_caminho">Visualizar histórico de um arquivo específico pelo caminho</h2>
+		<p>
+			<code>git log -- caminho_do_arquivo</code>
+		</p>
+	<h2 id="git_log_hist_palavra">Visualizar histórico de um arquivo específico que contêm uma determinada palavra</h2>
+		<p>
+			<code>git log --summary -S<palavra> [caminho_do_arquivo]</code>
+		</p>	
+	<h2 id="git_log_hist_param">Exibir histórico modificação de um arquivo com parâmetros</h2>
+		<p>
+			O M pode ser substituido por: Adicionado (A), Copiado (C), Apagado (D), Modificado (M), Renomeado (R), entre outros.
+			<code>git log --diff-filter=M -- <caminho_do_arquivo></code>
+		</p>
+	<h2 id="git_log_autor">Visualizar commits de determinado autor</h2>
+		<p>
+			<code>git log --author=nomedoautor</code>
+			<br>Ex:
+			<code>git log --author=hlays</code>
+		</p>
+	</section>
+	<section class="teal_deer">
+	<h1 id="gitignore">[gitignore] Ignorar determinados arquivos na hora de commitar</h1>
+		<p>
+			Serve para listar todos os arquivos que não deverão ser lançados no repositório, ou seja, que estão na pasta mas deverão ser ignorados pelo git. Recomenda-se criar apenas um único gitignore em trabalhos em grupo e commitá-lo, assim todos terão
+			acesso aos nomes dos arquivos ignorados e evita de que um mesmo arquivo seja ignorado mais vezes por outras pessoas.
+			<br />No github
+			<https://github.com/github/gitignore> você pode encontrar vários templates de gitignore. <br />Passos:
+			<ol>
+				<li>
+					criar um arquivo com extensão (.gitignore) na pasta onde estão os arquivos de commit
+				</li>
+				<li>
+					num editor de texto adicionar no arquivo .gitignore o nome dos arquivos que deverão ser ignorados. Todos esses arquivos depois de terem o nome salvo no .gitignore não aparecerão mais em git status. exemplo:
+					<br /><code>fonte.txt</code>
+					<br /><code>img21.png</code>
+				</li>
+				<li>
+					salvar e fazer o commit deste arquivo .gitignore como outro arquivo qualquer
+				</li>
+			</ol>
+		</p>
+	<h2 id="gitignore_atalho">ATALHO gitignore: todos os arquivos de mesma extensão</h2>
+		<p>
+			Vamos supor que queremos que o git ignore todos os arquivos em formato txt que estão na pasta. Basta salvar no arquivo .gitignore * + extensão do tipo de arquivo a ser ignorado (no editor de texto):
+			<br /><code>*.txt</code>
+		</p>
+	<h2 id="gitignore_add">Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)</h2>
+		<p>
+			<code>git add -f nome_do_arquivo.extensão</code>
+		</p>
+	</section>
+	<section class="mindaro">
+	<h1 id="git_diff">Git diff</h1>
+		<p>
+			Para comparar:
+			<ul>
+				<li>
+					modified e commited: <code>git diff</code>
+				</li>
+				<li>
+					staged e commited:<code>git diff --staged</code> ou <code>git diff --cached</code>
+				</li>
+				<li>
+					commited e commited:<code>git diff hash_do_commit_antigo..hash_do_commit_atual</code>
+				</li>
+			</ul>
+		</p>	
+	<h2 id="git_diff_mod">Visualizar últimas atualizações que estão em :::modified:::</h2>
+		<p>
+			Geralmente de um arquivo que você acabou de mexer e ainda não fez commit das últimas atualizações.
+			<br>O console irá mostrar todas as modificações realizadas que estão diferentes da última atualização commitada pelo git (compara modified e commited). </br>
+			<br>Em verde (+) tudo o que foi acrescentado e em vermelho (-) tudo o que foi removido. </br>
+			<br>Tecle ENTER ou seta para baixo até chegar ao final do documento (END) e então tecle (q) para sair. Comando:</br>
+			<code>git diff</code>
+		</p>
+	<h2 id="git_diff_arq">Visualizar últimas modificações em um arquivo específico</h2>
+		<p>
+			<code>git diff nome_do_arquivo.extensão</code>
+		</p>
+	<h2 id="git_diff_stg">Visualizar últimas atualizações que estão em :::staged:::</h2>
+		<p>
+			Para visualizar modificações que não estão em modified acrescentar (--staged ou --cached)
+			<br><code>git diff --staged</code>
+		</p>
+	<h2 id="git_diff_comparar">comparar modificações entre commits</h2>
+		<p>
+			<code>git diff hash_do_commit_antigo..hash_do_commit_atual</code>
+		</p>
+		<p>
+			Exemplo. Dados os commits abaixo, para comparar C5 e C6:
+			<br>Lays@Krasco MINGW64 ~/desktop/teste_git (master)</br>
+			<br>$ git log --oneline</br>
+			<br>99a627b (HEAD -> master) c7 - atualizações diversas
+			<br>6d30e14 C7 - mudanças no corpo do projeto
+			<br>fc5cbee C6 - arquivo git ignore
+			<br>574cc01 C5 - Acrescentado img e algumas alterações
+			<br>a7b2440 c4 - alterações
+			<br>d6ec6be C3 - Acresc nome do curso e prof
+			<br>13e1d6c outro html chamado curso com o link do curso
+			<br>bd5dcc8 "add novo paragrafo em <body>"
+			<br>98f7dd4 C1 - h1 e parágrafo
+			<br>e0a52d7 C0 - Primeiro commit
+			<br><code>-> comando : git diff 574cc01..fc5cbee</code>
+		</p>
+		<p>
+			Resumindo...
+			<br><img src="img/modificar.png" width="30%" height="50%">
+		</p>
+	</section>
+	<section class="lavender_grey">
+	<h1 id="desf_alteracoes">Desfazer alterações</h1>
+		<p>
+			Supondo que você deseja desfazer alterações no arquivo..vai depender em que ponto ele está: untracked, modified, commited.
+			<br>* Ao invés de desfazer, o mais aconselhado é reverter, para ao invés de apenas deletar a alteração, manter documentado. Ver reverter mais abaixo.</br>
+		</p>
+	<h2 id="desf_alteracoes_untracked">Desfazer alterações: arquivo em :::untracked:::</h2>
+		<p>
+			<code>git checkout --nome_do_arquivo.extensão</code>
+		</p>
+	<h2 id="desf_alteracoes_modif">Desfazer alterações: arquivos em :::modified::: (já feito add, mas não commit)</h2>
+		<ol>
+			<li>1º tira ele de modified e leva de volta para untracked:
+				<br><code>git reset nome_do_arquivo.extensão</code>
+			</li>
+			<li>2º já é possível fazer checkout e reverter alterações
+				<br><code>git checkout --nome_do_arquivo.extensão</code>
+			</li>
+		</ol>
+	<h2 id="desf_alteracoes_comm">Desfazer alterações: arquivos já commitados</h2>
+	<h3>1º caso SOFT</h3>
+		<p>
+			Tirar arquivo de commit e passar de volta para staged, sem deletar o arquivo, usa-se o comando --soft + a hash do pai, ou seja, a hash do commit anterior ao que eu quero apagar. e depois é possível fazer o checkout.
+			<br><code>git reset --soft hash_do_pai</code>
+		</p>
+	<h3>2º caso MIXED</h3>
+		<p>
+			Tirar arquivo de commit e passar para modified (fora do staged), sem deletar o arquivo, usa-se o comando --mixed + a hash do pai, ou seja, a hash do commit anterior ao que eu quero apagar e depois é possível fazer o checkout.
+			<br><code>git reset --mixed hash_do_pai</code>
+		</p>
+	<h3>3º caso DELETAR HARD</h3>
+
+		<p>
+			Tirar arquivo de commit e deletar o arquivo (todos os commits e arquivos que estão depois do que o commit em questão deixam de existir, são deletados e fica só do commit pai/anterior para baixo). Usa-se o comando --hard + a hash do pai, ou seja, a hash do commit anterior ao que eu quero apagar e depois é possível fazer o checkout.
+			<br><code>git reset --mixed hash_do_pai</code>
+		</p>
+	<h2 id="desf_alteracoes_revert">Reverter alterações</h2>
+		<p>
+			Quase semelhante ao desfazer, mas nesse caso será criado um commit que indica a reversão. É o mais aconselhado.
+		</p>
+	<h3>1° caso</h3>
+		<p>
+			Com mensagem sobre a reversão, neste caso o editor de texto irá abrir para que você insira a mensagem sobre o por que da reversão, ou digite (-m “mensagem”) após o hash
+			<br><code>git revert hash_do_commit_a_ser_revertido</code>
+		</p>
+	<h3>2° caso</h3>
+		<p>
+			Sem mensagem sobre a reversão:
+			<br><code>git revert hash_do_commit_a_ser_revertido --no-edit</code>
+		</p>
+	</section>
+	<section class="orange">
+	<h1 id="arq_del_local">Arquivo deletado manualmente pelo OS, como commitar</h1>
+		<p>
+			Quando deletar um arquivo do arquivo local de sua máquina, o git irá reconhecer isso e se você verificar no comando <bold>git status</bold>  irá verificar que ele está em uma nova instância do git chamada <bold>“deleted”</bold>, para confirmar essa exclusão e manter documentado esse processo.
+		</p>	
+		<p>
+			Deve-se:
+			<br><code>git rm nome_do_arquivo.extensão</code>
+			<br><code>git commit</code>
+		</p>
+		<p>
+			OU
+			<br><code>git add nome_do_arquivo.extensão</code>
+			<br><code>git commit</code>
+		</p>			
+		<p> 
+			Os dois métodos são distintos. Quando removemos pelo sistema operacional ou por alguma ide e queremos commitar essa ação, temos que add ao stage e commitar. Agora se commitarmos diretamente pelo git (com git rm) não precisamos fazer o add, pois a deleção já vai para a stage. Nesse caso é só um corte de caminho para não precisar usar o git add.
+	</section>
+	<section class="sea_serpent">
+	<h1 id="desf_del_local">Desfazer: arquivo deletado da máquina</h1>
+		<p>
+			<code>git checkout -- nome_do_arquivo.extensão</code>
+		</p>
+	</section>
+	<section class="sheengreen">
+	<h1 id="del_git">Remover arquivo/pasta pelo Git</h1>	
+	<h2 id="del_git_arq">Remover arquivo</h2>
+		<p>
+			<code>git rm nome_do_arquivo.extensão</code>
+		</p>
+	<h2 id="del_git_folder">Remover pasta</h2>
+		<p>
+			<code>git rm -r nome da pasta</code>
+		</p>
+	</section>
+	<section class="teal_deer">
+	<h1 id="renomear">Renomear arquivo local</h1>	
+	<h2 id="renomear_local">1ª opção: renomear pelo computador</h2>
+		<p>
+			<ol>
+				<li>renomeie normalmente o arquivo pela pasta.</li>
+				<li>Faça <code>git add do arquivo</code></li>
+				<li>Assim ele irá passar para o estado de RENAMED quando você verificar pelo <code>git status</code></li>
+				<li>Agora faça o commit do arquivo normalmente com <code>git commit</code></li>
+		</p>
+	<h2 renomear_git>2ª opção: pelo Git</h2>
+		<p>
+			<ol>
+				<li>No terminal: <br><code>git mv nome_antigo.extensão novo_nome.extensão</code></li>
+				<li>Assim ele irá passar para o estado de RENAMED quando você verificar pelo <code>git status</code></li>
+				<li>Agora faça o commit do arquivo normalmente com <code>git commit</code> para consolidar a mudança</li>
+			</ol>
+		</p>
+	</section>
+	<section class="mindaro">
+	<h1 id="conectar_github">1ª vez conectar conta do Github</h1>		
+	<h2 id="gerar_ssh">Gerar chaves SSH</h2>
+		<p>
+			Quando usar pela primeira vez, deverá conectar a sua conta do Github na sua máquina, para isso, é necessário Connectar o SSH da sua conta. Onde sua Chave pública do github será autenticada pela chave privada da sua máquina. 
+			<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">link para instruções</a>
+		</p>
+		<p>
+			No terminal, digite:
+			<br><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code>
+		</p>		
+		<p>
+			O terminal irá informar que está gerando as chaves. <br>Depois disso irá perguntar onde você deseja salvar a chave privada, se quiser no local já sugerido pelo git, basta teclar ENTER.
+		</p>
+		<p>
+			Depois disso ele irá perguntar se você deseja salvar uma senha adicional, geralmente não é necessário, então basta teclar ENTER. caso for inserir senha, deve-se digitar a senha e depois confirmar a mesma.
+		</p>
+	<h2 id="add_ssh">Adicionar chave SSH</h2>
+		<p>
+			Digite no terminal para entrar no diretório das chaves salvas:
+			<br><code>cd ~/.ssh/</code>
+		</p>
+		<p>
+			O terminal irá mostrar o nome das chaves, a que interessa é a .pub, copie o nome dela. Pode usar o comando <code>cat</code> ou <code>more</code>. Digite:
+			<br><code>cat id_rsa.pub</code>
+		</p>
+		<p>
+			Irá aparecer sua chave pública no terminal (um conjunto de caracteres com diversas linhas..copie.
+		</p>
+		<p>
+			Agora, vá no site do Github, clique em sua imagem de perfil (botão verde no canto superior direito da tela) >>> settings (lado esquerdo da tela) >>> SSH and GPG keys >>> new SSH key (botão verde no canto superior direito da tela) >>> Digitar o nome/titulo (geralmente coloca-se o nome do seu pc) e colar a chave >>> Add SSH Key.
+		</p>
+	</section>
+	<section class="lavender_grey">
+	<h1 id="remote_add">[remote add] Repositório local para remoto - da sua máquina para Github</h1>
+		<p>
+			<ol>
+				<li>criar um repositório no Github e copiar o endereço SSH do repositório.</li>
+				<li>no terminal digitar: <br><code>git remote add origin endereço_ssh</code>. Este nome <bold>origin</bold> pode ser o nome que você quiser, mas é mais comumente utilizado o origin. Este comando serve para adicionar seu repositório local no Github.</li>
+				<li>enviar arquivos para o Github. Digite no terminal: <br><code>git push origin master</code></li>
+				<li>Da 1ª vez, irá pedir usuário e senha do Github, após informar, ele automaticamente irá fazer o push dos seus arquivos.</li>
+			</ol>
+		</p>
+	<h2 id="verif_conec">Verificar se está conectado</h2>
+		<p>
+			<code>git remote</code>
+			<br>Deve aparecer: origin, ou o nome que você tenha usado.
+		</p>
+	<h2 id="verif_det">Verificar detalhes do repositório no Github</h2>
+		<p>
+			<code>git remote -v</code>
+		</p>
+	</section>
+	<section class="orange">
+	<h1 id="push">push: sincronizar alterações locais para o repositório do Github</h1>
+		<p>
+			Sempre que quiser atualizar os commits locais também no Github fazer:
+			<br><code>git push origin master</code>
+		</p>
+	</section>
+	<section class="sea_serpent">
+	<h1 id="git_clone">clone: trazer repositório remoto para o arquivo local</h1>
+		<p>
+			Este é o inverso. Quando você cria o repositório no Github e deseja trazer para a máquina, não basta fazer um simples download do repositório, pois não seria uma cópia completa, uma vez que, faria uma cópia dos arquivos simplesmente e não do repositório em si com o Git. 
+			<br>Será necessário clonar o repositório remoto utilizando o comando <bold>clone</bold>
+		</p>
+		<p>
+			Não esqueça de estar com o local que deseja salvar o repositório configurado no terminal
+			<br>
+			<code>git clone endereço_do_repositorio</code>
+			<br> você deverá encontrar o endereço SSH do repositório na página do repositório do Github. Fica localizado em um botão verde do lado direito da tela. Você pode clonar tantos seus próprios repositório, quanto em repositórios criados por outras pessoas com quem irá trabalhar no projeto em questão.
+		</p>
+	</section>
+	<section class="sheengreen">
+	<h1 id="pull">pull: sincronizar alterações do repositótio remoto para o local</h1>
+		<p>
+			<code>git pull origin master</code>
+			<br>origin, ou o nome que você tenha usado..
+		</p>
+	</section>
+	<section class="teal_deer">
+	<h1 id="outros_repo">Trabalhando com repositórios de outras pessoas</h1>	
+	<h2 id="colab">Modo Colaborador</h2>
+		<p>
+			Geralmente, se você colabora com repositórios da empresa onde trabalha, ou em projetos opensource, por exemplo, dos quais você faz parte da equipe, quando você desejar enviar seus commits com alterações do repositório em questão, precisará estar ajustado no Git como <bold>Colaborador</bold>, caso contrário ao tentar fazer o commit, será informado de "acesso negado".
+		</p>
+		<p>
+			Para isso, o dono do repositório deverá ir até a página do repositório em questão, clicar em <bold>settings</bold> >>> colaborators >>> e inserir seu nome de usuário.
+		</p>
+		<p>
+			Assim, sendo um colaborador, toda vez que enviar um commit, o dono do repoitório será notificado sobre suas alterações e deverá permitir ou não que elas sejam consolidadas.
+		</p>		
+	<h2 id="pull_request">Pull request</h2>
+		<p>
+			Geralmente, se você colabora com projetos opensource, por exemplo, dos quais você deseja colaborar de alguma forma, quando você faz alterações em arquivos e deseja commitá-los para o repositório original (que não foi criado por você), deverá solicitar essa permissão através do botão <bold>pull request</bold> no Github. Suas alterações serão avaliadas e consideradas pelos colaboradores oficiais do repositório.
+			<br>Isso permite o controle sobre o projeto, sem que qualquer um mexa no repositório sem permissão e evitando alterações indesejadas.
+		</p>
+	<h2 id="fork">FORK, uma cópia de outros repositórios para o seu repositório</h2>
+		<p>
+			Quando você faz um <bold>fork</bold>, cria uma cópia de um repositório remoto de outra pessoa para o seu repositório remoto, assim quando fizer alterações e commits nos arquivos deste repositório, estes serão refletidos no seu repositório e não no original. 
+		</p>
+	</section>
+	<section class="mindaro">
+	<h1 id="branches">BRANCHES (ramificação)</h1>
+		<p>
+			Branches são como uma linha do tempo.
+		</p>
+		<p>
+			Quando você faz o 1º commit do seu repositório, o Git automáticamente cria a 1ª branch chamada <bold>master</bold>.
+		</p>
+		<p>
+			Quando necessário, você poderá criar outras branchs, como uma forma de ramificar o repositório e trabalhar em paralelo.
+		</p>
+		<p>
+			<img src="img/branch.png" width="50%" height="50%">
+		</p>
+		<p>
+			Exemplificando, vamos supor que você tenha um repositório do projeto de um site. Em algum momento você deseja fazer algumas modificações para aprimorar o site, modificando todo o estilo css da página. Porém será um processo mais demorado, e enquanto você continua a desenvolver o html, não quer que essas alterações em andamento do css prejudiquem ou até impessam seu trabalho com o html.
+			<br>Ao mesmo tempo, você não pode simplesmente fazer um gitignore do css, pois afetaria o desenvolvimento html.
+			<br>Assim você, cria uma nova ramificação da parte css. E pode fazer commits para cada branch separadamente, do html seguindo a linha do tempo principal <bold>master</bold> e a parte css em outra branch.
+			<br>
+			Assim, o último estado do css antes de ser ramificado da master, continuará lá ativo até que você termine as alterações e volte a atualização final para a branch master.
+		</p>
+		<p>
+			Outra exemplificação seria, quando uma equipe deseja ramificar o trabalho de cada um, para permitir o trabalho em paralelo quando necessário.
+		</p>	
+	<h2 id="branches_new">Criar uma nova branch</h2>
+		<p>
+			<code>git branch nome_da_nova_branch</code>
+		</p>
+		<p>
+			>>> ATALHO <<<
+			<br>
+			É possível também criar uma branche e já ir para ela automaticamente sem a necessidade do comando git branch e depois git checkout, para isso:
+			<br><code>git checkout -b nome_da_nova_branch</code>
+		</p>
+	<h2 id="branches_efet">Efetivar branch através do commit</h2>
+		<p>
+			A ramificação só é efetivada quando você commitar o arquivo na ramificação.
+			<br>Não se esqueça de commitar com o terminal ajustado na branch como explicado no tópico anterior.
+			<br>
+			<img src="img/commit_branch.png" width="80%" height="80%">
+		</p>
+	<h2 id="branches_new_remote">Criar branch no repositório remoto</h2>
+		<p>
+			Quando criamos uma branch no repositório local, será necessário criar a mesma branch no repositório remoto. 
+			<br>Isso pode ser feito pelo próprio site do Github ou pelo terminal:
+			<br>
+			<code>git branch master:nome_da_nova_branch</code>
+		</p>
+		<p>
+			Lembrando que, quando trabalhamos em equipe, geralmente criamos ramificações somente no nosso repositório local, e ao final fazemos push somente do que é necessário no repositório remoto. Tudo isso vai depender de cada caso.
+		</p>
+		<p>
+			No tópico a seguir veremos um atalho para Criar branch já trackeada ao repositório remoto.
+		</p>
+	<h2 id="branches_new_trc">Criar branch já trackeada ao repositório remoto</h2>
+		<p>
+			<code>git branch nome_da_nova_branch origin/nome_da_nova_branch</code>
+		</p>
+	<h2 id="branches_view">Visualizar Branchs</h2>	
+	<h3>Visualizar todas as braches (LOCAIS e REMOTAS)</h3>
+		<p>
+			<code>git branch -a</code>
+		</p>		
+	<h3>Visualizar braches LOCAIS</h3>
+		<p>
+			<code>git branch</code>
+		</p>
+	<h3>Visualizar braches REMOTAS</h3>
+		<p>
+			<code>git branch -r</code>
+		</p>
+		<p>
+			Em qual branch estou?
+			<br> com o comando git branch, o terminal mostrará todas as branchs existentes no repositório, e a branch em que você está irá aparecer em verde com * (asterísco)
+			<br><img src="img/git_branch.png" width="80%" height="80%">
+		</p>
+	<h3>Último commit foi commitado em qual branch?</h3>
+		<p>
+			<br><code>git log --oneline</code>
+		</p>
+		<p>
+			O terminal irá mostrar todos os commits realizados e na 1ª linha, podemos verificar através de <bold>HEAD</bold> em qual branch está o último commit.
+		</p>
+	<h2 id="branches_change">Mudar de branch, commitar entre branchs</h2>
+		<p>
+			Quando quiser mudar de branch para commitar, basta digitar no terminal:
+			<br><code>git branch checkout nome_da_branch</code>
+		</p>
+	<h2 id="branches_del">Deletar uma branch</h2>
+		<p>
+			Para deletar uma branch, é necessário que você não esteja nela. Então certifique-se de que está na branch master antes de execultar o código.
+			<br><code>git branch -d nome_da_branch_deletar</code>
+		</p>
+		<p>
+			Pode acontecer de o Git acusar que a branch não foi completamente mesclada. Você pode mesclar corretamente e excluir. Ou, caso queira excluir e não mesclar, não salvando assim o commit, basta trocar o -d por -D:
+			<br><code>git branch -D nome_da_branch_deletar</code>
+		</p>
+	</section>
+	<section class="lavender_grey">
+	<h1 id="mesclar">Mesclar branches: merge e rebase</h1>
+		<p>
+			Supondo que naquele exemplo anterior, você terminou suas alterações em paralelo no css e deseja que a brach "teste", seja mesclada com a master para prosseguir com o projeto em completo.
+		</p>
+		<p>
+			1º certifique-se que você esteja na branch "master" (se não estiver, use: <code>branch checkout master</code>)
+		</p>
+		<p>
+			A diferença entre mesclar branches com merge e com rebase:
+			<p>
+				<bold>merge</bold>: mescla e a existência da ramificação fica registrada em um commit merge.
+				Tem como vantagem manter um histórico leal.
+			</p>
+			<p>
+				<bold>rebase</bold>: o Git irá "rebasear" e as ramificações passarão a ser uma só recriando uma base linear na branch master.
+				<br>No momento em que você cria a ramificação, o Git guarda o estado dos determinados arquivos e quando você faz rebase, o Git compara os arquivos anteriores com os novos e é como se fizesse um novo commit e a ramificação, praticamente, não tivesse existido.
+			</p>
+	<h2 id="merge">:::merge::: para Mesclar branches</h2>
+		</p>
+		<p>
+			Use o comando merge para mesclar:
+			<br><code>git merge nome_da_branch_que _deseja_mesclar -m "mensagem sobre o commit"</code>
+		</p>
+		<p>
+			No caso do exemplo:
+			<br><code>git merge testar</code>
+		</p>
+		<p>
+			Ou seja, uma vez, que já estamos em "master", informamos ao git para "trazer"/"mesclar" a branch testar com master.
+		</p>
+		<p>
+			<bold>:::Agora, existem algumas excessões:::</bold>
+		</p>
+		<p>
+			Caso não tenha sido criado nenhum commit na branch master que entre em conflito com os commits do branch paralelo, temos o que chamamos de "fast-forward", os commits da branch passam automaticamente para a branch principal (master) sem conflito ou complicações.
+		</p>
+		<p>
+			Caso algum commit entre em conflito, o merge automático não vai funcionar, e temos que seguir alguns passos adicionais. Assim teremos que decidir como resolver o conflito com nossos arquivos, seja adicionando-os, ou excluindo, dependendo do caso.
+		</p>
+		<p>
+			Feito o merge certinho, podemos deletar a branch adicional, caso não seja mais necessária, seguindo os passos já mencionados anteriormente (<code>git branch -d nome_da_branch_a_deletar</code>)
+		</p>
+	<h2 id="rebase">:::rebase::: para Mesclar branches</h2>
+		<p>
+			<code>git rebase nome_da_branch_que_deseja_mesclar</code>
+		</p>
+		<p>
+			Cuidado, sempre é aconselhavel somente fazer rebase em branchs locais, uma vez que fazer isso em branches compartilhadas com outras pessoas pode gerar conflitos.
+		</p>
+		<p>
+			Em alguns casos em que a branch master tiver commits à frente de outra branch, será necessário fazer um rebase ao contrário.
+		</p>
+		<p>
+			Ou seja, fazer o rebase a partir da outra branch para levar a master para lá (fazendo isso você iguala a linha do tempo) e depois fazendo um novo rebase para levar/tombar da nova branch para a branch master. Isso irá gerar um fast forward sem conflitos na branch master compartilhada.
+			<br>Para ilustrar melhor esta situação, veja o exemplo:
+		</p>
+	</section>
+	<section class="orange">
+	<h1 id="corrigir_conflitos">Corrigir conflitos</h1>
+		<p>
+			Lembre-se que se o seu terminal estiver apontando para uma determinada branch, todas as alterações que você estiver fazendo sobre os documentos irão refletir naquela branch em questão. 
+		</p>
+		<p>
+			Então, não se esqueça de alterar a branch quando necessário. Uma vez que alterações realizadas no mesmo documento local irão "aparecer" de maneira diferente no próprio documento, dependendo da branch em que você estiver.
+		</p>
+		<p>
+			Muitas vezes os conflitos entre arquivos acontecem justamente porque algumas linhas de código, por exemplo, estão de forma diferente dependendo da branch.
+		</p>
+		<p>
+			Por isso, para resolver esse tipo de conflito, é necessário ver qual linha do arquivo está desatualizada em relação à outra branch e atualizá-la.
+		</p>	
+		<h3>Conflitos e abortar merge</h3>
+			<p>
+				Antes de finalizar o processo de rebase, para corrigir conflitos, etc, é possível cancelar a operação com:
+				<br><code>git merge --abort</code>
+			</p>
+			<p>
+				Algumas vezes podem ocorrer problemas de conflitos entre os commits, neste caso você deverá corrigir os conflitos e abortar o merge ou para continuar depois de corrigir basta fazer o merge novamente.
+			</p>
+		<h3>Conflitos e abortar rebase</h3>
+			<p>
+				Antes de finalizar o processo de rebase, para corrigir conflitos, etc, é possível cancelar a operação com:
+				<br><code>git rebase --abort</code>
+			</p>
+			<p>
+				Algumas vezes podem ocorrer problemas de conflitos entre os commits, neste caso você deverá corrigir os conflitos e abortar o rebase ou para continuar depois de corrigir, não é necessário começar a operação novamente como ocorre com o merge, aqui podemos continuar de onde paramos com:
+				<br><code>git rebase --continue</code>
+			</p>
+	</section>
+	<section class="sea_serpent">
+	<h1 id="tracking">Tracking: rastreando branchs entre repositório local e remoto</h1>
+		<p>
+			Pode acontecer durante os commits locais, de estar desatualizado no repositório remoto, para resolver isso:
+		</p>
+		<p>
+			<br><code>git push -u origin master</code>
+		</p>
+		<p>
+			Neste exemplo, na hora de fazer o push, acrescenta-se -u para atualizar e igualar a branch master nos repositórios. Lembrando que usamos "origin" como exemplo (conforme explicado é um nome que se dá), e usou-se a branch master, mas pode ser feito para qualquer outra branch que se deseja atualizar a posição.
+		</p>
+		<p>
+			Feito isso uma vez, a branch de ambos repositórios será sempre rastreada e atualizada durante os push normais.
+			<br>Lembrando que os repositórios remotos que são clonados para o repositório local já vem trackeados automaticamente.
+			<br>Então se você "mandar" um <code>git push</code> ele já opera sozinho sem necessidade de acrescentar origin master, por exemplo.
+		</p>
+		<p>
+			Quando fazemos um <code>git push origin master</code> para enviar as atualizações de commits para o repositório
+		</p>
+	</section>
+</body>
+</html>

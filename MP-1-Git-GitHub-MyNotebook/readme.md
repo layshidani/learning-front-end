@@ -1,5 +1,5 @@
-# Projeto WEB 1 - [Notebook do Curso de Git e GitHub]
-Página com meu resumo sobre o conteúdo aprendido no curso de Git e Github - Básico e Intermediário da UDEMY.  __[<Visualizar\>](https://hlays.bitbucket.io/Projeto-1-Git-GitHub-MyNotebook/)__
+# Projeto WEB 1: [Notebook Git e GitHub ] [<Visualizar\>](https://hlays.github.io/learning-web/MP-1-Git-GitHub-MyNotebook/)
+Página com meu resumo sobre o conteúdo aprendido sobre Git e Github - Básico e Intermediário da UDEMY.  __[<Visualizar\>](https://hlays.bitbucket.io/Projeto-1-Git-GitHub-MyNotebook/)__
 
 ## Utilizado:
 
@@ -33,4 +33,3 @@ Página com meu resumo sobre o conteúdo aprendido no curso de Git e Github - B�
 - Nota: 5/5
 
 ---
-__[Visualizar](https://hlays.bitbucket.io/Projeto-4-Cats-Photos/)__

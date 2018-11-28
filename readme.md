@@ -1,22 +1,32 @@
-# Learning
+# :books: Learning 
+
 ## Desenvolvimento de páginas WEB 
 
-### Projeto WEB 1: [Notebook do Curso de Git e GitHub ] [<Visualizar\>](https://hlays.bitbucket.io/Projeto-1-Git-GitHub-MyNotebook/)
+### * Projeto WEB 1: [Notebook Git e GitHub ] [<Visualizar\>](https://hlays.github.io/learning-web/MP-1-Git-GitHub-MyNotebook/)
 
-### Projeto WEB 2: [Life in the wild] [<Visualizar\>](https://hlays.bitbucket.io/Projeto-2-Life-in-the-wild/)
+### * Projeto WEB 2: [Life in the wild] [<Visualizar\>](https://hlays.github.io/learning-web/MP-2-Life-in-the-wild/)
 
-### Projeto WEB 3: [Coleção de frases favoritas] (Utilizado Boostrap) [<Visualizar\>](https://hlays.bitbucket.io/Projeto-3-Frases-com-Bootstrap)
+### * Projeto WEB 3: [Coleção de frases favoritas] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/MP-3-Frases-com-Bootstrap/)
 
+### * Projeto WEB 4: [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/MP-4-Cats-Photos/)
 
-### Projeto WEB 4: [Cat Photos] [<Visualizar\>](https://hlays.bitbucket.io/Projeto-4-Cats-Photos/)
+### * Projeto WEB 5: [Página pessoal 1] [<Visualizar\>](https://hlays.github.io/learning-web/MP-5-Pagina-Pessoal-1/)
 
-### Projeto WEB 5: [Página pessoal 1] [<Visualizar\>](https://hlays.bitbucket.io/Projeto-5-Pagina-Pessoal-1/)
+## :heavy_check_mark: FreeCodeCamp projects
+
+- [Projects](https://github.com/hlays/FreeCodeCamp)
 
 ---
 
+:round_pushpin: I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
 
 
-# >>> Links interessantes <<<
+:round_pushpin: [My Leaning Track](https://github.com/hlays/learning-track)
+
+:round_pushpin: [My Learning Nootebooks](https://github.com/hlays/mylearningnotebooks)
+
+
+# :link: Links úteis :link:
 
 ## Referência: 
 - [W3S](https://www.w3schools.com/) THE WORLD'S LARGEST WEB DEVELOPER SITE
@@ -26,7 +36,7 @@
 - [Mozilla Developer](https://developer.mozilla.org/) (em inglês, alguns conteúdos disponíveis em português)
 
 
-## Ferramentas 
+## :wrench: Ferramentas 
 
 ### Fontes:
 
@@ -73,3 +83,4 @@
     <h1>Branch</h1>
     <i class="fas fa-code-branch"></i>
     ```
+

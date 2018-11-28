@@ -1,5 +1,5 @@
 # Projeto WEB 2 - [Life in the wild]
-Página simples com foto de animais. __[<Visualizar\>](https://hlays.bitbucket.io/Projeto-2-Life-in-the-wild/)__
+Página simples com foto de animais. [<Visualizar\>](https://hlays.github.io/learning-web/MP-2-Life-in-the-wild/)
 
 
 ## Utlizado:

@@ -1,6 +1,6 @@
 # Projeto WEB 3 - [Coleção de frases favoritas]
 Página com algumas frases (quotes) preferidas.
-Utilizando Bootstrap. __[<Visualizar\>](https://hlays.bitbucket.io/Projeto-3-Frases-com-Bootstrap)__
+Utilizando Bootstrap. __[<Visualizar\>](https://hlays.github.io/learning-web/MP-3-Frases-com-Bootstrap/)__
 
 ## Utilizado:
 

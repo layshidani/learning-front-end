@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Game Trivia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <main id="main-doc">
+      <section id="welcome">
+        <a href="#welcome"><i id="home-button" class="fas fa-home fa-2x"></i></a>
+        <a href="#instructions"><i id="instructions-button" class="fas fa-question-circle fa-2x"></i></a>
+        <h1 id="name"></h1>
+        <h1>Bem-vindo (a) ao jogo de Trivia</h1>
+          <p>
+            <i class="fas fa-gamepad fa-2x" alt="gamepad"></i>
+          </p>
+        <h1>Boa Sorte!</h1>
+          <a href="#choice" rel="internal" id="start"><i class="fas fa-play-circle"></i>&ensp;Começar</a>
+      </section>
+      <section id="choice">
+        <h1>Escolha o seu tema</h1>
+        <button id="theme1" onclick="goodChoice1()"><i class="fas fa-laptop-code"></i>&ensp;CSS</button>
+        <i class="fas fa-arrows-alt-h"></i>
+        <button id="theme2" onclick="goodChoice2()"><i class="fab fa-js-square"></i>&ensp;JavaScript</button>
+      </section>
+<hr>
+      <section id="result">
+        <h1>Resultado</h1>
+        <div>
+          <h2><i class="fas fa-trophy"></i>&ensp;Pontuação&ensp;<i class="fas fa-trophy"></i></h2>
+          <p id="final-points-0"></p>
+          <p id="final-points-1-2"></p>
+          <p id="final-points-3"></p>
+        </div>
+      </section>
+      <section>
+        <button id="play-again" value="Refresh Page" onClick="playAgain()">Jogar de novo! :)</button>
+      </section>
+<hr>
+      <section id="answers">
+        <button onclick="showAnswerTheme1()" id="buttonTheme1"><i class="far fa-question-circle"></i>&ensp;Ver respostas Tema 1 - CSS</button>
+        <div id="answers-theme-1">
+        <!--Tema 1-->
+          <h2>Tema 1: CSS</h2>
+          <h3>1. O que é CSS?</h3>
+            <p class="wrong-answer">
+              A. CSS (Cascading Style Sheets) é uma linguagem de programação para automatizar páginas web.
+            </p>
+            <p  class="wrong-answer">
+              B. CSS (Cascading Style Sheets) é um conjunto de folhas para estilizar somente textos.
+            </p>
+            <p class="correct-answer">
+              C. CSS (Cascading Style Sheets) é um mecanismo para adicionar estilo a um documento web. &ensp;<i class="fas fa-check"></i>
+            </p>
+          <h3>2. Quando foi lançado o CSS?</h3>
+            <p  class="wrong-answer">
+              A. 1992.
+            </p>
+            <p class="correct-answer">
+              B. 1996. &ensp;<i class="fas fa-check"></i>
+            </p class="wrong-answer">
+            <p class="wrong-answer">
+              C. 2002.
+            </p>
+          <h3>3. Qual é a propriedade que eu posso usar em CSS para modificar o tamanho das letras do texto?</h3>
+            <p class="correct-answer">
+              A. font-size. &ensp;<i class="fas fa-check"></i>
+            </p>
+            <p class="wrong-answer">
+              B. text-size.
+            </p>
+            <p class="wrong-answer">
+              C. letter-size.
+            </p>
+        </div>
+        <!--Tema 2-->
+        <button onclick="showAnswerTheme2()"><i class="far fa-question-circle"></i>&ensp;Ver respostas Tema 2 - Javascript</button>
+        <div id="answers-theme-2">
+          <h2>Tema 2: JavaScript</h2>
+          <h3>1. Em que ano foi criado o Javascript?</h3>
+            <p class="wrong-answer">
+              A. 2008.
+            </p>
+            <p class="wrong-answer">
+              B. 1991.
+            </p>
+            <p class="correct-answer">
+              C. 1995. &ensp;<i class="fas fa-check"></i>
+            </p>
+          <h3>2. Qual o nome do(a) criador(a) do JS?</h3>
+            <p class="correct-answer">
+              A. Brendan Eich. &ensp;<i class="fas fa-check"></i>
+            </p>
+            <p class="wrong-answer">
+              B. Ada Lovelace.
+            </p>
+            <p class="wrong-answer">
+              C. Steve Jobs.
+            </p>
+          <h3>3. Por que o JS é uma excelente linguagem para aprender?</h3>
+            <p class="correct-answer">
+              A. Porque as aplicações são quase infinitas e é uma das linguagens que mais cresce no mercado de trabalho. &ensp;<i class="fas fa-check"></i>
+            </p>
+            <p class="wrong-answer">
+              B. Porque é uma linguagem de baixo nível.
+            </p>
+            <p class="wrong-answer">
+              C. Porque o JS é aplicado para obtenção de resultado eficiente e descritivo.
+            </p>
+        </div>
+      </section>
+      <section id="instructions">
+        <h1><i class="fas fa-paperclip"></i>&ensp;Instruções</h1>
+        <ol>
+          <li>Serão 3 perguntas sobre o tema escolhido;</li>
+          <li>Cada pergunta terá 3 alternativas de resposta (A / B / C), somente uma estará correta;</li>
+          <li>Ao clicar no tema escolhido, uma janela será aberta nesta página com a pergunta e 3 alternativas de resposta;</li>
+          <li>Responda digitando a letra correspondente à alternativa escolhida (A, B ou C);</li>
+          <li>Não se preocupe com letras maiúsculas ou minúsculas, mas lembre-se de digitar apenas uma das alternativas;</li>
+          <li>Clique em OK;</li>
+          <li>Você saberá se acertou ou não e depois responderá à próxima pergunta até completar todas as 3;</li>
+          <li>Ao final, você poderá ver sua pontuação final;</li>
+          <li>Gosta de desafios? Clique no botão "Jogar de novo";</li>
+          <li>DIVIRTA-SE! &ensp;<i class="far fa-grin-wink"></i></li>
+        </ol>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

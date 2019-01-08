@@ -1,0 +1,31 @@
+html {
+  font-family: 'Staatliches', cursive;
+  background: url("img/photo-1523764282555-892d818c83c6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+}
+
+#home {
+  background-color: #E3D373;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#inst {
+  font-style: italic;
+  color: gray;
+}
+
+#home {
+  width: 400px;
+  height: auto;
+  margin-top: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#calc {
+  border-radius: 5px;
+}

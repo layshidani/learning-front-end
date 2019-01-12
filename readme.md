@@ -2,7 +2,13 @@
 
 ## Desenvolvimento de páginas WEB 
 
+### * [JS - Drum (en)] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-Drum/)
+
 ### * [Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto_Trivia/)
+
+### * [Conversor de Temperatura (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Conversor-de-Temperatura/)
+
+### * [Etanol ou Gasolina? (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Etanol-ou-Gasolina/)
 
 ### * [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
 
@@ -22,11 +28,11 @@
 * FCC2-Build-a-Survey-Form
 [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
 
-* FCC3-Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page)
+* FCC3-Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)
 
-* FCC4-Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page)
+* FCC4-Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)
 
-* FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage)
+* FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
 ---
 
 :round_pushpin: I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).

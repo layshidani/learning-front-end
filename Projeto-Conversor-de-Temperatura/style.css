@@ -1,0 +1,26 @@
+html {
+  color: #fff9f4;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 120%;
+  background: url('img/paul-schafer-464760-unsplash.jpg');
+  background-size: cover;
+}
+
+h1 {
+  font-size: 230%;
+}
+
+#conversor {
+  text-align: center;
+  margin-top: 30px;
+}
+
+input {
+  color: #000040;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 10px;
+}

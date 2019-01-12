@@ -2,20 +2,31 @@
 
 ## Desenvolvimento de páginas WEB 
 
-### * Projeto WEB 1: [Notebook Git e GitHub ] [<Visualizar\>](https://hlays.github.io/learning-web/MP-1-Git-GitHub-MyNotebook/)
+### * [Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto_Trivia/)
 
-### * Projeto WEB 2: [Life in the wild] [<Visualizar\>](https://hlays.github.io/learning-web/MP-2-Life-in-the-wild/)
+### * [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
 
-### * Projeto WEB 3: [Coleção de frases favoritas] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/MP-3-Frases-com-Bootstrap/)
+### * [Life in the wild] [<Visualizar\>](https://hlays.github.io/learning-web/Life-in-the-wild/)
 
-### * Projeto WEB 4: [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/MP-4-Cats-Photos/)
+### * [Coleção de frases favoritas (pt-br)] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/Frases-com-Bootstrap/)
 
-### * Projeto WEB 5: [Página pessoal 1] [<Visualizar\>](https://hlays.github.io/learning-web/MP-5-Pagina-Pessoal-1/)
+### * [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/Cats-Photos/)
 
-## :heavy_check_mark: FreeCodeCamp projects
+### * [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
 
-- [Projects](https://github.com/hlays/FreeCodeCamp)
+## :heavy_check_mark: FreeCodeCamp Projects
 
+* FCC1-TributePage-SebastiãoSalgado
+[<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
+
+* FCC2-Build-a-Survey-Form
+[<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
+
+* FCC3-Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page)
+
+* FCC4-Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page)
+
+* FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage)
 ---
 
 :round_pushpin: I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).

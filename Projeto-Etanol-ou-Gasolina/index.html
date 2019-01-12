@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <title>Etanol ou Gasolina?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
@@ -14,20 +15,20 @@
     <section id="home">
       <h1><i class="fas fa-gas-pump"></i>&ensp; O que compensa mais: Abastecer com Etanol ou Gasolina?</h1>
       <div id="calculator">
-        <h2>Insira o preço do litro de combustível</h2>
+        <h2><i class="fas fa-hand-point-right"></i>&ensp; Insira o preço do litro de combustível</h2>
         <p id="inst">
           Use ponto (.) ao invés de vírgula (,)
         </p>
         <p>
-          <label for="ethanol" id="ethanol-label"><i class="fas fa-money-bill-alt"></i>&ensp; Preço do Etanol R$/litro:</label>
-          <input id="ethanol" type="number" placeholder="Exemplo: R$ 2.99" required/>
+          <i class="fas fa-money-bill-alt"></i>&ensp; Preço do Etanol R$/litro:
+          <input id="ethanol" type="number" placeholder="Exemplo: R$ 2.99"/>
         </p>
         <p>
-          <label for="gasoline" id="gasoline-label"><i class="fas fa-money-bill-alt"></i>&ensp; Preço da Gasolina R$/litro:</label>
-          <input id="gasoline" type="number" placeholder="Exemplo: R$ 3.99" required/>
+          <i class="fas fa-money-bill-alt"></i>&ensp; Preço da Gasolina R$/litro:
+          <input id="gasoline" type="number" placeholder="Exemplo: R$ 3.99"/>
         </p>
         <p>
-          <button id="calc" onclick="calculate(ethanol, gasoline)">Calcular!</button>
+          <button id="calc" onclick="calculate()">Calcular!</button>
         </p>
       </div>
       <div>

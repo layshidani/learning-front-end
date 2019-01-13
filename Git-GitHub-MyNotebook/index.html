@@ -192,6 +192,7 @@
 						<li><a href="#branches_view">Visualizar Branchs</a></li>
 						<li><a href="#branches_change">Mudar de branch, commitar entre branchs</a></li>
 						<li><a href="#branches_del">Deletar uma branch</a></li>
+						<li><a href="#branches_del-remote">Deletar uma branch remota</a></li>
 					</ul>
 				</li>
 				<li>
@@ -1048,7 +1049,7 @@
 			Quando quiser mudar de branch para commitar, basta digitar no terminal:
 			<br><code>git branch checkout nome_da_branch</code>
 		</p>
-	<h2 id="branches_del">Deletar uma branch</h2>
+	<h2 id="branches_del">Deletar uma branch local</h2>
 		<p>
 			Para deletar uma branch, é necessário que você não esteja nela. Então certifique-se de que está na branch master antes de execultar o código.
 			<br><code>git branch -d nome_da_branch_deletar</code>
@@ -1056,6 +1057,9 @@
 		<p>
 			Pode acontecer de o Git acusar que a branch não foi completamente mesclada. Você pode mesclar corretamente e excluir. Ou, caso queira excluir e não mesclar, não salvando assim o commit, basta trocar o -d por -D:
 			<br><code>git branch -D nome_da_branch_deletar</code>
+		</p>
+		<h2 id="branches_del-remote">Deletar uma branch remota</h2>
+		<code>git push <nome do origin> <nome do branch> --delete</code>
 		</p>
 	</section>
 	<section class="lavender_grey">

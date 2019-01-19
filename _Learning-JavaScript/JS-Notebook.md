@@ -134,10 +134,28 @@ x < 10 ? console.log( x ) : console.log( y );
 - m -> /code/m : verificação multilinha
 
 ## Alcance []
-- [abc] : busca por qualquer um dos caracteres entre [] (ou seja, procura por 'a', 'b', 'c')
-- [x-y] : busca por caracteres entre a primeira letra e a segunda -> exemplo: de 'a' a 'z' -> a-z
-- [0-9] : busca por qualquer caracteres entre os números estipulados
-- [x|y] : busca por x ou y..
+- `/[abc]/` : busca por qualquer um dos caracteres entre [] (ou seja, procura por 'a', 'b', 'c')
+- `/[x-y]/` : busca por caracteres entre a primeira letra e a segunda -> exemplo: de 'a' a 'z' -> a-z
+- `/[0-9]/` : busca por qualquer caracteres entre os números estipulados
+- `/[x|y]/` : busca por x ou y..
+- `/[^code]/` : busca por caracteres diferentes dos informados -> exemplo: `/[^aeiou]/` -> procura por caracteres que não sejam vogais
+- `/[code+]/` : busca por uma ou mais ocorrências -> exemplo: 
+
+    ```
+      /[o+]/ 
+
+      * ['ovo'] // => ['o', 'o']
+
+      * ['voo'] // => ['oo']
+
+      * ['voa'] // => ['o']
+    ```
+- `/[code*]/` : busca por  ou mais ocorrências
+- `/[code]?/` : busca pela menor ocorrência (trecho)
+  
+  exemplo
+  `'economia'.match(/o[a-z]*?o/) => 'ono'`
+
 
 ## Quantificadores
 - n+ : busca por pelo menos uma ocorrência
@@ -150,7 +168,8 @@ x < 10 ? console.log( x ) : console.log( y );
 
 ## Caracteres especiais
 
-- \ : Uma barra invertida que preceda um caractere não especial significa que o caractere seguinte é especial e não deve ser interpretado de forma literal. _(MDN)
+- \ : uma barra invertida que preceda um caractere não especial significa que o caractere seguinte é especial e não deve ser interpretado de forma literal. _(MDN)
+- ^: procura por todos os caracteres que não sejam os informadaos.
 
 ...cont
 
@@ -198,6 +217,63 @@ ex:
 ```
 'brasileiro'.match(/br./) 
 ```
+
+## Procurar caracteres diferentes dos informados
+```
+/[^code]/
+```
+
+## Procurar por ocorrência no início (^)
+`/^code/`
+
+ex: 
+
+```
+let greeting = "Hello World!";
+let greetRegex = /^Hello/; 
+let result = greetRegex.test(greeting); => true
+
+```
+
+## Procurar por ocorrência no final ($)
+`/code$/`
+
+ex: 
+
+```
+let greeting = "Hello World!";
+let greetRegex = /World$/; 
+let result = greetRegex.test(greeting); => true
+
+```
+
+## Procurar por mais de uma ocorrência seguida 
+`/code+/`
+
+Ex: `'voo'.match(/o+/g)` // => 'oo'
+
+## Atalho: procurar todas as letras (maiúsculas e minúsculas), números e _ (\w)
+
+[A-Za-z0-9_] = `/\w/g`
+
+## Atalho: procurar todos os símbolos menos as letras (maiúsculas e minúsculas), números e _ (\W)
+
+ [^A-Za-z0-9_] = `/\W/g`
+
+## Atalho: procurar todas ocorrências de números (\d)
+
+ [0-9_] = `/\d/g`
+
+ ex
+
+ ```
+let numString = "Ganhamos um aumento de 10%";
+let noNumRegex = /\D/g; // Change this line
+let result = numString.match(noNumRegex).length; 
+
+// => 24
+ ```
+
 ---
 ######################################
 # JS WEB

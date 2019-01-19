@@ -274,6 +274,11 @@ let result = numString.match(noNumRegex).length;
 // => 24
  ```
 
+## Atalho: procurar por espaços em branco (\s)
+`/\s/g`
+
+## Atalho: procurar por caracteres que não são espaços em branco (\S)
+`/\S/g`
 ---
 ######################################
 # JS WEB

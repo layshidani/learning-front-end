@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>JS + CSS Clock</title>
+  <title>Relógio (JS)</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 
   <style>
     html {
-      background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+      background: #018DED url(img/fancycrave-324724-unsplash.jpg);
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -53,13 +53,31 @@
       position: relative;
       width: 100%;
       height: 100%;
+      border-radius: 50%;
+      background-color: #C36946;
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
-    .hand {
+    .hour-hand {
       width: 50%;
       height: 6px;
-      background: black;
+      background: #1D382F;
+      position: absolute;
+      top: 50%;
+    }
+
+    .minute-hand {
+      width: 50%;
+      height: 6px;
+      background: #1D382F;
+      position: absolute;
+      top: 50%;
+    }
+
+    .second-hand {
+      width: 50%;
+      height: 2px;
+      background: #1D382F;
       position: absolute;
       top: 50%;
     }

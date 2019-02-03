@@ -10,7 +10,7 @@
 :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
 
 
-### * [JS30 - Playing with CSS variables and JS] [<Visualizar\>]()
+### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>]()
 
 ### * [LAB - Cipher (pt-br)] [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
 

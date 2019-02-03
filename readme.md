@@ -45,7 +45,7 @@
 
 ---
 
-:round_pushpin: ## 100DaysOfCode
+## :round_pushpin: 100DaysOfCode
 
 I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
 

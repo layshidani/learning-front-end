@@ -115,6 +115,27 @@ x < 10 ? console.log( x ) : console.log( y );
 ```
 
 ---
+# Arrow function
+```
+Sintaxe:
+
+parametros => retorno
+
+Exemplos:
+
+const exemplo = (x, y) => x + y;
+
+const exemplo2 = () => 'Hello';
+
+console.log(exemplo2) //Hello
+
+const exemplo3 = text => text
+```
+
+
+
+
+---
 # Regular Expressions (RegEx)
 
 > Expressões regulares são padrões utilizados para selecionar combinações de caracteres em uma string. Em JavaScript, expressões regulares também são objetos. Elas podem ser utilizadas com os métodos *exec* e *test* do objeto RegExp, e com os métodos *match*, *replace*, *search*, e *split* do objeto String. _(MDN)
@@ -279,6 +300,65 @@ let result = numString.match(noNumRegex).length;
 
 ## Atalho: procurar por caracteres que não são espaços em branco (\S)
 `/\S/g`
+
+## Especificador de quantidade ({n,n})
+(Procura ocorrência entre quantidade de um nº ao outro de vezes)
+
+`/code{n,n}code/`
+
+`/code{n,}code/`
+
+ex:
+
+`/ola{3,}a/.test('olaaaaa') // => true` 
+
+## Especificador exato de quantidade ({n})
+`/code{n}code/`
+
+## Procurar 0 ou 1 ocorrência de caractére (?)
+`/code?/`
+
+ex:
+
+```
+/ama?/.test('ama') // => true
+/ama?/.test('amar') // => true
+/ama?/.test('amora') // => false
+```
+
+## Positive lookahead (?=...)
+`/(?=code)/`
+
+ex: checar se a senha tem entre 3 e 6 caracteres e pelo menos um número.
+
+```
+let senha = "ola321";
+let checarSenha = /(?=\w{3,6})(?=\D*\d)/;
+checarSenha.test(senha); // => true
+```
+
+## Negative lookahead (?=!...)
+`/(?=!code)/`
+
+
+## Repetição de grupo (()\número de vezes)
+(funciona com .test e .match)
+
+`/(code)\número de vezes/`
+
+ex:
+
+```
+/(\w+)\s\1/;
+```
+
+## Capturar ocorrência e substituir (.replace)
+
+ex:
+
+`'Hello mundo!'.replace(/Hello/, 'Olá') // => "Olá mundo!"`
+
+`'bem tudo'.replace(/(\w+)\s(\w+)/, '$2 $1'); // => "tudo bem"`
 ---
 ######################################
 # JS WEB

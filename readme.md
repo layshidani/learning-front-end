@@ -7,10 +7,10 @@
 - JS30:  [JavasCript30](https://javascript30.com/) curriculum project
 - LAB:  [Laboratoria](http://laboratoria.la/) curriculum project
 
-:pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
+## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
 
 
-### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>]()
+### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
 
 ### * [LAB - Cipher (pt-br)] [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
 
@@ -39,13 +39,15 @@
 ### * [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/Cats-Photos/)
 
 ### * [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
----
+
 ### * [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
 
 
 ---
 
-:round_pushpin: I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
+:round_pushpin: ## 100DaysOfCode
+
+I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
 
 ---
 

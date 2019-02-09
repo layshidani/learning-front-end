@@ -71,7 +71,7 @@ Exemplos de [W3Schools](https://www.w3schools.com/js/js_output.asp)
 
 
 
-# Array
+# Arrays
 
 Array exemplo:
 ```
@@ -99,6 +99,31 @@ myArray.shift(0); => [1, 2, 3]
 ```
 
 
+## Array em ordem crescente (sort())
+
+`arr.sort()`
+
+
+## Fazer cópia de array
+
+`[...arr]`
+
+ex
+
+let myArr = [1, 2, 3]
+let newArr = [...myArr] // [1, 2, 3]
+let otherArr = [0, ...myArr, 4, 5, 6, 7, 8, 9, 10]
+
+## verificar se é array
+
+```
+var arr = []
+
+
+Array.isArray(arr) // true
+```
+
+
 # ternário (versão reduzida de uma condição)
 
 - if normal:
@@ -112,6 +137,67 @@ if ( x < 10 ) {
 - ternário
 ```
 x < 10 ? console.log( x ) : console.log( y );
+```
+
+
+---
+
+# Objetos
+conjunto de pares chave/valor (key/value)
+
+```
+const obj = {
+  chave: valor
+}
+```
+
+## Acessar valor
+
+`obj.chave` ou `obj['chave']`
+
+## Alguns Métodos
+
+```
+var myObj = {
+    primeiroNome: 'Lays',
+    ultimoNome: 'Hidani',
+    idade: 28,
+    pets: ['Breno', 'Amora', 'Lola']
+}
+
+
+// -> Acessando valores
+
+myObj["idade"]
+// resultado: 28
+
+
+myObj.primeiroNome
+// resultado: "Lays"
+
+// -> retorna array com todas as chaves (keys)
+
+Object.keys(myObj)
+["primeiroNome", "ultimoNome", "idade", "pets"]
+
+Object.getOwnPropertyNames(myObj)
+// resultado: ["primeiroNome", "ultimoNome", "idade", "pets"]
+
+
+// -> retorna array com todos os valores (values)
+
+Object.values(myObj)
+// resultado: ["Lays", "Hidani", 28, Array(3)]
+
+
+// -> Verifica a existência de uma chave/propriedade no objeto
+
+myObj.hasOwnProperty('primeiroNome', idade)
+// resultado: true
+
+'primeiroNome' in myObj
+// resultado: true
+
 ```
 
 ---

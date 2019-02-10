@@ -2,12 +2,13 @@
 
 ## Projetos
 
-:pushpin: **Note:**
+## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
+
+
+:pushpin: **abbreviation**
 - FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project
 - JS30:  [JavasCript30](https://javascript30.com/) curriculum project
 - LAB:  [Laboratoria](http://laboratoria.la/) curriculum project
-
-## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
 
 
 ### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
@@ -45,7 +46,16 @@
 
 ---
 
-:round_pushpin: ## 100DaysOfCode
+## :round_pushpin: Learning Notes
+
+[JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
+[Receitas Design Responsivo](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
+[Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
+[Linha de Comando](https://github.com/hlays/linha-de-comando)
+
+---
+
+## :round_pushpin: 100DaysOfCode
 
 I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
 

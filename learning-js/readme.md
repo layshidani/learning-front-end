@@ -40,12 +40,16 @@ Os valores primitivos
 # Output
 
 - console.log()
+- console.table()
 - window.alert()
 - document.write()
 - inner.HTML
 
 ## console.log()
 Irá aparecer no console do browser. Mais usado para testar o código.
+
+## console.table()
+Tabela exibida no console do browser.
 
 ## window.alert()
 Irá abrir uma pequena caixa de alerta no browser.
@@ -71,7 +75,7 @@ Exemplos de [W3Schools](https://www.w3schools.com/js/js_output.asp)
 
 
 
-# Array
+# Arrays
 
 Array exemplo:
 ```
@@ -99,6 +103,246 @@ myArray.shift(0); => [1, 2, 3]
 ```
 
 
+## Array em ordem crescente (sort())
+
+`arr.sort()`
+
+
+## Fazer cópia de array
+
+`[...arr]`
+
+ex
+
+let myArr = [1, 2, 3]
+let newArr = [...myArr] // [1, 2, 3]
+let otherArr = [0, ...myArr, 4, 5, 6, 7, 8, 9, 10]
+
+## verificar se é array
+
+```
+var arr = []
+
+
+Array.isArray(arr) // true
+```
+
+---
+
+
+## map()
+Transforma um array, retornando um array do mesmo tamanho.
+*dica: bom para quando é necessário transformar os elementos de um array*
+
+**sintaxe**
+
+```
+array.map(function(valorAtual, index, arr), thisValue)
+
+```
+
+onde, `index, arr, thisValue` são opcionais.
+
+
+**exemplo**
+```
+let persons = [
+  {
+    firstName: 'Lays',
+    lastName: 'Hidani'
+  },
+  {
+    firstName: 'June',
+    lastName: 'Hidani'
+  }
+]
+
+
+persons.map(person => person.firstName + ' ' + person.lastName )
+
+// resultado: ["Lays Hidani", "June Hidani"]
+```
+
+## filter()
+Filtra itens de um array, seguindo algumas condições.
+*dica: bom para selecionar um subconjunto de um array*
+
+**sintaxe**
+```
+array.filter(function(valorAtual, index, arr), thisValue)
+
+```
+
+onde, `index, arr, thisValue` são opcionais.
+
+
+**exemplo**
+```
+let pets = [
+  {
+    nome:  'June',
+    cor: 'cinza',
+    gender: 'femea',
+    idade: 8
+  },
+  {
+    nome:  'Rui',
+    cor: 'tigrado',
+    gender: 'macho',
+    idade: 1
+  },
+  {
+    nome:  'Ozzy',
+    cor: 'marrom',
+    gender: 'macho',
+    idade: 12
+  },
+  {
+    nome:  'Dexter',
+    cor: 'tigrado',
+    gender: 'macho',
+    idade: 1
+  }
+]
+
+const filtro = pets.filter(pet => (pet.idade > 5))
+
+console.table(filtro)
+
+// resultado: 
+```
+![filter exemplo](img/filter-ex.png)
+
+## some()
+Verificação booleana. Retorna `true` se algum item do array responde à condição.
+
+**sintaxe**
+```
+array.some(function(valorAtual, index, arr), thisValue)
+
+```
+
+onde, `index, arr, thisValue` são opcionais.
+
+
+
+```
+pets.some(pet => pet.cor === 'tigrado')
+
+// resultado: true
+
+```
+
+## every()
+Verificação booleana. Retorna `true` se todos os itens do array responde à condição.
+
+
+**sintaxe**
+```
+array.every(function(valorAtual, index, arr), thisValue)
+
+```
+
+onde, `index, arr, thisValue` são opcionais.
+
+
+**exemplo**
+
+```
+pets.every(pet => pet.cor === 'marrom')
+
+// resultado: false
+```
+
+
+## find()
+Procura um item no array.
+*dica: use para selecionar um único elemento do array*
+
+
+**sintaxe**
+```
+array.find(function(valorAtual, index, arr), thisValue)
+
+```
+
+onde, `index, arr, thisValue` são opcionais.
+
+
+**exemplo**
+
+```
+pets.find(pet => pet.cor === 'marrom')
+
+//resultado: {nome: "Ozzy", cor: "marrom", gender: "macho", idade: 12}
+```
+
+
+
+## forEach()
+
+Itera o array para executar determinada ação. Boa substituta do loop `for`.
+
+
+**sintaxe**
+```
+array.forEach(function(valorAtual, index, arr), thisValue)
+
+```
+
+onde, `index, arr, thisValue` são opcionais.
+
+
+**exemplo**
+
+```
+var array = [0, 1, 2, 3, 4, 5];
+var total = 0;
+ 
+function sum(number) {
+  total += number; 
+}
+ 
+array.forEach(sum);
+console.log(total);
+
+// resultado: 15
+
+```
+
+
+
+## reduce()
+
+*dica: use para derivar um único valor de outros vários elementos de um array.*
+
+
+**sintaxe**
+```
+array.reduce(function(total, valorAtual, index, arr), valorInicial)
+
+```
+
+onde, `index, arr, valorInicial` são opcionais.
+
+
+**exemplo**
+
+```
+let array = [1, 2, 3, 4, 5]
+
+let result = array.reduce((total, number) => total + number)
+
+console.log(result)
+
+// resultado: 15
+
+```
+
+
+---
+
+
 # ternário (versão reduzida de uma condição)
 
 - if normal:
@@ -112,6 +356,67 @@ if ( x < 10 ) {
 - ternário
 ```
 x < 10 ? console.log( x ) : console.log( y );
+```
+
+
+---
+
+# Objetos
+conjunto de pares chave/valor (key/value)
+
+```
+const obj = {
+  chave: valor
+}
+```
+
+## Acessar valor
+
+`obj.chave` ou `obj['chave']`
+
+## Alguns Métodos
+
+```
+var myObj = {
+    primeiroNome: 'Lays',
+    ultimoNome: 'Hidani',
+    idade: 28,
+    pets: ['Breno', 'Amora', 'Lola']
+}
+
+
+// -> Acessando valores
+
+myObj["idade"]
+// resultado: 28
+
+
+myObj.primeiroNome
+// resultado: "Lays"
+
+// -> retorna array com todas as chaves (keys)
+
+Object.keys(myObj)
+["primeiroNome", "ultimoNome", "idade", "pets"]
+
+Object.getOwnPropertyNames(myObj)
+// resultado: ["primeiroNome", "ultimoNome", "idade", "pets"]
+
+
+// -> retorna array com todos os valores (values)
+
+Object.values(myObj)
+// resultado: ["Lays", "Hidani", 28, Array(3)]
+
+
+// -> Verifica a existência de uma chave/propriedade no objeto
+
+myObj.hasOwnProperty('primeiroNome', idade)
+// resultado: true
+
+'primeiroNome' in myObj
+// resultado: true
+
 ```
 
 ---

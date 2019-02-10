@@ -5,7 +5,7 @@
 ## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
 
 
-:pushpin: **abbreviation**
+**Abbreviation**
 - FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project
 - JS30:  [JavasCript30](https://javascript30.com/) curriculum project
 - LAB:  [Laboratoria](http://laboratoria.la/) curriculum project
@@ -48,10 +48,10 @@
 
 ## :round_pushpin: Learning Notes
 
-[JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
-[Receitas Design Responsivo](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
-[Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
-[Linha de Comando](https://github.com/hlays/linha-de-comando)
+### * [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
+### * [Receitas Design Responsivo](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
+### * [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
+### * [Linha de Comando](https://github.com/hlays/linha-de-comando)
 
 ---
 

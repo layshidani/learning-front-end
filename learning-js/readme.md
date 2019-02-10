@@ -40,12 +40,16 @@ Os valores primitivos
 # Output
 
 - console.log()
+- console.table()
 - window.alert()
 - document.write()
 - inner.HTML
 
 ## console.log()
 Irá aparecer no console do browser. Mais usado para testar o código.
+
+## console.table()
+Tabela exibida no console do browser.
 
 ## window.alert()
 Irá abrir uma pequena caixa de alerta no browser.

@@ -114,9 +114,11 @@ myArray.shift(0); => [1, 2, 3]
 
 ex
 
+```
 let myArr = [1, 2, 3]
 let newArr = [...myArr] // [1, 2, 3]
 let otherArr = [0, ...myArr, 4, 5, 6, 7, 8, 9, 10]
+```
 
 ## verificar se é array
 
@@ -339,6 +341,51 @@ console.log(result)
 
 ```
 
+## Fatiar Array ou String slice()
+
+> extrai o texto de uma string e retorna uma nova string. Alterações no texto em uma string não afetam a outra string. -MDN
+
+**Sintaxe**
+
+`array.slice(indexInicial, indexFinal)`
+
+onde `indexFinal` se não indicado, considera até o final do array
+
+**Exemplo**
+
+`'Tudo bem?'.slice(5)`
+
+// => resultado: "bem?"
+
+## Alterar conteúdo do array splice()
+
+> Altera o conteúdo de um array removendo ou substituindo elementos existentes e / ou adicionando novos elementos. -MDN
+
+**Sintaxe**
+
+`array.splice(index, howmany, item1, ....., itemX)`
+
+onde `howmany` e `items` são opicionais.
+
+**Exemplo**
+
+```
+let numbers = ['zero', 'um', 2, 3, 4, 'cinco']
+
+numbers.splice(2, 3, 'dois', 'três', 'quatro') // retorna [2, 3, 4]
+
+console.log(numbers)
+
+// Resultado: ["zero", "um", "dois", "três", "quatro", "cinco"]
+```
+
+Neste exemplo, dissemos ao `splice(2, 3, 'dois', 'três', 'quatro')` para começar no **índice 2** do nosso array `numbers`, pegar os **3 elementos** a partir do índice 2, e substituí-los pelos elementos **'dois', 'três', 'quatro'**. 
+
+Ele irá nos retornar os elementos que foram removidos.
+
+Em seguida, podemos verificar essa substituição ao conferir os valores de numbers novamente.
+
+
 
 ---
 
@@ -383,34 +430,39 @@ var myObj = {
     idade: 28,
     pets: ['Breno', 'Amora', 'Lola']
 }
+```
 
+**-> Acessando valores**
 
-// -> Acessando valores
-
+```
 myObj["idade"]
 // resultado: 28
 
 
 myObj.primeiroNome
 // resultado: "Lays"
+```
 
-// -> retorna array com todas as chaves (keys)
+**-> retorna array com todas as chaves (keys)**
 
+```
 Object.keys(myObj)
 ["primeiroNome", "ultimoNome", "idade", "pets"]
 
 Object.getOwnPropertyNames(myObj)
 // resultado: ["primeiroNome", "ultimoNome", "idade", "pets"]
+```
 
+**-> retorna array com todos os valores (values)**
 
-// -> retorna array com todos os valores (values)
-
+```
 Object.values(myObj)
 // resultado: ["Lays", "Hidani", 28, Array(3)]
+```
 
+**-> Verifica a existência de uma chave/propriedade no objeto**
 
-// -> Verifica a existência de uma chave/propriedade no objeto
-
+```
 myObj.hasOwnProperty('primeiroNome', idade)
 // resultado: true
 
@@ -421,12 +473,15 @@ myObj.hasOwnProperty('primeiroNome', idade)
 
 ---
 # Arrow function
-```
 Sintaxe:
 
-parametros => retorno
+`parametros => retorno`
+
 
 Exemplos:
+
+
+```
 
 const exemplo = (x, y) => x + y;
 
@@ -530,24 +585,20 @@ console.log(/ball|dog|cat/.test('I see a dog'));  // true
 
 ## Trecho
 
-```
-/.code/ 
+`/.code/`
 
 e
 
-/code./
-```
+
+`/code./`
+
 
 ex:
 
-```
-'brasileiro'.match(/br./) 
-```
+`'brasileiro'.match(/br./)`
 
 ## Procurar caracteres diferentes dos informados
-```
-/[^code]/
-```
+`/[^code]/`
 
 ## Procurar por ocorrência no início (^)
 `/^code/`
@@ -580,15 +631,15 @@ Ex: `'voo'.match(/o+/g)` // => 'oo'
 
 ## Atalho: procurar todas as letras (maiúsculas e minúsculas), números e _ (\w)
 
-[A-Za-z0-9_] = `/\w/g`
+`[A-Za-z0-9_] = /\w/g`
 
 ## Atalho: procurar todos os símbolos menos as letras (maiúsculas e minúsculas), números e _ (\W)
 
- [^A-Za-z0-9_] = `/\W/g`
+ `[^A-Za-z0-9_] = /\W/g`
 
 ## Atalho: procurar todas ocorrências de números (\d)
 
- [0-9_] = `/\d/g`
+ `[0-9_] = /\d/g`
 
  ex
 
@@ -673,7 +724,58 @@ ex:
 - Mostrar e Esconder elementos no HTML
 
 
-# DOM
+# DOM (document object model)
+
+## Obter/selecionar elementos do HTML
+
+- document.getElementById('id'): obtem o elemento através do id
+- document.getElementByClass('class'): obtem o elemento através da classe
+- document.getElementsByName('name'): obtem o elemento através do nome
+- document.getElementsByTagName('tag'): obtem o elemento através da tag
+
+## Inserir valor no HTML através de innerHTML
+
+**Exemplo**
+
+**HMTL**
+
+```
+<p id='user-name'></p>
+<p>Bem vindo!</p>
+
+```
+
+**JS**
+
+(obtém o valor)
+Primeiro, seleciona o elemento do HTML. No caso, obtem-se a entrada/input do usuário através do prompt e guarda na variável `name`:
+
+`var name = prompt("Olá, qual é o seu nome?");`
+
+(diz onde quer inserir o valor)
+Em seguida, seleciona o elemento do HTML onde será inserida a variável `name`:
+
+`var welcome = document.getElementById("user-name");`
+
+(insere o valor)
+Então, utiliza-se o `innerHTML`, para inserir no HTML o valor da variável `name`:
+welcome.innerHTML = name;
+
+
+## Obter valor de input (.value)
+**importante: costuma-se nomear com $ no início todas as variáveis no js que têm valores com origem do HTML**
+
+**exemplo**
+
+HTML:
+
+`<input id="name"></input>`
+
+JS:
+
+`var $name = document.getElementById("name").value`
+
+*o valor inserido no input com id `name` será armazenado na variável name*
 
 * Adicionar ação ao clicar:
 
@@ -684,3 +786,43 @@ ex:
 ```
 document.getElementById("p")[0] ----> p índice 0  ----> [p, p, p]
 ```
+
+## Method: addEventListener()
+Como o próprio nome diz, esse método fica 'escutando' tudo o que acontece na página, e 'dispaara' / executa determinada função quando determinado evento ocorre.
+
+**sintaxe**
+
+`addEventListener(event, function, useCapture)`
+
+*useCapture é opcional, valor booleano*
+*false- Default. O manipulador de eventos é executado na fase de bubbling*
+*true - O manipulador de eventos é executado na fase de captura*
+
+### events types 
+
+[Acesse MDN para lista completa](https://developer.mozilla.org/pt-BR/docs/Web/Events)
+
+Mais comuns:
+
+- 'click': execulta a função quando elemento é clicado (botão, por exemplo)
+- 'input': execulta a função após mudança (quando algo é digitado em um input, por exemplo)
+
+**exemplo**
+
+```
+No HTML:
+<button id="btn"></button>
+
+
+no JS:
+function hello() {
+  console.log("Hello")
+}
+
+document.getElementById("btn").addEventListener("click", hello);
+```
+
+
+
+
+

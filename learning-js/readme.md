@@ -341,6 +341,51 @@ console.log(result)
 
 ```
 
+## Fatiar Array ou String slice()
+
+> extrai o texto de uma string e retorna uma nova string. Alterações no texto em uma string não afetam a outra string. -MDN
+
+**Sintaxe**
+
+`array.slice(indexInicial, indexFinal)`
+
+onde `indexFinal` se não indicado, considera até o final do array
+
+**Exemplo**
+
+`'Tudo bem?'.slice(5)`
+
+// => resultado: "bem?"
+
+## Alterar conteúdo do array splice()
+
+> Altera o conteúdo de um array removendo ou substituindo elementos existentes e / ou adicionando novos elementos. -MDN
+
+**Sintaxe**
+
+`array.splice(index, howmany, item1, ....., itemX)`
+
+onde `howmany` e `items` são opicionais.
+
+**Exemplo**
+
+```
+let numbers = ['zero', 'um', 2, 3, 4, 'cinco']
+
+numbers.splice(2, 3, 'dois', 'três', 'quatro') // retorna [2, 3, 4]
+
+console.log(numbers)
+
+// Resultado: ["zero", "um", "dois", "três", "quatro", "cinco"]
+```
+
+Neste exemplo, dissemos ao `splice(2, 3, 'dois', 'três', 'quatro')` para começar no **índice 2** do nosso array `numbers`, pegar os **3 elementos** a partir do índice 2, e substituí-los pelos elementos **'dois', 'três', 'quatro'**. 
+
+Ele irá nos retornar os elementos que foram removidos.
+
+Em seguida, podemos verificar essa substituição ao conferir os valores de numbers novamente.
+
+
 
 ---
 

@@ -191,36 +191,19 @@ console.log('-> Mutations');
 
 function mutation(arr) {
 
-  let mainArr = arr[1].toLowerCase()
-  let compareArr = arr[0].toLowerCase()
+  let trueLetters = 0
 
-  for (let letter of mainArr) {
-    if (compareArr.indexOf(letter) < 0) {
-      return false
-    } 
+  for (letter of arr[1]) {
+    if (arr[0].indexOf(letter) > -1) {
+      trueLetters++
+    }
   }
-  return true
+  if (trueLetters.length === arr[1].length) {
+    return true
+  }
+  return false
 }
 
 // teste
 console.log(mutation(["hello", "hey"]))
 console.log(mutation(["hello", "Hello"]))
-
-
-
-
-console.log('-> Chunky Monkey');
-
-// Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
-
-function chunkArrayInGroups(arr, size) {
-  // Break it up.
-  let result = []
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, size + i))
-  }
-  return result
-}
-
-// test
-console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2))

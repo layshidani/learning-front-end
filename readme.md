@@ -4,12 +4,14 @@
 
 ## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
 
+/-------------------------------------------------------------------------\
 
-**Abbreviation:**
-- FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project
-- JS30:  [JavasCript30](https://javascript30.com/) curriculum project
-- LAB:  [Laboratoria](http://laboratoria.la/) curriculum project
+  **Abbreviation:**                                                         
+- FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project 
+- JS30:  [JavasCript30](https://javascript30.com/) curriculum project    
+- LAB:  [Laboratoria](http://laboratoria.la/) curriculum project         
 
+/--------------------------------------------------------------------------\
 
 ### * [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-web/js30-flex-panels-gallery/)
 

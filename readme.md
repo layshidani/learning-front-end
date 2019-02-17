@@ -1,5 +1,15 @@
 # :books: Learning 
 
+## :round_pushpin: Learning Notes
+
+### * [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
+### * [CSS](https://github.com/hlays/learning-web/tree/master/learning-css)
+### * [Design Responsivo CookBook](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
+### * [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
+### * [Linha de Comando](https://github.com/hlays/linha-de-comando)
+
+---
+
 ## Projetos
 
 ## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
@@ -50,22 +60,13 @@
 
 ---
 
-## :round_pushpin: Learning Notes
-
-### * [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
-### * [Design Responsivo CookBook](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
-### * [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
-### * [Linha de Comando](https://github.com/hlays/linha-de-comando)
-
----
-
 ## :round_pushpin: 100DaysOfCode
 
 I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
 
 ---
 
-# :link: Links úteis :link:
+# :link: Links úteis
 
 ## Referência: 
 - [W3S](https://www.w3schools.com/) THE WORLD'S LARGEST WEB DEVELOPER SITE
@@ -77,49 +78,12 @@ I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays
 
 ## :wrench: Ferramentas 
 
-### Fontes:
-
-- [Google Fonts](https://fonts.google.com/)
-
 
 ### Dev
 
 - [Code Pen](https://codepen.io/): social development environment
 
-### CSS
 
-- [CSS Tricks](https://css-tricks.com/): Enciclopédia CSS (em inglês)
 
-- [Paletton](http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF): Paleta de cores CSS
 
-- [CSS Minifier](https://cssminifier.com/): comprime CSS
-
-- [Animate CSS](https://daneden.github.io/animate.css/): animações em CSS com exemplo e código (em inglês)
-
-- [FlexBox Froggy](https://flexboxfroggy.com/): Game para aprender flexbox
-
-### Ícones:
-
-- [Fonts Awesome](https://fontawesome.com/icons?d=gallery): uma espécie de acervo de ícones. Funciona mais ou menos como o Boostrap, adiciona-se um link de referência (do mesmo jeito que o Google Fonts) em '<head>' e no corpo da página HTML, pode-se adicionar o ícone desejado. Exemplo: 
-
-    - 1º link
-        ```
-        <head>
-        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-        </head>
-        ```
-
-    - 2º escolha o ícone 
-    
-    - 3º copie o código do ícone escolhido:
-        ```
-        <i class="fas fa-code-branch"></i>
-        ```
-
-    - 3º insira no seu HTML
-    
-    ```
-    <h1>Branch</h1>
-    <i class="fas fa-code-branch"></i>
-    ```
 

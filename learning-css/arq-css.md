@@ -1,61 +1,16 @@
-# CSS
+# Arquitetura CSS
 
 ## Links úteis
 
+### Ferramentas
+
 - [Specificity Calculator](http://specificity.keegan.st/)
+- [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 
+### Artigos
 
----
-
-# Dicas 
-
-## Evitar Seletores superqualificados
-
-> Encontre o meio termo. Não faça seletores muito específicos ou seletores muito genéricos. O CSS trabalha com especificidade: quanto mais específico, mais certeiro você é ao capturar um elemento, mas seu CSS fica mais engessado e consequentemente você usa mais código. Quanto mais genérico, mais elementos do mesmo tipo você formata, mas o risco de conflito de estilos aumenta. O ideal é encontrar o meio termo, onde você é tão específico e nem tão genérico.
-> [(Tabless)](https://tableless.com.br/oocss-ou-css-do-jeito-certo/)
-
-
-Por exemplo:
-
-`.container #box p`
-
-Poderia ser substituído por:
-
-`#box p`
-
-Pois a class `.container` é desnecessária neste caso.
-
-## Evite usar ID para estilo css
-- IDs são como âncoras. 
-- Utiliza-se mais como âncora para o JS e como indentificador de conteúdo.
-- Dê preferência para o uso de classes que torna o código mais reutilizável, por exemplo.
-
----
-
-## Especificidade
-
-I. Estilos inline
-II. IDs
-III. Classes, pseudoclasses e atributos
-IV. Elementos e pseudoelementos
-
-- Em caso de empate, ganha estilo cascata
-- `!important` sempre tem maior prioridade 
-- conflito de `!importante`, ganha o `!importante` estilo cascata
-
----
-## Hierarquia eficiência de seletores
-
-1. ID                - ex: #id
-2. Classe            - ex: .classe
-3. Tipo              - ex: h1
-4. Irmão adjacente   - ex: h1 + p
-5. Filho             - ex: li > ul
-6. Descendente       - ex: h1 p
-7. Universal         - ex: *
-8. Atributo          - ex: [type="text"]
-9. Pseudo classe/pseudo elemento - ex: a:hover
-
+- [OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?](https://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/)
+- [Organize seu CSS com SMACSS, BEM e SASS](https://medium.com/@larymagal/organize-seu-css-com-smacss-bem-e-sass-7e8f50a41544)
 
 ---
 
@@ -157,6 +112,57 @@ Onde qualquer objeto poderá ser colocado em outro container sem ter sua aparên
 
 ---
 
-## SMACSS
+## SMACSS (Scalable and Modular Architecture for CSS)
+
+O conceito do SMACSS é criar 5 camadas (arquivos) CSS separados em diretórios de acordo com sua função:
+
+- base
+- layout (l-)
+- module
+- state (is-)
+- theme
+
+### base
+Não utiliza seletores com classes ou id. 
+Geralmente são arquivos de **reset** para unificar o estilo dos navegadores, **plugins**, etc.
+
+Ou seja, é o arquivo base para tornar o estilo comum/igual em diferentes navegadores, por exemplo.
+
+Um bom exemplo de reset: 
 
 [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+
+### layout (l-)
+Recomenda-se utilizar IDs e classes com prefixo `l-`.
+
+Parte estrutural do projeto, elementos únicos, como **header**, **footer**, **section**, **article**, **GRID**, **flexbox**.
+
+### module
+Componentes.
+Devem ser:
+
+- independente 
+- intercambiável
+
+Exemplos: navbar, botão, formulários, cores, tipografia.
+
+*! evite utilizar **elementos** dentro do módulo, utilização de classes é mais recomendado, por causa da independência*
+*! não utilize IDs*
+
+### state (is-)
+Regras que gerenciam o estado dos componentes, como `hover` e `active`, por exemplo.
+
+Então utilizamos classes com o prefixo `is-`:
+
+Exemplo: 
+
+`.is-active`
+
+`.is-disabled`
+
+### theme 
+Temas para o layout, como por exemplo, tema claro e tema escuro.
+
+Geralmente insere-se uma classe referente ao tema na tag `<body>`.
+
+ex: `<body class="theme-christmas">`

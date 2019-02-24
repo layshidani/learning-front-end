@@ -166,3 +166,60 @@ Temas para o layout, como por exemplo, tema claro e tema escuro.
 Geralmente insere-se uma classe referente ao tema na tag `<body>`.
 
 ex: `<body class="theme-christmas">`
+
+---
+
+## BEM (Bloco, Elemento e Modificador)
+
+É uma metodologia para nomear classes no CSS.
+
+
+### Bloco
+
+![bem-blocos](bem-block.jpg)
+*[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+
+```
+.bloco {
+
+}
+```
+Os blocos são componentes independentes que possibilitam sua fácil reutilização. Por serem independentes, mesmo que você modifique sua localização dentro da página (ou utilize em outros documentos) continuarão a funcionar normalmente.
+
+Os blocos ainda poderão constituir-se de outros blocos. 
+
+### Elemento (__)
+
+![bem-element](bem-element.jpg)
+*[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+
+Utilizar dois _ (*underline*) para nomear 'filho' de um bloco.
+
+```
+.bloco__filho {
+
+}
+```
+
+Um elemento é o filho de um bloco, e não deve ser usado fora deste bloco.
+
+### Modificador (--)
+
+Imagine uma aba ativa: 
+
+![bem-modifier](bem-modifier.jpg)
+*[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+
+Utilizar dois - (*traço*) para nomear modificadores do 'filho' de um bloco.
+
+```
+.bloco__filho--modificador {
+
+}
+```
+
+### Dicas
+
+O BEM funciona bem usando o SMACSS como complemento em alguns casos...
+
+Como no caso do uso de .is-active (SMACSS) ao invés de --active (BEM).

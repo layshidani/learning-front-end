@@ -176,7 +176,7 @@ ex: `<body class="theme-christmas">`
 
 ### Bloco
 
-![bem-blocos](bem-block.jpg)
+![bem-blocos](img/bem-block.jpg)
 *[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
 
 ```
@@ -190,7 +190,7 @@ Os blocos ainda poderão constituir-se de outros blocos.
 
 ### Elemento (__)
 
-![bem-element](bem-element.jpg)
+![bem-element](img/bem-element.jpg)
 *[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
 
 Utilizar dois _ (*underline*) para nomear 'filho' de um bloco.
@@ -207,7 +207,7 @@ Um elemento é o filho de um bloco, e não deve ser usado fora deste bloco.
 
 Imagine uma aba ativa: 
 
-![bem-modifier](bem-modifier.jpg)
+![bem-modifier](img/bem-modifier.jpg)
 *[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
 
 Utilizar dois - (*traço*) para nomear modificadores do 'filho' de um bloco.

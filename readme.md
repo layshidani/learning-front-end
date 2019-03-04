@@ -62,7 +62,7 @@
 
 ## :round_pushpin: 100DaysOfCode
 
-I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
+I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/My-100-days-of-Code/blob/master/r1-log.md).
 
 ---
 

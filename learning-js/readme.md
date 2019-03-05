@@ -1041,3 +1041,102 @@ function hello() {
 
 document.getElementById("btn").addEventListener("click", hello);
 ```
+
+# Trabalhando com elementos no DOM
+
+[Excelente Artigo: Mastering the DOM](https://medium.com/re-dom/master-the-dom-bc1a2a06089b)
+
+## Criar elementos (createElement)
+Sintaxe:
+
+```
+document.createElement(tagName)
+```
+
+Exemplo:
+
+Criamos um elemento de tag `<p>` e associamos à variável p.
+
+```
+let p = document.createElement("p");
+```
+
+## Definir um atributo (setAttribute)
+Sintaxe:
+
+```
+elemento.setAttribute("nomeDoAtributo", "valorDoAtributo")
+```
+
+Usando o exemplo anterior:
+
+Atribuímos uma classe css de valor "hello" à tag `<p>` criada anteriormente.
+
+```
+p.setAttribute("class", "hello");
+``` 
+
+## Remover um atributo (removeAttribute)
+Sintaxe:
+
+```
+elemento.removeAttribute("nomeDoAtributo", "valorDoAtributo")
+```
+
+
+## Outra forma de denifir classes (classList.add)
+
+Outra forma de fazer o exemplo anterior seria:
+
+```
+p.classList.add("hello");
+```
+
+## Remover uma classe (classList.remove)
+Sintaxe:
+
+```
+p.classList.remove("hello");
+```
+
+## Anexar elementos à elementos já existentes (appendChild)
+
+Sintaxe:
+```
+document.parentName.appendChild(child);
+```
+
+Exemplo:
+
+```
+document.body.appendChild("p");
+```
+
+## Remover elementos de elementos já existentes (removeChild)
+Da mesma forma que podemos anexar elementos filhos, também podemos removê-los:
+
+Sintaxe:
+```
+document.parentName.removeChild(child);
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

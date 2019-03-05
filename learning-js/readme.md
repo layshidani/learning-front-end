@@ -874,20 +874,53 @@ ex:
 # DOM (document object model)
 
 ## Obter/selecionar elementos do HTML
+Há duas formas de selecionar elementos: 
+- getElement
+- querySelector
 
+### getElement
 - document.getElementById('id'): obtem o elemento através do id
 - document.getElementByClass('class'): obtem o elemento através da classe
 - document.getElementsByName('name'): obtem o elemento através do nome
 - document.getElementsByTagName('tag'): obtem o elemento através da tag
 
-## Inserir valor no HTML através de innerHTML
+### QuerySelector
+Usa os símbolos **#** e **.** assim como o CSS:
+
+- documento.querySelector("#id"): obtem o elemento através do id
+- documento.querySelector(".class"): obtem o elemento através da classe
+- documento.querySelectorAll("elemento"): obtem todos os elementos com essa tag
+
+## Template Literals (conhecidos como Template string antes do ES6)
+Templates literals são strings que permitem expressões embutidas.
+
+Uma forma de misturar texto (string) comum e variáveis de JS, por exemplo.
+
+- Template Literals utiliza acentos graves (**`**) para indicar o início e o fim do código que deverá ser inserido.
+- podemos inserir expressões que serão substituídas por seu resultado dentro do Template Literals, utilizando **placeholders**: `${expressão}`.
+
+Exemplo:
+
+```
+let x = 100;
+let y = 50;
+
+console.log(`O resultado de ${x} + ${y} = ${x + y}`)
+
+// resultado: O resultado de 100 + 50 = 150
+
+```
+
+## Inserir valor no HTML através de innerHTML e Template Literals
+
+> A propriedade innerHTML retorna o texto, incluindo todas as tags de espaçamento e elemento interno. [-w3schools](https://www.w3schools.com/jsref/prop_node_textcontent.asp)
+
 
 **Exemplo**
 
 **HMTL**
 
 ```
-<p id='user-name'></p>
 <p>Bem vindo!</p>
 
 ```
@@ -902,11 +935,37 @@ Primeiro, seleciona o elemento do HTML. No caso, obtem-se a entrada/input do usu
 (diz onde quer inserir o valor)
 Em seguida, seleciona o elemento do HTML onde será inserida a variável `name`:
 
-`var welcome = document.getElementById("user-name");`
+`var welcome = document.querySelector("#user-name");`
 
 (insere o valor)
 Então, utiliza-se o `innerHTML`, para inserir no HTML o valor da variável `name`:
-welcome.innerHTML = name;
+
+```
+welcome.innerHTML = 
+`
+<p>
+  Olá, ${name}.
+</p>
+`
+```
+
+## Modificar o conteúdo/texto (textContent)
+
+> A propriedade textContent retorna o texto com espaçamento, mas sem tags de elementos internos. [-w3schools](https://www.w3schools.com/jsref/prop_node_textcontent.asp)
+
+**HTML:**
+
+`<p id="hello"></p>`
+
+**JS:**
+
+A frase abaixo, será inserida entre as tags `<p>` de id **hello**.
+```
+let getP = document.querySelector("#hello");
+
+p.textContent = `Olá, ${name}. Seja bem vindo!`;
+```
+
 
 
 ## Obter valor de input (.value)

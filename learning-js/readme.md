@@ -993,6 +993,19 @@ JS:
 document.getElementById("p")[0] ----> p índice 0  ----> [p, p, p]
 ```
 
+## Obter valor de option (value="")
+Usando `<select>` e `<option>`, para saber o valor selecionado, podemos inserir `value="valor"` em cada `<option>`.
+
+HTML:
+
+```
+<select>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+</select>
+```
+
 ## Method: addEventListener()
 Como o próprio nome diz, esse método fica 'escutando' tudo o que acontece na página, e 'dispaara' / executa determinada função quando determinado evento ocorre.
 
@@ -1011,7 +1024,8 @@ Como o próprio nome diz, esse método fica 'escutando' tudo o que acontece na p
 Mais comuns:
 
 - 'click': execulta a função quando elemento é clicado (botão, por exemplo)
-- 'input': execulta a função após mudança (quando algo é digitado em um input, por exemplo)
+- 'input': execulta a função após inserção de valor (quando algo é digitado em um input, por exemplo)
+- 'change': execulta a função após mudança (quando selecionamos uma opção em um `select`, por exemplo)
 
 **exemplo**
 

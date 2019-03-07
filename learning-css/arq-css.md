@@ -223,3 +223,6 @@ Utilizar dois - (*traço*) para nomear modificadores do 'filho' de um bloco.
 O BEM funciona bem usando o SMACSS como complemento em alguns casos...
 
 Como no caso do uso de .is-active (SMACSS) ao invés de --active (BEM).
+
+---
+

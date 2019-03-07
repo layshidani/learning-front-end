@@ -1006,6 +1006,17 @@ HTML:
 </select>
 ```
 
+## Difinir ou retornar o valor de `<option>` (selectedIndex)
+
+A propriedade selectedIndex define ou retorna o índice da opção selecionada em uma lista suspensa.
+
+Imagine que queremos definir o valor do `value` de um `<select>` para que ele retorne à um padrão inicial:
+
+```
+typeMenu.selectedIndex = "type";
+```
+
+
 ## Method: addEventListener()
 Como o próprio nome diz, esse método fica 'escutando' tudo o que acontece na página, e 'dispaara' / executa determinada função quando determinado evento ocorre.
 

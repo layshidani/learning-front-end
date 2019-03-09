@@ -119,6 +119,9 @@ Array.isArray(arr) // true
     ```
 
 - add no final do array -> **push()**
+
+Considere: `let myArray = [1, 2, 3]`;
+
 ```
 myArray.push(4); => [1, 2, 3, 4]
 ```

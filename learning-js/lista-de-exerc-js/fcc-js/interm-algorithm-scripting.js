@@ -87,3 +87,67 @@ function spinalCase(str) {
 
 console.log('spinalCase("This Is Spinal Tap"): ', spinalCase('This Is Spinal Tap'))
 console.log('spinalCase("thisIsSpinal_Tap"): ', spinalCase("thisIsSpinal_Tap"))
+
+console.log('-> Pig Latin');
+
+// Translate the provided string to pig latin.
+
+// Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay".
+
+// If a word begins with a vowel you just add "way" to the end.
+
+// Input strings are guaranteed to be English words in all lowercase.
+
+function translatePigLatin(str) {
+  let vowel = /[aeiou]/gi;
+  let pigLatin;
+
+  if (str[0].match(vowel)) {
+    pigLatin = str + 'way';
+  } else if (str.match(vowel) === null) {
+    pigLatin = str + 'ay';
+  } else {
+    let firstVowel = str.indexOf(str.match(vowel)[0])
+    pigLatin = str.substr(firstVowel) + str.substr(0, firstVowel) + 'ay';
+  }
+  return pigLatin;
+}
+
+// testes
+console.log('translatePigLatin("consonant"): ', translatePigLatin("consonant"));
+console.log('translatePigLatin("glove"):', translatePigLatin("glove")); // "oveglay"
+
+console.log('-> Search and Replace');
+
+// Perform a search and replace on the sentence using the arguments provided and return the new sentence.
+// First argument is the sentence to perform the search and replace on.
+// Second argument is the word that you will be replacing (before).
+// Third argument is what you will be replacing the second argument with (after).
+
+function myReplace(str, before, after) {
+  let index = str.indexOf(before);
+
+  // verificar se é maiúscula
+  if (str[index] === str[index].toUpperCase()) {
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  }
+  str = str.replace(before, after);
+
+  return str;
+}
+
+// teste
+console.log('myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"): ', myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+
+console.log('-> DNA Pairing');
+
+// The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.
+
+// Base pairs are a pair of AT and CG. Match the missing element to the provided character.
+
+// Return the provided character as the first element in each array.
+
+// For example, for the input GCG, return [["G", "C"], ["C","G"],["G", "C"]]
+
+// The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
+

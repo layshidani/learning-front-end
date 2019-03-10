@@ -19,9 +19,9 @@ function sumAll(arr) {
 
 console.log('sumAll([1, 4]): ', sumAll([1, 4])); // 10
 
+// -------------------------------------------------------------------
 
 console.log('-> Diff Two Arrays');
-
 // Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 
 function diffArray(arr1, arr2) {
@@ -31,7 +31,7 @@ function diffArray(arr1, arr2) {
 // teste
 console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
 
-
+// -------------------------------------------------------------------
 
 console.log('-> Seek and Destroy');
 // You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
@@ -44,6 +44,7 @@ function destroyer(arr, ...args) {
 
 console.log('destroyer([1, 2, 3, 1, 2, 3], 2, 3): ', destroyer([1, 2, 3, 1, 2, 3], 2, 3));
 
+// -------------------------------------------------------------------
 
 
 console.log('-> Wherefore art thou');
@@ -69,6 +70,7 @@ function whatIsInAName(collection, source) {
 // teste
 console.log('whatIsInAName', whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
 
+// -------------------------------------------------------------------
 
 console.log('-> Spinal Tap Case');
 // Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
@@ -87,6 +89,10 @@ function spinalCase(str) {
 
 console.log('spinalCase("This Is Spinal Tap"): ', spinalCase('This Is Spinal Tap'))
 console.log('spinalCase("thisIsSpinal_Tap"): ', spinalCase("thisIsSpinal_Tap"))
+
+
+
+// -------------------------------------------------------------------
 
 console.log('-> Pig Latin');
 
@@ -117,6 +123,9 @@ function translatePigLatin(str) {
 console.log('translatePigLatin("consonant"): ', translatePigLatin("consonant"));
 console.log('translatePigLatin("glove"):', translatePigLatin("glove")); // "oveglay"
 
+
+// -------------------------------------------------------------------
+
 console.log('-> Search and Replace');
 
 // Perform a search and replace on the sentence using the arguments provided and return the new sentence.
@@ -139,6 +148,10 @@ function myReplace(str, before, after) {
 // teste
 console.log('myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"): ', myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
 
+
+
+// -------------------------------------------------------------------
+
 console.log('-> DNA Pairing');
 
 // The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.
@@ -151,3 +164,57 @@ console.log('-> DNA Pairing');
 
 // The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
+
+function pairElement(str) {
+  let result = [];
+
+  let src = function(char) {
+    switch(char) {
+      case 'A':
+        result.push(['A', 'T']);
+        break;
+      case 'T':
+        result.push(['T', 'A']);
+        break;
+      case 'C':
+        result.push(['C', 'G']);
+        break;
+      case 'G':
+        result.push(['G', 'C']);
+        break;      
+    }
+  };
+
+  for (let letter in str) {
+    src(str[letter]);
+  }
+  return result;
+}
+
+// teste
+console.log('pairElement("GCG"): ', pairElement("GCG"));
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Missing letters');
+// Find the missing letter in the passed letter range and return it.
+// If all letters are present in the range, return undefined.
+function fearNotLetter(str) {
+  let compare = str.charCodeAt(0);
+  let missing;
+
+  str.split('').map(function(letter,index) {
+    if (str.charCodeAt(index) == compare) {
+      ++compare;
+    } else {
+      missing = String.fromCharCode(compare);
+    }
+  });
+
+  return missing;
+}
+
+// teste
+console.log('fearNotLetter("abce"): ', fearNotLetter("abce"));
+console.log('fearNotLetter("stvwx"): ', fearNotLetter("stvwx"));

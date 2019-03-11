@@ -243,3 +243,72 @@ function uniteUnique(arr1, arr2, arr3) {
 }
 
 console.log('uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]): ', uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Convert HTML Entities');
+
+// Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
+
+function convertHTML(str) {
+  var array = str.split('');
+
+  for (let i in array) {
+    switch (array[i]) {
+      case '<':
+        array[i] = '&lt;';
+        break;
+      case '&':
+        array[i] = '&amp;';
+        break;
+      case '>':
+        array[i] = '&gt;';
+        break;
+      case '"':
+        array[i] = '&quot;';
+        break;
+      case "'":
+        array[i] = "&apos;";
+        break;
+    }
+  }
+
+  array = array.join('');
+  return array;
+}
+
+// teste
+console.log('convertHTML("Dolce & Gabbana"): ', convertHTML("Dolce & Gabbana"));
+
+
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Sum All Odd Fibonacci Numbers');
+
+// Given a positive integer num, return the sum of all odd Fibonacci numbers that are less than or equal to num.
+// The first two numbers in the Fibonacci sequence are 1 and 1. Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
+// For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less than or equal to 10 are 1, 1, 3, and 5.
+
+function sumFibs(num) {
+  let prevNum = 0;
+  let currNum = 1;
+  let result = 0;
+
+  while (currNum <= num) {
+    if (currNum % 2 !== 0) {
+      result += currNum;
+    }
+
+    currNum += prevNum;
+    prevNum = currNum - prevNum;
+  }
+
+  return result;
+}
+
+// teste
+console.log('sumFibs(4): ', sumFibs(4));

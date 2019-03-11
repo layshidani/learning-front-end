@@ -218,3 +218,28 @@ function fearNotLetter(str) {
 // teste
 console.log('fearNotLetter("abce"): ', fearNotLetter("abce"));
 console.log('fearNotLetter("stvwx"): ', fearNotLetter("stvwx"));
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Sorted Union');
+
+// Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.
+// In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.
+// The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
+
+function uniteUnique(arr1, arr2, arr3) {
+  let newArr = [];
+
+  for (let array of arguments) {
+    for (let num of array) {
+      if (newArr.indexOf(num) < 0) {
+      // or if (!newArr.includes(num))
+        newArr.push(num);
+      }
+    }
+  }
+  return newArr;
+}
+
+console.log('uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]): ', uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));

@@ -133,12 +133,12 @@ myArray.unshift(0); => [0, 1, 2, 3, 4]
 
 - remover no final do array -> **pop()**
 ```
-myArray.pop(4); => [0, 1, 2, 3]
+myArray.pop(); => [0, 1, 2, 3]
 ```
 
 - remover no começo do array -> **shift()**
 ```
-myArray.shift(0); => [1, 2, 3]
+myArray.shift(); => [1, 2, 3]
 ```
 
 ### Fazer cópia de array

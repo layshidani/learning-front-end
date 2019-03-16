@@ -227,6 +227,8 @@ Como no caso do uso de .is-active (SMACSS) ao invés de --active (BEM).
 ---
 
 # SASS
+[Guia Completo do SASS - oficial](https://sass-guidelin.es/pt/)
+
 ```  
 // Aninhamento:
 .navbar {

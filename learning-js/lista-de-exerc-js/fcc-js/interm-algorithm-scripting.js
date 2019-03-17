@@ -398,4 +398,32 @@ function binaryAgent(str) {
   return result.join("");
 }
 
+// radix (parseInt(item, 2))
+
+// usada para especificar qual o sistema de numeração que deseja converter a string. Podendo receber valores de 2 a 36, dentre os mais utilizados podemos destacar 10 (decimal), 2 (binário), 16 (hexadecimal) e 8 (octal). É opcional ! É justamente no fato do paramento base ser opcional é que mora o perigo. Pois, caso o mesmo não seja informado, o interpretador javascript irá se comportar das seguintes formas:
+
+// Começando com caractere que não pode ser convertido para um número, retorna NaN (not a number)
+// Quando um string começa com “0x” é analisada implicitamente com base 16 (hexadecimal)
+// Quando uma string começa com “0″, é analisada implicitamente com base 8  (octal)
+// Quando uma string começa com qualquer outro valor, é base 10 (decimal)
+
+// teste
 console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Everything Be True');
+
+// Check if the predicate (second argument) is truthy on all elements of a collection (first argument).
+// In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.
+// In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.
+// Remember, you can access object properties through either dot notation or [] notation.
+
+function truthCheck(collection, pre) {
+  // Is everyone being true?
+  return collection.every((obj) => obj[pre]);
+}
+
+// teste
+console.log(truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex"));

@@ -168,8 +168,8 @@ console.log('-> DNA Pairing');
 function pairElement(str) {
   let result = [];
 
-  let src = function(char) {
-    switch(char) {
+  let src = function (char) {
+    switch (char) {
       case 'A':
         result.push(['A', 'T']);
         break;
@@ -181,7 +181,7 @@ function pairElement(str) {
         break;
       case 'G':
         result.push(['G', 'C']);
-        break;      
+        break;
     }
   };
 
@@ -204,7 +204,7 @@ function fearNotLetter(str) {
   let compare = str.charCodeAt(0);
   let missing;
 
-  str.split('').map(function(letter,index) {
+  str.split('').map(function (letter, index) {
     if (str.charCodeAt(index) == compare) {
       ++compare;
     } else {
@@ -234,7 +234,7 @@ function uniteUnique(arr1, arr2, arr3) {
   for (let array of arguments) {
     for (let num of array) {
       if (newArr.indexOf(num) < 0) {
-      // or if (!newArr.includes(num))
+        // or if (!newArr.includes(num))
         newArr.push(num);
       }
     }
@@ -324,7 +324,7 @@ console.log('-> Sum All Primes');
 
 function sumPrimes(num) {
   function isPrime(val) {
-    for(let i = 2; i < val; i++){
+    for (let i = 2; i < val; i++) {
       if (val % i === 0) {
         return false;
       }
@@ -334,8 +334,8 @@ function sumPrimes(num) {
 
   let sum = 0;
 
-  for(let j = 2; j <= num; j++){   
-    if(isPrime(j)){
+  for (let j = 2; j <= num; j++) {
+    if (isPrime(j)) {
       sum += j;
     }
   }
@@ -362,10 +362,10 @@ function dropElements(arr, func) {
 }
 
 // teste
-console.log(dropElements([1, 2, 3], function(n) {return n < 3; }));
-console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
-console.log(dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;}));
-console.log(dropElements([1, 2, 3, 4], function(n) {return n > 5;}));
+console.log(dropElements([1, 2, 3], function (n) { return n < 3; }));
+console.log(dropElements([0, 1, 0, 1], function (n) { return n === 1; }));
+console.log(dropElements([1, 2, 3, 9, 2], function (n) { return n > 2; }));
+console.log(dropElements([1, 2, 3, 4], function (n) { return n > 5; }));
 
 // -------------------------------------------------------------------
 
@@ -426,7 +426,7 @@ function truthCheck(collection, pre) {
 }
 
 // teste
-console.log(truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex"));
+console.log(truthCheck([{ "user": "Tinky-Winky", "sex": "male" }, { "user": "Dipsy", "sex": "male" }, { "user": "Laa-Laa", "sex": "female" }, { "user": "Po", "sex": "female" }], "sex"));
 
 
 // -------------------------------------------------------------------
@@ -440,18 +440,90 @@ console.log('-> Arguments Optional');
 // sumTwoAnd(3) returns 5.
 // If either argument isn't a valid number, return undefined.
 
-function addTogether() {
-  let args = Array.from(arguments);
-  
-  if (args.some(num => typeof num !== 'number')) {
-    return undefined;
-  } else if (args.length > 1) {
-    return args.reduce((sum, atual) => sum += atual, 0);
-  } else {
-    
-  }
+// function addTogether() {
+//   let args = Array.from(arguments);
+//   let result;
 
+//   if (args.some(num => typeof num !== 'number')) {
+//     result = undefined;
+//   } else if (args.length > 1) {
+//     result = args.reduce((sum, atual) => sum += atual, 0);
+//   } else {
+//     result = num + args;
+//   }
+
+// }
+
+// // teste
+// console.log(addTogether(2, 3));
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Make a Person');
+// Fill in the object constructor with the following methods below:
+// getFirstName() getLastName() getFullName() setFirstName(first) setLastName(last) setFullName(firstAndLast)
+// Run the tests to see the expected output for each method.
+// The methods that take an argument must accept only one argument and it has to be a string.
+// These methods must be the only available means of interacting with the object.
+
+var Person = function(firstAndLast) {
+  // Complete the method below and implement the others similarly
+  var fullName = firstAndLast;
+
+  this.getFirstName = function() {
+    return fullName.split(" ")[0];
+  };
+
+  this.getLastName = function() {
+    return fullName.split(" ")[1];
+  };
+
+  this.getFullName = function() {
+    return fullName;
+  };
+
+  this.setFirstName = function(name) {
+    fullName = name + " " + fullName.split(" ")[1];
+  };
+
+  this.setLastName = function(name) {
+    fullName = fullName.split(" ")[0] + " " + name;
+  };
+
+  this.setFullName = function(name) {
+    fullName = name;
+  };
+};
+
+
+// teste
+var bob = new Person('Bob Ross');
+console.log('bob.getFullName(): ', bob.getFullName());
+
+
+// -------------------------------------------------------------------
+
+console.log('-> Map the Debris');
+
+// Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).
+// The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.
+// You can read about orbital periods on Wikipedia.
+// The values should be rounded to the nearest whole number. The body being orbited is Earth.
+// The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km3s-2.
+
+
+function orbitalPeriod(arr) {
+  var GM = 398600.4418;
+  var earthRadius = 6367.4447;
+
+  arr.forEach(function(item) {
+    var calc = Math.round(2 * Math.PI * Math.sqrt(Math.pow(earthRadius + item.avgAlt, 3) / GM));
+    delete item.avgAlt;
+    item.orbitalPeriod = calc;
+  });
+  return arr;
 }
 
 // teste
-addTogether(2,3);
+console.log('orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]): ', orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]));

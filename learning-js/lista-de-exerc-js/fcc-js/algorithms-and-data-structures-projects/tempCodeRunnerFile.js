@@ -1,1 +1,1 @@
-/[\W_]/g
+console.log('convertToRoman(36): ', convertToRoman(36));

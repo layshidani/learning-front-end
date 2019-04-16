@@ -26,6 +26,7 @@
 [Documentação - Sass Lang](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 [Sass Meister - The sassiest way to play with Sass, Compass, & LibSass](https://www.sassmeister.com/)
 [Guides & Tutorials on Sass and Compass](http://thesassway.com/)
+[Sass is awesome](https://github.com/HugoGiraudel/awesome-sass)
 
 ## Instalação
 [Sass - Instalação (en)](https://sass-lang.com/install)
@@ -40,6 +41,9 @@ Podemos realizar a instalação através da linha de comando:
 Para verificar a versão instalada, ou se já tem instalada: 
 
 `sass -v`
+
+## watch ?em-construção
+http://sassbreak.com/watch-your-sass/
 
 ## Aninhamento
 
@@ -237,6 +241,8 @@ O exemplo acima, poderia ter mais de um parâmetro e valores padrões, como em f
 
 ## Extender estilo de outra classe - Herança (@extend)
 Podemos reaproveitar/herdar o estilo de outra classe utilizando o `@extend`.
+
+## ?em-construção %
 
 Ex: Suponhamos que queremos que queremos aplicar o estilo da classe `example` à classe `example-important` e acrescentar a cor vermelha à fonte:
 
@@ -460,3 +466,5 @@ Estou no arquivo **mains.scss**, para importar o arquivo parcial acima basta inc
 ```
 @import 'mixins'
 ```
+
+## _ importar arquivos Parciais ?em-construção

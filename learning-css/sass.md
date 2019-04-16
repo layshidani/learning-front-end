@@ -23,9 +23,13 @@
 ## Links
 
 [Guia Completo do SASS - oficial](https://sass-guidelin.es/pt/)
+[Documentação - Sass Lang](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 [Sass Meister - The sassiest way to play with Sass, Compass, & LibSass](https://www.sassmeister.com/)
+[Guides & Tutorials on Sass and Compass](http://thesassway.com/)
 
 ## Instalação
+[Sass - Instalação (en)](https://sass-lang.com/install)
+
 Podemos realizar a instalação através da linha de comando:
 
 * Macs e PCs: `sudo gem install sass`

@@ -10,9 +10,7 @@
 
 ---
 
-## Projetos
-
-## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
+## :pushpin: Projetos
 
 /-------------------------------------------------------------------------\
 
@@ -60,7 +58,6 @@
 ### * [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
 
 ### * [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
-
 
 ---
 

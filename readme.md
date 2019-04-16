@@ -4,7 +4,7 @@
 
 ### * [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
 ### * [CSS](https://github.com/hlays/learning-web/tree/master/learning-css)
-### * [Design Responsivo CookBook](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
+  ### * [Design Responsivo CookBook](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
 ### * [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
 ### * [Linha de Comando](https://github.com/hlays/linha-de-comando)
 

@@ -2,6 +2,7 @@
 
 - [Dicas](dicas-css.md)
 - [Arquitetura CSS: CSSOO, SMACSS, BEM](arq-css.md)
+- [Sass](sass.md)
 - [Design Responsivo - CookBook](design-reponsivo-receita.md)
 
 ## :link: Links Úteis 

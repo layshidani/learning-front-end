@@ -1,5 +1,23 @@
 # Arquitetura CSS
 
+* [Links úteis](#Links-úteis)
+  * [Ferramentas](#Ferramentas)
+  * [Artigos](#Artigos)
+* [CSS orientado a objetos ::CSSOO::](#CSS-orientado-a-objetos-::CSSOO::)
+  * [1. princípio: Separação de estrutura e de visual ::skin::](#1.-princípio:-Separação-de-estrutura-e-de-visual-::skin::)
+  * [2. princípio - Independência de containers e de conteúdos](#2.-princípio---Independência-de-containers-e-de-conteúdos)
+* [Scalable and Modular Architecture for CSS ::SMACSS::](#Scalable-and-Modular-Architecture-for-CSS-::SMACSS::)
+  * [Base](#Base)
+  * [Layout (l-)](#Layout-(l-))
+  * [Module](#Module)
+  * [State (is-)](#State-(is-))
+  * [Theme](#Theme)
+* [Bloco, Elemento e Modificador ::BEM::](#Bloco,-Elemento-e-Modificador-::BEM::)
+  * [Bloco](#Bloco)
+  * [Elemento](#Elemento)
+  * [Modificador](#Modificador)
+  * [Dicas](#Dicas)
+
 ## Links úteis
 
 ### Ferramentas
@@ -14,7 +32,7 @@
 
 ---
 
-## CSSOO (CSS orientado a objetos)
+## CSS orientado a objetos ::CSSOO::
 - Facilita manutenção de código.
 - Evita repetição de código.
 
@@ -29,7 +47,7 @@
 > - Comportamentos JavaScript, listeners ou métodos associados.
 > [(Matheus Castiglioni)](https://medium.com/trainingcenter/organizando-seu-c%C3%B3digo-css-parte-1-c0af96e4cc9f)
 
-### 1 princípio - Separação de estrutura e de visual (skin)
+### 1. princípio: Separação de estrutura e de visual ::skin::
 
 > A ideia é que nós separemos as características visuais das características estruturais, tornando-os modulares de forma que possamos reutilizá-los em diferentes elementos tendo resultados iguais. [(tableless)](https://tableless.com.br/oocss-ou-css-do-jeito-certo/)
 
@@ -101,7 +119,7 @@ CSS:
 }
 ```
 
-### 2 princípio - Independência de containers e de conteúdos
+### 2. princípio - Independência de containers e de conteúdos
 
 > Essencialmente quer dizer: Raramente use estilos que dependam de localização. Idealmente, um objeto deve parecer-se igual, independentemente de onde estiver na página, ou mesmo se trocar de página.
 > [(Matheus Castiglioni)](https://medium.com/trainingcenter/organizando-seu-c%C3%B3digo-css-parte-1-c0af96e4cc9f)
@@ -112,7 +130,7 @@ Onde qualquer objeto poderá ser colocado em outro container sem ter sua aparên
 
 ---
 
-## SMACSS (Scalable and Modular Architecture for CSS)
+## Scalable and Modular Architecture for CSS ::SMACSS::
 
 O conceito do SMACSS é criar 5 camadas (arquivos) CSS separados em diretórios de acordo com sua função:
 
@@ -122,7 +140,7 @@ O conceito do SMACSS é criar 5 camadas (arquivos) CSS separados em diretórios 
 - state (is-)
 - theme
 
-### base
+### Base
 Não utiliza seletores com classes ou id. 
 Geralmente são arquivos de **reset** para unificar o estilo dos navegadores, **plugins**, etc.
 
@@ -132,12 +150,12 @@ Um bom exemplo de reset:
 
 [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 
-### layout (l-)
+### Layout (l-)
 Recomenda-se utilizar IDs e classes com prefixo `l-`.
 
 Parte estrutural do projeto, elementos únicos, como **header**, **footer**, **section**, **article**, **GRID**, **flexbox**.
 
-### module
+### Module
 Componentes.
 Devem ser:
 
@@ -149,7 +167,7 @@ Exemplos: navbar, botão, formulários, cores, tipografia.
 *! evite utilizar **elementos** dentro do módulo, utilização de classes é mais recomendado, por causa da independência*
 *! não utilize IDs*
 
-### state (is-)
+### State (is-)
 Regras que gerenciam o estado dos componentes, como `hover` e `active`, por exemplo.
 
 Então utilizamos classes com o prefixo `is-`:
@@ -160,7 +178,7 @@ Exemplo:
 
 `.is-disabled`
 
-### theme 
+### Theme 
 Temas para o layout, como por exemplo, tema claro e tema escuro.
 
 Geralmente insere-se uma classe referente ao tema na tag `<body>`.
@@ -169,7 +187,7 @@ ex: `<body class="theme-christmas">`
 
 ---
 
-## BEM (Bloco, Elemento e Modificador)
+## Bloco, Elemento e Modificador ::BEM::
 
 É uma metodologia para nomear classes no CSS.
 
@@ -225,190 +243,4 @@ O BEM funciona bem usando o SMACSS como complemento em alguns casos...
 Como no caso do uso de .is-active (SMACSS) ao invés de --active (BEM).
 
 ---
-
-# SASS
-[Guia Completo do SASS - oficial](https://sass-guidelin.es/pt/)
-
-```  
-// Aninhamento:
-.navbar {
-  ul {
-    list-style: none;
-  }
-  
-  li {
-    display: inline-block;
-  }
-``` 
-
-É o mesmo que:
-```
-.navbar ul {
-  list-style: none;
-}
-.navbar li {
-  display: inline-block;
-}
-```
-
-## referência à ascendente (&)
-
-**Exemplo 1:**
-
-```
-a {
-  text-decoration: none;
-    
-// & referência à ascendente
-  &:hover {
-    color: purple;
-  }
-}
-```
-
-Resultado da compilação:
-```
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: purple;
-}
-```
-
-**Exemplo 2:**
-
-```
-.seletor {
-  color: blue;
-  
-  .alguma-classe & {
-    color: red;
-  }
-}
-```
-
-Resultado da compilação:
-```
-.seletor {
-  color: blue;
-}
-.alguma-classe .seletor {
-  color: red;
-}
-```
-
-**Funciona com BEM:**
-```
-.seletor {
-  color: blue;
-  
-  &--modificador {
-    color: red;
-  }
-}
-```
-
-Resultado da compilação:
-
-```
-.seletor {
-  color: blue;
-}
-.seletor--modificador {
-  color: red;
-}
-```
-
-### Fazer aninhamento, porém com compilação na raíz (@at-root)
-
-```
-div {
-  background-color: blue;
-  
-  @at-root {
-    h1 {
-      color: pink;
-    }
-  }
-}
-```
-
-Resultado da compilação:
-```
-div {
-  background-color: blue;
-}
-h1 {
-  color: pink;
-}
-```
-
-## Variáveis ($nome: valor)
-A mudança no valor altera automaticamente o valor onde foram atribuídas as variáveis:
-
-Exemplo
-```
-$circle: 50%;
-$default-color: blue;
-
-
-div {
-  border-radius: $circle;
-  color: $default-color;
-}
-
-```
-
-Resultado da compilação:
-
-```
-div {
-  border-radius: 50%;
-  color: blue;
-}
-```
-
-## Mixins (@mixin e @include)
-Ex 1:
-
-```
-@mixin bar {
-  color: #000000;
-}
-
-.foo {
-  @include bar;
-}
-```
-
-Resultado da compilação:
-```
-.foo {
-  color: #000000;
-}
-```
-
-Ex 2:
-
-```
-@mixin bar($color) {
-  color: $color;
-}
-
-.foo {
-  @include bar(#FFFFFF);
-}
-```
-
-Resultado da compilação:
-```
-.foo {
-  color: #FFFFFF;
-}
-```
-
-O exemplo acima, poderia ter mais de um parâmetro e valores padrões, como em funções JS.
-
-
 

@@ -23,6 +23,10 @@
 
 /--------------------------------------------------------------------------\
 
+### * [LAB - Rede Social - SerView] [<Visualizar\>](https://serview-2019.firebaseapp.com/)
+
+### * [LAB - Data Lovers - Pokemon] [<Visualizar\>](https://hlays.github.io/data-lovers/)
+
 ### * [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-web/js30-flex-panels-gallery/)
 
 ### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
@@ -63,27 +67,3 @@
 ## :round_pushpin: 100DaysOfCode
 
 I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/My-100-days-of-Code/blob/master/r1-log.md).
-
----
-
-# :link: Links úteis
-
-## Referência: 
-- [W3S](https://www.w3schools.com/) THE WORLD'S LARGEST WEB DEVELOPER SITE
-
-- [CSS Browser Support Reference](https://www.w3schools.com/cssref/css3_browsersupport.asp): Referência CSS sobre suporte dos browsers
-
-- [Mozilla Developer](https://developer.mozilla.org/) (em inglês, alguns conteúdos disponíveis em português)
-
-
-## :wrench: Ferramentas 
-
-
-### Dev
-
-- [Code Pen](https://codepen.io/): social development environment
-
-
-
-
-

@@ -9,6 +9,7 @@
 * [Aninhamento](#Aninhamento)
   * [Fazer aninhamento, porém com compilação na raíz (@at-root)](#Fazer-aninhamento,-porém-com-compilação-na-raíz-(@at-root))
 * [Variáveis ($nome: valor)](#Variáveis-($nome:-valor))
+* [Operadores](#Operadores)
 * [Mixins (@mixin e @include)](#Mixins-(@mixin-e-@include))
 * [Extender estilo de outra classe (@extend)](#Extender-estilo-de-outra-classe-(@extend))
 * [Condições e Loops (if, else if, else, for, while, each)](#Condições-e-Loops-(if,-else-if,-else,-for,-while,-each))
@@ -178,6 +179,17 @@ div {
 }
 ```
 
+## Operadores
+Podemos usar operadores para fazer operações matemáticas:
+
+```
++ 
+-
+*
+/
+%
+```
+
 ## Mixins (@mixin e @include)
 Ex 1:
 
@@ -219,8 +231,8 @@ Resultado da compilação:
 
 O exemplo acima, poderia ter mais de um parâmetro e valores padrões, como em funções JS.
 
-## Extender estilo de outra classe (@extend)
-Podemos reaproveitar o estilo de outra classe utilizando o `@extend`.
+## Extender estilo de outra classe - Herança (@extend)
+Podemos reaproveitar/herdar o estilo de outra classe utilizando o `@extend`.
 
 Ex: Suponhamos que queremos que queremos aplicar o estilo da classe `example` à classe `example-important` e acrescentar a cor vermelha à fonte:
 

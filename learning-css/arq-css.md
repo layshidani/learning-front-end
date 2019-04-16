@@ -3,16 +3,16 @@
 * [Links úteis](#Links-úteis)
   * [Ferramentas](#Ferramentas)
   * [Artigos](#Artigos)
-* [CSS orientado a objetos ::CSSOO::](#CSS-orientado-a-objetos-::CSSOO::)
-  * [1. princípio: Separação de estrutura e de visual ::skin::](#1.-princípio:-Separação-de-estrutura-e-de-visual-::skin::)
+* [CSS orientado a objetos (CSSOO)](#CSS-orientado-a-objetos-(CSSOO)
+  * [1. princípio - Separação de estrutura e de visual (skin)](#1.-princípio---Separação-de-estrutura-e-de-visual-(skin))
   * [2. princípio - Independência de containers e de conteúdos](#2.-princípio---Independência-de-containers-e-de-conteúdos)
-* [Scalable and Modular Architecture for CSS ::SMACSS::](#Scalable-and-Modular-Architecture-for-CSS-::SMACSS::)
+* [Scalable and Modular Architecture for CSS (SMACSS)](#Scalable-and-Modular-Architecture-for-CSS-::SMACSS::)
   * [Base](#Base)
   * [Layout (l-)](#Layout-(l-))
   * [Module](#Module)
   * [State (is-)](#State-(is-))
   * [Theme](#Theme)
-* [Bloco, Elemento e Modificador ::BEM::](#Bloco,-Elemento-e-Modificador-::BEM::)
+* [Bloco, Elemento e Modificador (BEM)](#Bloco,-Elemento-e-Modificador-(BEM))
   * [Bloco](#Bloco)
   * [Elemento](#Elemento)
   * [Modificador](#Modificador)
@@ -47,7 +47,7 @@
 > - Comportamentos JavaScript, listeners ou métodos associados.
 > [(Matheus Castiglioni)](https://medium.com/trainingcenter/organizando-seu-c%C3%B3digo-css-parte-1-c0af96e4cc9f)
 
-### 1. princípio: Separação de estrutura e de visual ::skin::
+### 1. princípio - Separação de estrutura e de visual (skin)
 
 > A ideia é que nós separemos as características visuais das características estruturais, tornando-os modulares de forma que possamos reutilizá-los em diferentes elementos tendo resultados iguais. [(tableless)](https://tableless.com.br/oocss-ou-css-do-jeito-certo/)
 
@@ -130,7 +130,7 @@ Onde qualquer objeto poderá ser colocado em outro container sem ter sua aparên
 
 ---
 
-## Scalable and Modular Architecture for CSS ::SMACSS::
+## Scalable and Modular Architecture for CSS (SMACSS)
 
 O conceito do SMACSS é criar 5 camadas (arquivos) CSS separados em diretórios de acordo com sua função:
 
@@ -187,7 +187,7 @@ ex: `<body class="theme-christmas">`
 
 ---
 
-## Bloco, Elemento e Modificador ::BEM::
+## Bloco, Elemento e Modificador (BEM)
 
 É uma metodologia para nomear classes no CSS.
 

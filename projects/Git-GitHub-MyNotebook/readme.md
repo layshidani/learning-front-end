@@ -1,6 +1,9 @@
-# [Notebook Git e GitHub ] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
-Página com meu resumo sobre o conteúdo aprendido sobre Git e Github.  __[<Visualizar\>](https://hlays.github.io/learning-web/
-Git-GitHub-MyNotebook/)__
+# [Notebook Git e GitHub ] [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
+
+Página com meu resumo sobre o conteúdo aprendido sobre Git e Github.  
+
+## Sample
+![sample](../img/sample/sample-git-github-notebook.png)
 
 ## Utilizado:
 

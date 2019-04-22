@@ -1,7 +1,8 @@
 # Cats Photos Gallery
-Página com fotos de gatos. __[<Visualizar\>](https://hlays.github.io/learning-web/MP-4-Cats-Photos/)__
+Página com fotos de gatos. __[<Visualizar\>](https://hlays.github.io/learning-front-end/projects/MP-4-Cats-Photos/)__
 
-
+## Sample
+![sample](../img/sample/sample-cats.png)
 
 ## Utilizado:
 

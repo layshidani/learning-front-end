@@ -4,7 +4,7 @@
 
 * [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
 * [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css)
-* [Git e GitHub](https://hlays.github.io/learning-front-end/Git-GitHub-MyNotebook/)
+* [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
 * [Linha de Comando](https://github.com/hlays/linha-de-comando)
 * [Configuração npm init, eslint, testes com mocha, chai, nyc](https://github.com/hlays/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha.md)
 
@@ -30,19 +30,23 @@ Projetos desenvolvidos para aprendizado.
 
 * [JS30] Flex panels gallery [<Visualizar\>](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)
 
-* [JS30] Playing with CSS variables with JS[<Visualizar\>](https://hlays.github.io/learning-front-end/js30-playing-with-css-var/)
+* [JS30] Playing with CSS variables with JS[<Visualizar\>](https://hlays.github.io/learning-front-end/projects/js30-playing-with-css-var/)
 
 * [LAB] Cipher (pt-br) [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
 
-* [JS30] Clock [<Visualizar\>](https://hlays.github.io/learning-front-end/JS30-clock/)
+* [JS30] Clock [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/JS30-clock/)
 
-* [JS30] Drum (en) [<Visualizar\>](https://hlays.github.io/learning-front-end/JS30-Drum/)
+* [JS30] Drum (en) [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/JS30-Drum/)
 
-* Conversor de Temperatura (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto-Conversor-de-Temperatura/)
+* Conversor de Temperatura (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Projeto-Conversor-de-Temperatura/)
 
-* [LAB] Game Trivia (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto_Trivia/)
+* [LAB] Game Trivia (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Projeto_Trivia/)
 
-* Etanol ou Gasolina? (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto-Etanol-ou-Gasolina/)
+* Etanol ou Gasolina? (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Projeto-Etanol-ou-Gasolina/)
+
+* Memory Game [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/memory-game/)
+
+* Lamp [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Lamp/)
 
 * [FCC] Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
 
@@ -54,13 +58,13 @@ Projetos desenvolvidos para aprendizado.
 
 *  [FCC] TributePage-SebastiãoSalgado [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
 
-* Coleção de frases favoritas (pt-br) (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-front-end/Frases-com-Bootstrap/)
+* Coleção de frases favoritas (pt-br) (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Frases-com-Bootstrap/)
 
-* Cat Photos [<Visualizar\>](https://hlays.github.io/learning-front-end/cats-photos/)
+* Cat Photos [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/cats-photos/)
 
-* Notebook Git e GitHub (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Git-GitHub-MyNotebook/)
+* Notebook Git e GitHub (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
 
-* Página pessoal 1 - Portifolio simples [<Visualizar\>](https://hlays.github.io/learning-front-end/Pagina-Pessoal-1/)
+* Página pessoal 1 - Portifolio simples [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Pagina-Pessoal-1/)
 
 ---
 

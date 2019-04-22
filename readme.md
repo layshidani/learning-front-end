@@ -1,4 +1,4 @@
-# :books: Learning 
+# :books: Learning Front-End
 
 ## :pushpin: Learning Notes
 
@@ -6,7 +6,7 @@
 * [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css)
 * [Git e GitHub](https://hlays.github.io/learning-front-end/Git-GitHub-MyNotebook/)
 * [Linha de Comando](https://github.com/hlays/linha-de-comando)
-* [Configuração biblioteca JS com npm, eslint, mocha, chai, nyc]()
+* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://github.com/hlays/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha.md)
 
 ---
 
@@ -14,10 +14,12 @@
 Projetos desenvolvidos para aprendizado.
 
 /-------------------------------------------------------------------------\
+
   **Abbreviation:**                                                         
 - FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project 
 - JS30:  [JavasCript30](https://javascript30.com/) curriculum project    
-- LAB:  [Laboratoria](http://laboratoria.la/) curriculum project         
+- LAB:  [Laboratoria](http://laboratoria.la/) curriculum project     
+
 /--------------------------------------------------------------------------\
 
 * [LAB] Rede Social - SerView [<Visualizar\>](https://serview-2019.firebaseapp.com/)

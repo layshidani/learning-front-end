@@ -38,3 +38,9 @@ function convertToRoman(num) {
 }
 
 console.log('convertToRoman(36): ', convertToRoman(36));
+
+function romanValidation(roman) {
+  if (roman === '' || typeof roman !== 'string') {
+    
+  }
+}

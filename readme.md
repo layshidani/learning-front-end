@@ -2,62 +2,63 @@
 
 ## :round_pushpin: Learning Notes
 
-### * [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
-### * [CSS](https://github.com/hlays/learning-web/tree/master/learning-css)
-  ### * [Design Responsivo CookBook](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
-### * [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
-### * [Linha de Comando](https://github.com/hlays/linha-de-comando)
+* [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
+* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-web/tree/master/learning-css)
+* [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
+* [Linha de Comando](https://github.com/hlays/linha-de-comando)
+* [Configuração biblioteca JS com npm, eslint, mocha, chai, nyc]()
 
 ---
 
 ## :pushpin: Projetos
+Projetos desenvolvidos para aprendizado.
 
 /-------------------------------------------------------------------------\
-
   **Abbreviation:**                                                         
 - FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project 
 - JS30:  [JavasCript30](https://javascript30.com/) curriculum project    
 - LAB:  [Laboratoria](http://laboratoria.la/) curriculum project         
-
 /--------------------------------------------------------------------------\
 
-### * [LAB - Rede Social - SerView] [<Visualizar\>](https://serview-2019.firebaseapp.com/)
+* [LAB - Rede Social - SerView] [<Visualizar\>](https://serview-2019.firebaseapp.com/)
 
-### * [LAB - Data Lovers - Pokemon] [<Visualizar\>](https://hlays.github.io/data-lovers/)
+* [LAB - Data Lovers - Pokemon] [<Visualizar\>](https://hlays.github.io/data-lovers/)
 
-### * [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-web/js30-flex-panels-gallery/)
+* [LAB - Twitter Feed] [<Visualizar\>](https://hlays.github.io/twitter-lab/)
 
-### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
+* [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-web/js30-flex-panels-gallery/)
 
-### * [LAB - Cipher (pt-br)] [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
+* [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
 
-### * [JS30 - Clock] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-clock/)
+* [LAB - Cipher (pt-br)] [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
 
-### * [JS30 - Drum (en)] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-Drum/)
+* [JS30 - Clock] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-clock/)
 
-### * [Conversor de Temperatura (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Conversor-de-Temperatura/)
+* [JS30 - Drum (en)] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-Drum/)
 
-### * [LAB - Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto_Trivia/)
+* [Conversor de Temperatura (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Conversor-de-Temperatura/)
 
-### * [Etanol ou Gasolina? (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Etanol-ou-Gasolina/)
+* [LAB - Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto_Trivia/)
 
-### * FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
+* [Etanol ou Gasolina? (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Etanol-ou-Gasolina/)
 
-### * FCC4-Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)
+* FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
 
-### * FCC3-Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)
+* FCC4-Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)
 
-### * FCC2-Build-a-Survey-Form [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
+* FCC3-Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)
 
-### * FCC1-TributePage-SebastiãoSalgado [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
+* FCC2-Build-a-Survey-Form [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
 
-### * [Coleção de frases favoritas (pt-br)] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/Frases-com-Bootstrap/)
+* FCC1-TributePage-SebastiãoSalgado [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
 
-### * [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/Cats-Photos/)
+* [Coleção de frases favoritas (pt-br)] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/Frases-com-Bootstrap/)
 
-### * [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
+* [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/Cats-Photos/)
 
-### * [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
+* [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
+
+* [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
 
 ---
 

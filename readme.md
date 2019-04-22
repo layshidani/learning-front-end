@@ -2,9 +2,9 @@
 
 ## :round_pushpin: Learning Notes
 
-* [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
-* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-web/tree/master/learning-css)
-* [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
+* [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
+* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css)
+* [Git e GitHub](https://github.com/hlays/learning-front-end/tree/master/Git-GitHub-MyNotebook)
 * [Linha de Comando](https://github.com/hlays/linha-de-comando)
 * [Configuração biblioteca JS com npm, eslint, mocha, chai, nyc]()
 
@@ -26,21 +26,21 @@ Projetos desenvolvidos para aprendizado.
 
 * [LAB - Twitter Feed] [<Visualizar\>](https://hlays.github.io/twitter-lab/)
 
-* [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-web/js30-flex-panels-gallery/)
+* [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)
 
-* [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
+* [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-front-end/js30-playing-with-css-var/)
 
 * [LAB - Cipher (pt-br)] [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
 
-* [JS30 - Clock] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-clock/)
+* [JS30 - Clock] [<Visualizar\>](https://hlays.github.io/learning-front-end/JS30-clock/)
 
-* [JS30 - Drum (en)] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-Drum/)
+* [JS30 - Drum (en)] [<Visualizar\>](https://hlays.github.io/learning-front-end/JS30-Drum/)
 
-* [Conversor de Temperatura (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Conversor-de-Temperatura/)
+* [Conversor de Temperatura (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto-Conversor-de-Temperatura/)
 
-* [LAB - Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto_Trivia/)
+* [LAB - Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto_Trivia/)
 
-* [Etanol ou Gasolina? (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Etanol-ou-Gasolina/)
+* [Etanol ou Gasolina? (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto-Etanol-ou-Gasolina/)
 
 * FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
 
@@ -52,13 +52,13 @@ Projetos desenvolvidos para aprendizado.
 
 * FCC1-TributePage-SebastiãoSalgado [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
 
-* [Coleção de frases favoritas (pt-br)] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/Frases-com-Bootstrap/)
+* [Coleção de frases favoritas (pt-br)] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-front-end/Frases-com-Bootstrap/)
 
-* [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/Cats-Photos/)
+* [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-front-end/Cats-Photos/)
 
-* [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
+* [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-front-end/Git-GitHub-MyNotebook/)
 
-* [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
+* [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-front-end/Pagina-Pessoal-1/)
 
 ---
 

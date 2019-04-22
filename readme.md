@@ -1,89 +1,69 @@
-# :books: Learning 
+# :books: Learning Front-End
 
-## :round_pushpin: Learning Notes
+## :pushpin: Learning Notes
 
-### * [JavaScript](https://github.com/hlays/learning-web/tree/master/learning-js)
-### * [CSS](https://github.com/hlays/learning-web/tree/master/learning-css)
-### * [Design Responsivo CookBook](https://github.com/hlays/learning-web/blob/master/learning-css/design-reponsivo-receita.md)
-### * [Git e GitHub](https://github.com/hlays/learning-web/tree/master/Git-GitHub-MyNotebook)
-### * [Linha de Comando](https://github.com/hlays/linha-de-comando)
+* [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
+* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css)
+* [Git e GitHub](https://hlays.github.io/learning-front-end/Git-GitHub-MyNotebook/)
+* [Linha de Comando](https://github.com/hlays/linha-de-comando)
+* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://github.com/hlays/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha.md)
 
 ---
 
-## Projetos
-
-## :pushpin: *[Portifolio](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)*
+## :pushpin: Projetos
+Projetos desenvolvidos para aprendizado.
 
 /-------------------------------------------------------------------------\
 
   **Abbreviation:**                                                         
 - FCC:  [FreeCodeCamp](https://www.freecodecamp.org/) curriculum project 
 - JS30:  [JavasCript30](https://javascript30.com/) curriculum project    
-- LAB:  [Laboratoria](http://laboratoria.la/) curriculum project         
+- LAB:  [Laboratoria](http://laboratoria.la/) curriculum project     
 
 /--------------------------------------------------------------------------\
 
-### * [JS30 - Flex panels gallery] [<Visualizar\>](https://hlays.github.io/learning-web/js30-flex-panels-gallery/)
+* [LAB] Rede Social - SerView [<Visualizar\>](https://serview-2019.firebaseapp.com/)
 
-### * [JS30 - Playing with CSS variables with JS] [<Visualizar\>](https://hlays.github.io/learning-web/js30-playing-with-css-var/)
+* [LAB] Data Lovers - Pokemon] [<Visualizar\>](https://hlays.github.io/data-lovers/)
 
-### * [LAB - Cipher (pt-br)] [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
+* [LAB] Twitter Feed] [<Visualizar\>](https://hlays.github.io/twitter-lab/)
 
-### * [JS30 - Clock] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-clock/)
+* [JS30] Flex panels gallery [<Visualizar\>](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)
 
-### * [JS30 - Drum (en)] [<Visualizar\>](https://hlays.github.io/learning-web/JS30-Drum/)
+* [JS30] Playing with CSS variables with JS[<Visualizar\>](https://hlays.github.io/learning-front-end/js30-playing-with-css-var/)
 
-### * [Conversor de Temperatura (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Conversor-de-Temperatura/)
+* [LAB] Cipher (pt-br) [<Visualizar\>](https://hlays.github.io/caesar-cipher/src/index.html)
 
-### * [LAB - Game Trivia (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto_Trivia/)
+* [JS30] Clock [<Visualizar\>](https://hlays.github.io/learning-front-end/JS30-clock/)
 
-### * [Etanol ou Gasolina? (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Projeto-Etanol-ou-Gasolina/)
+* [JS30] Drum (en) [<Visualizar\>](https://hlays.github.io/learning-front-end/JS30-Drum/)
 
-### * FCC5-Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
+* Conversor de Temperatura (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto-Conversor-de-Temperatura/)
 
-### * FCC4-Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)
+* [LAB] Game Trivia (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto_Trivia/)
 
-### * FCC3-Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)
+* Etanol ou Gasolina? (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Projeto-Etanol-ou-Gasolina/)
 
-### * FCC2-Build-a-Survey-Form [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
+* [FCC] Personal-Portfolio-Webpage [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)
 
-### * FCC1-TributePage-SebastiãoSalgado [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
+*  [FCC] Technichal-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)
 
-### * [Coleção de frases favoritas (pt-br)] (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-web/Frases-com-Bootstrap/)
+*  [FCC] Product-Landing-Page [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)
 
-### * [Cat Photos] [<Visualizar\>](https://hlays.github.io/learning-web/Cats-Photos/)
+*  [FCC] Build-a-Survey-Form [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)
 
-### * [Notebook Git e GitHub (pt-br)] [<Visualizar\>](https://hlays.github.io/learning-web/Git-GitHub-MyNotebook/)
+*  [FCC] TributePage-SebastiãoSalgado [<Visualizar\>](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)
 
-### * [Página pessoal 1 - Portifolio simples] [<Visualizar\>](https://hlays.github.io/learning-web/Pagina-Pessoal-1/)
+* Coleção de frases favoritas (pt-br) (Utilizado Boostrap) [<Visualizar\>](https://hlays.github.io/learning-front-end/Frases-com-Bootstrap/)
 
+* Cat Photos [<Visualizar\>](https://hlays.github.io/learning-front-end/cats-photos/)
+
+* Notebook Git e GitHub (pt-br) [<Visualizar\>](https://hlays.github.io/learning-front-end/Git-GitHub-MyNotebook/)
+
+* Página pessoal 1 - Portifolio simples [<Visualizar\>](https://hlays.github.io/learning-front-end/Pagina-Pessoal-1/)
 
 ---
 
 ## :round_pushpin: 100DaysOfCode
 
-I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/100-days-of-code).
-
----
-
-# :link: Links úteis
-
-## Referência: 
-- [W3S](https://www.w3schools.com/) THE WORLD'S LARGEST WEB DEVELOPER SITE
-
-- [CSS Browser Support Reference](https://www.w3schools.com/cssref/css3_browsersupport.asp): Referência CSS sobre suporte dos browsers
-
-- [Mozilla Developer](https://developer.mozilla.org/) (em inglês, alguns conteúdos disponíveis em português)
-
-
-## :wrench: Ferramentas 
-
-
-### Dev
-
-- [Code Pen](https://codepen.io/): social development environment
-
-
-
-
-
+I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/My-100-days-of-Code/blob/master/r1-log.md).

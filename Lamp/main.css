@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

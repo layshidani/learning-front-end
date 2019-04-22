@@ -1,5 +1,23 @@
 # Arquitetura CSS
 
+* [Links úteis](#Links-úteis)
+  * [Ferramentas](#Ferramentas)
+  * [Artigos](#Artigos)
+* [CSS orientado a objetos (CSSOO)](#CSS-orientado-a-objetos-(CSSOO))
+  * [1. princípio - Separação de estrutura e de visual (skin)](#1.-princípio---Separação-de-estrutura-e-de-visual-(skin))
+  * [2. princípio - Independência de containers e de conteúdos](#2.-princípio---Independência-de-containers-e-de-conteúdos)
+* [Scalable and Modular Architecture for CSS (SMACSS)](#Scalable-and-Modular-Architecture-for-CSS-(SMACSS))
+  * [Base](#Base)
+  * [Layout (l-)](#Layout-(l-))
+  * [Module](#Module)
+  * [State (is-)](#State-(is-))
+  * [Theme](#Theme)
+* [Bloco, Elemento e Modificador (BEM)](#Bloco,-Elemento-e-Modificador-(BEM))
+  * [Bloco](#Bloco)
+  * [Elemento](#Elemento)
+  * [Modificador](#Modificador)
+  * [Dicas](#Dicas)
+
 ## Links úteis
 
 ### Ferramentas
@@ -14,7 +32,7 @@
 
 ---
 
-## CSSOO (CSS orientado a objetos)
+## CSS orientado a objetos ::CSSOO::
 - Facilita manutenção de código.
 - Evita repetição de código.
 
@@ -29,7 +47,7 @@
 > - Comportamentos JavaScript, listeners ou métodos associados.
 > [(Matheus Castiglioni)](https://medium.com/trainingcenter/organizando-seu-c%C3%B3digo-css-parte-1-c0af96e4cc9f)
 
-### 1 princípio - Separação de estrutura e de visual (skin)
+### 1. princípio - Separação de estrutura e de visual (skin)
 
 > A ideia é que nós separemos as características visuais das características estruturais, tornando-os modulares de forma que possamos reutilizá-los em diferentes elementos tendo resultados iguais. [(tableless)](https://tableless.com.br/oocss-ou-css-do-jeito-certo/)
 
@@ -101,7 +119,7 @@ CSS:
 }
 ```
 
-### 2 princípio - Independência de containers e de conteúdos
+### 2. princípio - Independência de containers e de conteúdos
 
 > Essencialmente quer dizer: Raramente use estilos que dependam de localização. Idealmente, um objeto deve parecer-se igual, independentemente de onde estiver na página, ou mesmo se trocar de página.
 > [(Matheus Castiglioni)](https://medium.com/trainingcenter/organizando-seu-c%C3%B3digo-css-parte-1-c0af96e4cc9f)
@@ -112,7 +130,7 @@ Onde qualquer objeto poderá ser colocado em outro container sem ter sua aparên
 
 ---
 
-## SMACSS (Scalable and Modular Architecture for CSS)
+## Scalable and Modular Architecture for CSS (SMACSS)
 
 O conceito do SMACSS é criar 5 camadas (arquivos) CSS separados em diretórios de acordo com sua função:
 
@@ -122,7 +140,7 @@ O conceito do SMACSS é criar 5 camadas (arquivos) CSS separados em diretórios 
 - state (is-)
 - theme
 
-### base
+### Base
 Não utiliza seletores com classes ou id. 
 Geralmente são arquivos de **reset** para unificar o estilo dos navegadores, **plugins**, etc.
 
@@ -132,12 +150,12 @@ Um bom exemplo de reset:
 
 [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 
-### layout (l-)
+### Layout (l-)
 Recomenda-se utilizar IDs e classes com prefixo `l-`.
 
 Parte estrutural do projeto, elementos únicos, como **header**, **footer**, **section**, **article**, **GRID**, **flexbox**.
 
-### module
+### Module
 Componentes.
 Devem ser:
 
@@ -149,7 +167,7 @@ Exemplos: navbar, botão, formulários, cores, tipografia.
 *! evite utilizar **elementos** dentro do módulo, utilização de classes é mais recomendado, por causa da independência*
 *! não utilize IDs*
 
-### state (is-)
+### State (is-)
 Regras que gerenciam o estado dos componentes, como `hover` e `active`, por exemplo.
 
 Então utilizamos classes com o prefixo `is-`:
@@ -160,9 +178,69 @@ Exemplo:
 
 `.is-disabled`
 
-### theme 
+### Theme 
 Temas para o layout, como por exemplo, tema claro e tema escuro.
 
 Geralmente insere-se uma classe referente ao tema na tag `<body>`.
 
 ex: `<body class="theme-christmas">`
+
+---
+
+## Bloco, Elemento e Modificador (BEM)
+
+É uma metodologia para nomear classes no CSS.
+
+
+### Bloco
+
+![bem-blocos](img/bem-block.jpg)
+*[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+
+```
+.bloco {
+
+}
+```
+Os blocos são componentes independentes que possibilitam sua fácil reutilização. Por serem independentes, mesmo que você modifique sua localização dentro da página (ou utilize em outros documentos) continuarão a funcionar normalmente.
+
+Os blocos ainda poderão constituir-se de outros blocos. 
+
+### Elemento (__)
+
+![bem-element](img/bem-element.jpg)
+*[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+
+Utilizar dois _ (*underline*) para nomear 'filho' de um bloco.
+
+```
+.bloco__filho {
+
+}
+```
+
+Um elemento é o filho de um bloco, e não deve ser usado fora deste bloco.
+
+### Modificador (--)
+
+Imagine uma aba ativa: 
+
+![bem-modifier](img/bem-modifier.jpg)
+*[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+
+Utilizar dois - (*traço*) para nomear modificadores do 'filho' de um bloco.
+
+```
+.bloco__filho--modificador {
+
+}
+```
+
+### Dicas
+
+O BEM funciona bem usando o SMACSS como complemento em alguns casos...
+
+Como no caso do uso de .is-active (SMACSS) ao invés de --active (BEM).
+
+---
+

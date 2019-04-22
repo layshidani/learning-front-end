@@ -2,6 +2,7 @@
 
 - [Dicas](dicas-css.md)
 - [Arquitetura CSS: CSSOO, SMACSS, BEM](arq-css.md)
+- [Sass](sass.md)
 - [Design Responsivo - CookBook](design-reponsivo-receita.md)
 
 ## :link: Links Úteis 
@@ -24,6 +25,8 @@
 - [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 - [CSS Minifier](https://cssminifier.com/): comprime CSS
 - [Animate CSS](https://daneden.github.io/animate.css/): animações em CSS com exemplo e código (em inglês)
+- [Flexbox PlayGround](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
+- [Learn CSS Grid](https://learncssgrid.com/)
 
 **Cores**
 - [Paletton](http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF): Paleta de cores CSS

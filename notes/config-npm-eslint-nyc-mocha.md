@@ -90,15 +90,11 @@ module.exports = cpfValidator;
 # Testes com nyc e mocha
 Depois de configurar e instalar corretamente conforme explicado nas etapas abaixo, para rodar os testes digite na linha de comando:
 
-```
-nyc mocha
-```
+`nyc mocha`
 
 ou 
 
-```
-npm run test
-```
+`npm run test`
 
 o resultado será exibido no terminal.
 
@@ -212,9 +208,7 @@ Outra alternativa de testes:
 # Testes com Jest
 Depois de configurar e instalar corretamente conforme explicado nas etapas abaixo, para rodar os testes digite na linha de comando:
 
-```
-npm run test
-```
+`npm run test`
 
 ## instalar jest
 
@@ -264,8 +258,6 @@ test('CPF 00000000', () => {
 
 Para execultar o teste, digite na linha de comando:
 
-```
-npm run test
-```
+`npm run test`
 
 o resultado será exibido no terminal.

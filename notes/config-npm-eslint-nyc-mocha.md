@@ -1,33 +1,49 @@
 # Configuração npm init, eslint, testes com mocha, nyc, chai
 Requisitos: **Node** e **npm** instalados.
 
-## criar arquivo .gitignore
-inclua **node_modules** no arquivo .gitignore
-
-## iniciar npm
-`npm init`
-
-responder todas as perguntas do terminal para criar o arquivo package.json
-
 ---
 Em todas as instalações a seguir, você poderá optar por instalar globalmente ou local:
 
 * global: `npm i -g nome-do-pacote`
 * local: `npm i nome-do-pacote --save-dev` 
 
+***No caso de incluir `--save`, as regras dos pacotes já serão automaticamente instaladas no arquivo package.json.***
+
 ---
+
+## criar arquivo .gitignore
+Há 2 opções:
+
+**Manualmente:**
+inclua **node_modules** no arquivo ***.gitignore***
+
+**NPM gitignore**
+instalar pacote:
+`npm install gitignore -g` (pode ser necessário acrescentar `sudo` no início do código)
+
+listar tipos:
+`gitignore -types`
+
+Por exemplo, escolhemos o Node (para trabalhar com JS):
+
+para criar o arquivo gitignore, digite no terminal:
+`gitignore Node`
+
+---
+
+## iniciar npm
+`npm init`
+
+responder todas as perguntas do terminal para criar o arquivo package.json
+
+*é possível editar ou inserir dados no próprio arquivo package.json manualmente a qualquer momento.*
+
 ## instalar eslint (local)
 [eslint](https://www.npmjs.com/package/eslint)
 
 instalar local:
 
 `npm install eslint --save-dev`
-
-ou 
-
-instalar global:
-
-`npm i -g eslint`
 
 ### configurar eslint
 Você pode rodar o comando local:
@@ -42,9 +58,12 @@ global:
 
 Em seguida,
 
-Responder todas as perguntas na linha de comando a respeito do seu projeto, e ele irá criar automaticamente o arquivo **.eslintrc.js** para o seu projeto.
+Responder todas as perguntas na linha de comando a respeito do seu projeto, ele irá criar automaticamente o arquivo **.eslintrc.js** para o seu projeto.
+
+*se faltar alguma **rule**, é possível adicionar/editar no próprio arquivo .eslintrc.js manualmente a qualquer momento.*
 
 ### Rodar Eslint
+Sempre que quiser rodar o eslint para verificar se o projeto está de acordo com os padrões de estilo:
 
 Local: 
 
@@ -56,8 +75,14 @@ Global:
 
 `eslint seu-arquivo.js`
 
-## instalar prettier (opcional)
+## corrigir com --fix
+Alguns tipos de erro podem ser corrigidos automaticamente pelo terminal, ao rodar o eslint:
+`eslint seu-arquivo.js --fix` ou 
+`./node_modules/.bin/eslint seu-arquivo.js --fix`
 
+* nas regras (rules): 1 = warning, 2 = error
+<!-- ## instalar prettier (opcional)
+O prettier corrige seu código para os padrões do eslint configurado.
 `npm install prettier --save-dev`
 
 ### criar arquivo prettier
@@ -70,7 +95,7 @@ add configurações no arquivo:
 {
   "singleQuote": true
 }
-```
+``` -->
 ---
 ## Preparar/exportar arquivo principal para testes
 
@@ -120,17 +145,12 @@ O nyc vai mostrar a percentagem do seu código que está sendo coberta pelos tes
 
 [nyc](https://www.npmjs.com/package/nyc)
 
-instalar global:
-
-`npm i -g nyc`
-
-
 instalar local:
 
 `npm i --save-dev nyc`
 
 ## configurar seu arquivo package.json para os testes com nyc mocha
-
+* caso não tenha instalado com --save
 Inclua este trecho *("test": "nyc mocha")* no seu package.json:
 ```
 "scripts": {
@@ -138,7 +158,6 @@ Inclua este trecho *("test": "nyc mocha")* no seu package.json:
     "format": "prettier"
 },
 ```
-
 
 ### criar pasta **test** com o arquivo de teste 
 
@@ -164,8 +183,8 @@ const cpfValidator = require('../index');
 Crie os testes em seu arquivo index.spec.js:
 
 ```
-describe('nome-da-função', () => {
-  it('descrição', () => {
+describe('descrição do teste', () => {
+  it('descrição/o que você está testando..', () => {
     assert.equal(nome-da-função('valor-teste'), resultado-esperado);
   });
 });
@@ -177,24 +196,17 @@ Ex:
 ```
 // no arquivo index.spec.js
 
-const { assert } = require('chai');
-const cpfValidator = require('../index');
-
-describe('cpfValidator()', () => {
-  it('Deve retornar true para CPF válidos', () => {
-    assert.equal(cpfValidator('12345678909'), true);
+describe('Validador de CPF', () => {
+  describe('Deve retornar true para CPFs válidos:', () => {
+    it('12345678909', () => {
+      assert.equal(cpfValidator('12345678909'), true);
+    });
   });
 
-  it('Deve retornar false para CPF vazio', () => {
-    assert.equal(cpfValidator(''), false);
-  });
-
-  it('Deve retornar false para CPF com menos de 9 dígitos', () => {
-    assert.equal(cpfValidator('123456'), false);
-  });
-
-  it('Deve retornar false para CPF com 9 dígitos iguais como 00000000000', () => {
-    assert.equal(cpfValidator('000000000'), false);
+  describe('Deve retornar false para CPFs inválidos:', () => {
+    it('9 dígitos iguais como 00000000000', () => {
+      assert.equal(cpfValidator('000000000'), false);
+    });
   });
 });
 
@@ -202,6 +214,11 @@ describe('cpfValidator()', () => {
 
 * Para rodar os testes, rode o comando `npm run test` ou `nyc mocha`. O resultado dos testes aparecerá no terminal.
 
+
+*********
+## Hooks com Husky (opicional)
+
+*********
 ---
 Outra alternativa de testes:
 

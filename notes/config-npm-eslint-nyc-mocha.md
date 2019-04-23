@@ -7,7 +7,7 @@ Em todas as instalações a seguir, você poderá optar por instalar globalmente
 * global: `npm i -g nome-do-pacote`
 * local: `npm i nome-do-pacote --save-dev` 
 
-***No caso de incluir `--save`, as regras dos pacotes já serão automaticamente instaladas no arquivo package.json.***
+***No caso de incluir `--save`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json.***
 
 ---
 

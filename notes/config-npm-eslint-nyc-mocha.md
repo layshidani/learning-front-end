@@ -1,5 +1,6 @@
 # Configuração npm init, eslint, testes com mocha, nyc, chai
 Requisitos: **Node** e **npm** instalados.
+Navegue com o terminal até a pasta principal do projeto para executar as instalações locais e/ou rodar os pacotes.
 
 ---
 Em todas as instalações a seguir, você poderá optar por instalar globalmente ou local:
@@ -7,7 +8,9 @@ Em todas as instalações a seguir, você poderá optar por instalar globalmente
 * global: `npm i -g nome-do-pacote`
 * local: `npm i nome-do-pacote --save-dev` 
 
-***No caso de incluir `--save`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json.***
+***No caso de incluir `--save-dev`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json.***
+
+*salvar global (pc)/local(no próprio projeto)*
 
 ---
 
@@ -15,7 +18,9 @@ Em todas as instalações a seguir, você poderá optar por instalar globalmente
 Há 2 opções:
 
 **Manualmente:**
-inclua **node_modules** no arquivo ***.gitignore***
+criar arquivo .gitignore,
+
+depois inclua **node_modules** no arquivo ***.gitignore***
 
 **NPM gitignore**
 instalar pacote:
@@ -34,9 +39,9 @@ para criar o arquivo gitignore, digite no terminal:
 ## iniciar npm
 `npm init`
 
-responder todas as perguntas do terminal para criar o arquivo package.json
+responder todas as perguntas do terminal para que o npm crie o arquivo package.json com todas essas informações sobre o projeto.
 
-*é possível editar ou inserir dados no próprio arquivo package.json manualmente a qualquer momento.*
+*é possível editar ou inserir dados no próprio arquivo package.json manualmente depois a qualquer momento.*
 
 ## instalar eslint (local)
 [eslint](https://www.npmjs.com/package/eslint)
@@ -97,18 +102,19 @@ add configurações no arquivo:
 }
 ``` -->
 ---
-## Preparar/exportar arquivo principal para testes
+## Preparar/exportar arquivo principal
+necessário para rodar no node e fazer os testes.
 
 ### exportar a função principal (de teste) no arquivo index.js
 
 ```
-module.exports = nome-da-função;
+module.exports.nome-da-função = nome-da-função;
 ```
 
 Ex:
 
 ```
-module.exports = cpfValidator;
+module.exports.cpfValidator = cpfValidator;
 ```
 
 ---
@@ -165,12 +171,17 @@ O arquivo deverá ter o mesmo nome do arquivo principal (index) adicionado `.spe
 
 `index.spec.js`
 
+Você poderá fazer os testes com **assert** ou com **expect**:
+
+### testes com assert
+
 - No arquivo `index.spec.js` incluir o código:
 
 ```
 const { assert } = require('chai');
 const nome_da_função_que_deseja_testar = require('../nome_do_arquivo');
 ```
+*no último `require()` é o endereço do arquivo de testes até seu arquivo js principal.*
 
 Ex:
 
@@ -215,9 +226,48 @@ describe('Validador de CPF', () => {
 * Para rodar os testes, rode o comando `npm run test` ou `nyc mocha`. O resultado dos testes aparecerá no terminal.
 
 
+### testes com expect
+
+- No arquivo `index.spec.js` incluir o código:
+
+```
+const chai = require("chai");
+const expect = chai.expect;
+const nome_da_função_que_deseja_testar = require("../nome_do_arquivo")
+```
+*no `require()` é o endereço do arquivo de testes até seu arquivo js principal.*
+
+Ex:
+
+```
+let chai = require("chai");
+let expect = chai.expect;
+let Chess = require("../lib/chess-lib")
+```
+
+Agora adicione os testes com expect:
+```
+expect().to.equal();
+```
+
+ex:
+```
+describe('Chess lib', () => {
+    it('Rainha ganha de peão', () => {
+        expect(Chess.chessBattle("rainha", "peao").to.equal("rainha"))
+    });
+})
+
+```
+
+
+* Para rodar os testes, rode o comando `npm run test` ou `nyc mocha`. O resultado dos testes aparecerá no terminal.
+
+
 *********
 ## Hooks com Husky (opicional)
 
+...
 *********
 ---
 Outra alternativa de testes:

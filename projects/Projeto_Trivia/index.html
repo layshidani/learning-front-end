@@ -11,40 +11,40 @@
   </head>
   <body>
     <main id="main-doc">
-      <section id="welcome">
-        <a href="#welcome"><i id="home-button" class="fas fa-home fa-2x"></i></a>
-        <a href="#instructions"><i id="instructions-button" class="fas fa-question-circle fa-2x"></i></a>
+      <section id="welcome" class="welcome">
+        <a href="#welcome" class="home-btn"><i id="home-button" class="fas fa-home fa-2x"></i></a>
+        <a href="#instructions" class="instructions-btn"><i id="instructions-button" class="fas fa-question-circle fa-2x"></i></a>
         <h1 id="name"></h1>
         <h1>Bem-vindo (a) ao jogo de Trivia</h1>
           <p>
             <i class="fas fa-gamepad fa-2x" alt="gamepad"></i>
           </p>
         <h1>Boa Sorte!</h1>
-          <a href="#choice" rel="internal" id="start"><i class="fas fa-play-circle"></i>&ensp;Começar</a>
+          <a href="#choice" rel="internal" id="start" class="start"><i class="fas fa-play-circle"></i>&ensp;Começar</a>
       </section>
-      <section id="choice">
+      <section id="choice" class="choice">
         <h1>Escolha o seu tema</h1>
         <button id="theme1" onclick="goodChoice1()"><i class="fas fa-laptop-code"></i>&ensp;CSS</button>
         <br>
         <button id="theme2" onclick="goodChoice2()"><i class="fab fa-js-square"></i>&ensp;JavaScript</button>
       </section>
 <hr>
-      <section id="result">
+      <section id="result" class="result">
         <h1>Resultado</h1>
         <div>
           <h2><i class="fas fa-trophy"></i>&ensp;Pontuação&ensp;<i class="fas fa-trophy"></i></h2>
-          <p id="final-points-0"></p>
-          <p id="final-points-1-2"></p>
-          <p id="final-points-3"></p>
+          <p id="final-points-0" class="final-points-0"></p>
+          <p id="final-points-1-2" class="final-points-1-2"></p>
+          <p id="final-points-3" class="final-points-3"></p>
         </div>
       </section>
       <section>
-        <button id="play-again" value="Refresh Page" onClick="playAgain()">Jogar de novo! :)</button>
+        <button id="play-again" class="play-again" value="Refresh Page" onClick="playAgain()">Jogar de novo! :)</button>
       </section>
 <hr>
       <section id="answers">
         <button onclick="showAnswerTheme1()" id="buttonTheme1"><i class="far fa-question-circle"></i>&ensp;Ver respostas Tema 1 - CSS</button>
-        <div id="answers-theme-1">
+        <div id="answers-theme-1" class="answers-theme-1">
         <!--Tema 1-->
           <h2>Tema 1: CSS</h2>
           <h3>1. O que é CSS?</h3>
@@ -80,7 +80,7 @@
         </div>
         <!--Tema 2-->
         <button onclick="showAnswerTheme2()"><i class="far fa-question-circle"></i>&ensp;Ver respostas Tema 2 - Javascript</button>
-        <div id="answers-theme-2">
+        <div id="answers-theme-2" class="answers-theme-2">
           <h2>Tema 2: JavaScript</h2>
           <h3>1. Em que ano foi criado o Javascript?</h3>
             <p class="wrong-answer">
@@ -114,7 +114,7 @@
             </p>
         </div>
       </section>
-      <section id="instructions">
+      <section id="instructions" class="instructions">
         <h1><i class="fas fa-paperclip"></i>&ensp;Instruções</h1>
         <ol>
           <li>Serão 3 perguntas sobre o tema escolhido;</li>

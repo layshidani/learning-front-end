@@ -12,7 +12,7 @@
   * [Module](#Module)
   * [State (is-)](#State-(is-))
   * [Theme](#Theme)
-* [Bloco, Elemento e Modificador (BEM)](#Bloco,-Elemento-e-Modificador-(BEM))
+* [BEM](#BEM)
   * [Bloco](#Bloco)
   * [Elemento](#Elemento)
   * [Modificador](#Modificador)
@@ -187,7 +187,9 @@ ex: `<body class="theme-christmas">`
 
 ---
 
-## Bloco, Elemento e Modificador (BEM)
+## BEM
+
+**Bloco, Elemento e Modificador (BEM)**
 
 É uma metodologia para nomear classes no CSS.
 

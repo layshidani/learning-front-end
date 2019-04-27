@@ -99,6 +99,11 @@ function showAnswerTheme2() {
 
 function playAgain() {
   points = 0;
+  document.getElementById("user-points").innerHTML = `
+  <p id="final-points-0" class="final-points-0"></p>
+  <p id="final-points-1-2" class="final-points-1-2"></p>
+  <p id="final-points-3" class="final-points-3"></p>
+  `
   document.getElementById("choice").scrollIntoView();
 }
 

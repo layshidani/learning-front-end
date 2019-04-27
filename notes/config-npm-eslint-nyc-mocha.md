@@ -12,17 +12,23 @@ Em todas as instalações a seguir, você poderá optar por instalar globalmente
 
 *salvar global (pc)/local(no próprio projeto)*
 
+## Verificar se pacote está instalado ou versão instalada
+
+`npm -v nome-do-pacote`
+
 ---
 
 ## criar arquivo .gitignore
 Há 2 opções:
 
-**Manualmente:**
+1.**Manualmente:**
 criar arquivo .gitignore,
 
 depois inclua **node_modules** no arquivo ***.gitignore***
 
-**NPM gitignore**
+ou
+
+2.**NPM gitignore**
 instalar pacote:
 `npm install gitignore -g` (pode ser necessário acrescentar `sudo` no início do código)
 

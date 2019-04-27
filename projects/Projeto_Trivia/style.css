@@ -3,13 +3,16 @@
   text-align: center;
 }
 
+.color-light {
+  color: #f2f2ff;
+}
+
 .welcome {
   font-size: 1.5vw;
   text-align: center;
   width: 100%;
   height: 100vh;
   padding: 10px 0;
-  color: #f2f2ff;
   background: url(img/bground.jpg) no-repeat bottom center scroll;
   background-position: 30% 45%;
   background-size: cover;
@@ -40,7 +43,6 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #f2f2ff;
   padding: 10px;
 }
 
@@ -54,7 +56,6 @@ a:hover {
 }
 
 .instructions {
-  color: #f2f2ff;
   background-color: #09112D;
   padding: 10px;
   border-radius: 5px;
@@ -123,11 +124,7 @@ button {
   color: gray;
 }
 
-.answers-theme-1 {
-  display: none;
-}
-
-.answers-theme-2 {
+.answers-theme-1, .answers-theme-2 {
   display: none;
 }
 

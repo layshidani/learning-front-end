@@ -2,11 +2,11 @@
 
 ## :pushpin: Learning Notes
 
-* [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
-* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css)
+* [JavaScript](https://hlays.github.io/learning-front-end/tree/master/learning-js)
+* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://hlays.github.io/learning-front-end/tree/master/learning-css)
 * [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
-* [Linha de Comando](https://github.com/hlays/linha-de-comando)
-* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://github.com/hlays/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha.md)
+* [Linha de Comando](https://hlays.github.io/linha-de-comando)
+* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://hlays.github.io/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha.md)
 
 ---
 

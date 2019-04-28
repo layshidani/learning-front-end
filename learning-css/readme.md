@@ -1,17 +1,17 @@
-# :bookmark_tabs: CSS Notes 
+# CSS Notes 
 
 - [Dicas](dicas-css.md)
 - [Arquitetura CSS: CSSOO, SMACSS, BEM](arq-css.md)
 - [Sass](sass.md)
 - [Design Responsivo - CookBook](design-reponsivo-receita.md)
 
-## :link: Links Úteis 
+## Links Úteis 
 
 ### Fontes de referência 
 - [W3Schools](https://www.w3schools.com/cssref/default.asp) THE WORLD'S LARGEST WEB DEVELOPER SITE
 - [CSS Tricks](https://css-tricks.com/): Enciclopédia CSS (em inglês)
 
-### :computer: Artigos
+### Artigos
 
 - [OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?](https://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/)
 - [Organize seu CSS com SMACSS, BEM e SASS](https://medium.com/@larymagal/organize-seu-css-com-smacss-bem-e-sass-7e8f50a41544)
@@ -19,7 +19,7 @@
 - [A Complete Guide to Grid - CSS TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 
-### :hammer_and_wrench: Ferramentas 
+### Ferramentas 
 
 - [Specificity Calculator](http://specificity.keegan.st/)
 - [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)

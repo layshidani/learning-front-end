@@ -2,11 +2,13 @@
 
 ## :pushpin: Learning Notes
 
-* [JavaScript](https://hlays.github.io/learning-front-end/tree/master/learning-js)
-* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://hlays.github.io/learning-front-end/tree/master/learning-css)
+* [JavaScript](https://hlays.github.io/learning-front-end/learning-js)
+* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://hlays.github.io/learning-front-end/learning-css)
 * [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
 * [Linha de Comando](https://hlays.github.io/linha-de-comando)
-* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://hlays.github.io/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha.md)
+* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://hlays.github.io/learning-front-end/notes/config-npm-eslint-nyc-mocha.md)
+* [Módulos - WebPack](https://hlays.github.io/learning-front-end/notes/module-webpack.md)
+* [Import e Export - es6](https://hlays.github.io/learning-front-end/notes/import-e-export-es6.md)
 
 ---
 

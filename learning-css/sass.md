@@ -42,8 +42,36 @@ Para verificar a versão instalada, ou se já tem instalada:
 
 `sass -v`
 
-## watch ?em-construção
-http://sassbreak.com/watch-your-sass/
+## Watch - automatizar mudanças
+
+> O comando --watch diz literalmente ao Sass para observar seu projeto em busca de mudanças. É o que converte seus arquivos Sass em CSS e auto-compila seu Sass toda vez que ele muda. --[Sobre o comando *watch*](http://sassbreak.com/watch-your-sass/)
+
+Sintaxe:
+```
+sass --watch nome-do-arquivo-sass.scss:nome-do-arquivo-css.css
+```
+
+Global:
+
+```
+sass --watch scss:css
+
+ou 
+
+sass --watch .
+
+```
+
+Exemplo:
+
+```
+sass --watch style.scss:style.css
+```
+
+Exemplo com pastas:
+```
+sass --watch scss/style.scss:css/style.css
+```
 
 ## Aninhamento
 
@@ -239,10 +267,11 @@ Resultado da compilação:
 
 O exemplo acima, poderia ter mais de um parâmetro e valores padrões, como em funções JS.
 
+<!-- ## ?em-construção % -->
+
 ## Extender estilo de outra classe - Herança (@extend)
 Podemos reaproveitar/herdar o estilo de outra classe utilizando o `@extend`.
 
-## ?em-construção %
 
 Ex: Suponhamos que queremos que queremos aplicar o estilo da classe `example` à classe `example-important` e acrescentar a cor vermelha à fonte:
 

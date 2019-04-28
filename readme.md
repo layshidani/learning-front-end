@@ -1,6 +1,6 @@
-# :books: Learning Front-End
+# Learning Front-End
 
-## :pushpin: Learning Notes
+## Learning Notes
 
 * [JavaScript](https://hlays.github.io/learning-front-end/learning-js)
 * [Configuração npm init, eslint, testes com mocha, chai, nyc](https://hlays.github.io/learning-front-end/notes/config-npm-eslint-nyc-mocha/)
@@ -11,8 +11,12 @@
 * [Linha de Comando](https://hlays.github.io/linha-de-comando/)
 
 ---
+## Learning Tracker
+* [Learning Tracker](https://hlays.github.io/learning-tracker/)
 
-## :pushpin: Projetos
+---
+
+## Projetos
 Projetos desenvolvidos para aprendizado.
 
 /-------------------------------------------------------------------------\
@@ -70,6 +74,6 @@ Projetos desenvolvidos para aprendizado.
 
 ---
 
-## :round_pushpin: 100DaysOfCode
+## 100DaysOfCode
 
 I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/My-100-days-of-Code/blob/master/r1-log.md).

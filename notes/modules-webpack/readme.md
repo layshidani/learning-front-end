@@ -94,22 +94,23 @@ ex:
 "scripts": {
     "build": "./node_modules/.bin/webpack",
     "watch": "npm run build -- --watch",
-    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
-  },
+  }
 ```
 
 Para rodar: `npm run build`
 
-Também é possível adicionar comandos como `--colors` e `progress`:
+Também é possível adicionar comandos como `--watch`,`--colors` e `progress`:
 
 ?emconstrução
+
+* `--watch`: este comando habilita o webpack para ficar 'assistindo' (watching) as mudanças que você faz nos seus arquivos e faz a recompilação automaticamente.
+
 
 ```
 "scripts": {
     "build": "./node_modules/.bin/webpack --colors --progress",
     "watch": "npm run build -- --watch",
-    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
-  },
+  }
 ```
 
 ## Uglify com UglifyJS
@@ -147,3 +148,20 @@ module.exports = {
   ]
 }
 ```
+
+## Criar um server com webpack
+Instale o dev server:
+
+`npm i --save-dev webpack-dev-server`
+
+Como vimos antes, para facilitar a vida, adicione um alias na parte de scripts do seu *package.json*:
+
+```
+"scripts": {
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open" // add um alias
+  }
+```
+
+depois basta digitar o comando no terminal:
+
+`npm run server`

@@ -6,11 +6,17 @@ Navegue com o terminal até a pasta principal do projeto para executar as instal
 Em todas as instalações a seguir, você poderá optar por instalar globalmente ou local:
 
 * global: `npm i -g nome-do-pacote`
-* local: `npm i nome-do-pacote --save-dev` 
+* local: `npm i nome-do-pacote --save-dev  // ou --save` 
 
-***No caso de incluir `--save-dev`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json.***
+  Onde:
+  * `--save-dev`: é usado para salvar o pacote para fins de desenvolvimento. Exemplo: testes unitários, minificação
+  * `--save`: é usado para salvar o pacote necessário para o aplicativo ser executado.
+
+***No caso de incluir `--save-dev` ou `--save`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json em devDependencies (--save-dev) e Dependencies (--save).***
 
 *salvar global (pc)/local(no próprio projeto)*
+
+?emconstrução add npm i | --production
 
 ## Verificar se pacote está instalado ou versão instalada
 
@@ -89,7 +95,7 @@ Local:
 `./node_modules/.bin/eslint seu-arquivo.js`
 
 #### Alias para rodar Eslint local
-Ao invés de ter que digitar o comando `./node_modules/.bin/eslint seu-arquivo.js` toda vez que quiser rodar o eslint, é possível gravas um *alias*. Basta incluir o comando em **scripts** em seu arquivo package.json:
+Ao invés de ter que digitar o comando `./node_modules/.bin/eslint seu-arquivo.js` toda vez que quiser rodar o eslint, é possível gravas um *alias*. Basta incluir o comando em **scripts** em seu arquivo package.json: `"alias": instrução` 
 
 ```
 "scripts": {

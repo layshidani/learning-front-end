@@ -12,7 +12,7 @@
 
 ---
 ## Learning Tracker
-* [Learning Tracker](https://hlays.github.io/learning-track/)
+* [Learning Tracker](https://hlays.github.io/learning-tracker/)
 
 ---
 

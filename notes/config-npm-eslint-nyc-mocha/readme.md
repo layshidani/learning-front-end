@@ -76,15 +76,41 @@ Responder todas as perguntas na linha de comando a respeito do seu projeto, ele 
 ### Rodar Eslint
 Sempre que quiser rodar o eslint para verificar se o projeto está de acordo com os padrões de estilo:
 
+Global:
+
+`eslint seu-arquivo.js`
+
+ou 
+
 Local: 
 
 `./node_modules/.bin/eslint seu-arquivo.js`
 
-ou 
+#### Alias para rodar Eslint local
+Ao invés de ter que digitar o comando `./node_modules/.bin/eslint seu-arquivo.js` toda vez que quiser rodar o eslint, é possível gravas um *alias*. Basta incluir o comando em **scripts** em seu arquivo package.json:
 
-Global:
+```
+"scripts": {
+    "alias": "./node_modules/.bin/eslint nome-do-seu-arquivo.js" // inclua aqui
+  },
+```
 
-`eslint seu-arquivo.js`
+Exemplo:
+
+```
+"scripts": {
+    "test": "nyc mocha",
+    "format": "prettier",
+    "eslint": "./node_modules/.bin/eslint index.js" // inclua aqui
+  },
+```
+
+Depois, sempre que quiser rodar o eslint, basta chamar pelo alias:
+
+ex:
+
+`npm run eslint`
+
 
 ## corrigir com --fix
 Alguns tipos de erro podem ser corrigidos automaticamente pelo terminal, ao rodar o eslint:

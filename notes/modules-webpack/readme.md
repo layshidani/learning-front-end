@@ -125,7 +125,6 @@ plugins: [
       compress: { warnings: false },
       // retirar comentários
       output: { comments: false },
-      sourceMap: true
     })
   ]
 ```

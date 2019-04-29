@@ -128,3 +128,22 @@ plugins: [
     })
   ]
 ```
+
+## Adicionar SourceMap 
+Depois que minificamos nosso código, fica bem difícil encontrar onde exatamente estão os erros quando eles surgirem, para facilitar esse processo na hora de debugar nosso código, podemos adicionar os *sourcemaps* ao nosso **package.json**.
+
+```
+module.exports = {
+  devtool: 'source-map', // add devtool: 'source-map'
+  //...
+  // ...
+
+  plugins: [
+  new webpack.optimize.UglifyJsPlugin({
+    compress: { warnings: false },
+    output: { comments: false },
+    sourceMap: true // add sourceMap: true
+    })
+  ]
+}
+```

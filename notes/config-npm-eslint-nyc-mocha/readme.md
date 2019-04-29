@@ -47,6 +47,8 @@ para criar o arquivo gitignore, digite no terminal:
 
 responder todas as perguntas do terminal para que o npm crie o arquivo package.json com todas essas informações sobre o projeto.
 
+*caso queira pular essas perguntas e criar um arquivo package.json e configurar depois, inclua `-y` ao rodar o comando acima:* `npm init -y`
+
 *é possível editar ou inserir dados no próprio arquivo package.json manualmente depois a qualquer momento.*
 
 ## instalar eslint (local)

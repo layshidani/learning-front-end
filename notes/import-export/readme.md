@@ -48,7 +48,7 @@ Há duas formas:
 
 Observações:
 * pode exportar várias funções
-* é obrigatório importar utilizando o mesmo nome do método exportado e utilizando {}
+* é obrigatório importar utilizando o mesmo nome do método exportado e utilizando {}, pois trata-se de um objeto.
 
 *direta*
 

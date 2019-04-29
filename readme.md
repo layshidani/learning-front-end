@@ -10,6 +10,9 @@
 * [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
 * [Linha de Comando](https://hlays.github.io/linha-de-comando/)
 
+
+## Links Collection
+* [Links Collection](https://hlays.github.io/learning-front-end/notes/links/)
 ---
 ## Learning Tracker
 * [Learning Tracker](https://hlays.github.io/learning-tracker/)

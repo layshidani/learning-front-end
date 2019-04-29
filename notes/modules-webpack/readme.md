@@ -8,6 +8,12 @@
 
 > O Webpack é um bundler de módulo JavaScript de código aberto. Seu principal objetivo é agrupar arquivos JavaScript para uso em um navegador, mas também é capaz de transformar, empacotar ou empacotar qualquer recurso ou ativo. --[Wikipedia](https://en.wikipedia.org/wiki/Webpack)
 
+Você irá codar no seu arquivo js normalmente, e o webpack irá fazer todo o trabalho de compilar o código (empacotar, minificar, etc).
+
+Então, o arquivo que linkamos ao html é o arquivo já compilado.
+
+Assim, você coda normalmente, e o webpack compila e trata os códigos como devem (o projeto vai trabalhar com o código já compilado).
+
 ## Instalar webpack e o babel
 
 `npm install --save-dev webpack babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 webpack-dev-server html-webpack-plugin`
@@ -20,10 +26,43 @@ onde:
 > * O hot reloading mantém a sua aplicação rodando e injeta a uma nova versão do aquivo editado em tempo de execução. Desta forma você não perde o estado da sua aplicação.
 > * html-webpack-plugin: injeta o bandle gerado pelo webpack em nosso index.html [criciumadev](https://medium.com/criciumadev/configurando-webpack-es6-7-e5368e4e33c)
 
+
 ## Criar o arquivo *webpack.config.js*
 [Documentação completa](https://webpack.js.org/configuration/)
 
 Criar o arquivo *webpack.config.js* na pasta de trabalho. E inserir as configurações necessárias.
+
+onde:
+
+* entry: é o arquivo de entrada, ou seja, o arquivo que deverá ser compilado.
+  ```
+  module.exports = {
+  // arquivo de entrada 
+    entry: {
+      filename: 'nome-do-arquivo.js',
+    },
+    // ...
+  }
+  ```
+* output: é o arquivo de saída, ou seja, o resultado da compilação.
+  em output você pode inserir apenas o nome do arquivo:
+  ```
+  module.exports = {
+    // ...
+    output: {
+      filename: 'nome-do-arquivo.js'
+    },
+    // ...
+  }
+  ```
+  ou inserir também o caminho:
+  ```
+  output: {
+    filename: 'nome-do-arquivo.js',
+    path: path.resolve(__dirname, 'nome-da-pasta')
+  }
+  ```
+
 
 Ex:
 ```
@@ -61,7 +100,10 @@ module.exports = {
 ```
 
 ## Importar e exportar 
-[Import and export es6]()
+
+ver:
+
+[Import and export es6](https://hlays.github.io/learning-front-end/notes/import-export/)
 
 ## Rodar Webpack
 Quando rodar o webpack, todo o código que está no arquivo (entry) especificado no ***webpack.config.js*** será 

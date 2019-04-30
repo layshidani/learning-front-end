@@ -4,7 +4,9 @@ Cursos, materiais, artigos.
 <!-- badges -->
 [artigo]: https://img.shields.io/badge/-artigo-brightgreen.svg
 [curso]: https://img.shields.io/badge/-curso-blue.svg
+[cheat]: https://img.shields.io/badge/-cheat--sheet-yellow.svg
 [github]: https://img.shields.io/badge/-github-lightgrey.svg
+[livro]: https://img.shields.io/badge/-livro-blueviolet.svg
 [video]: https://img.shields.io/badge/-v%C3%ADdeo-red.svg
 <!-- --- -->
 
@@ -19,4 +21,13 @@ Cursos, materiais, artigos.
 
 # Node
 
-* ![video] [Node Crash Course - Traversy Media](https://www.youtube.com/watch?v=fBNz5xF-Kx4&list=WL&index=98&t=2222s)
+* ![video] [Node.js Tutorial for Beginners: Learn Node in 1 Hour | Mosh](https://youtu.be/TlB_eWDSMt4)
+* ![video] [Node Crash Course - Traversy Media](https://youtu.be/fBNz5xF-Kx4)
+
+# TypeScript
+[TypeScript Tutorial for Angular and React Developers | Mosh](https://www.youtube.com/playlist?list=PLTjRvDozrdlxJjrQ4phZAUmiRn-HbK3M_)
+
+# Markdown
+![cheat] [Markdown Guide cheat-sheet](https://www.markdownguide.org/cheat-sheet/)
+
+![livro] [Markdown Guide book](https://www.markdownguide.org/book)

@@ -2,17 +2,17 @@
 
 ## Learning Notes
 
-* [JavaScript](https://hlays.github.io/learning-front-end/learning-js)
-* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://hlays.github.io/learning-front-end/notes/config-npm-eslint-nyc-mocha/)
-* [Módulos - WebPack](https://hlays.github.io/learning-front-end/notes/modules-webpack/)
-* [Import e Export - es6](https://hlays.github.io/learning-front-end/notes/import-export/)
-* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://hlays.github.io/learning-front-end/learning-css/)
+* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://github.com/hlays/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha/)
+* [Módulos - WebPack](https://github.com/hlays/learning-front-end/tree/master/notes/modules-webpack/)
+* [Import e Export - es6](https://github.com/hlays/learning-front-end/tree/master/notes/import-export/)
+* [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
+* [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css/)
 * [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
-* [Linha de Comando](https://hlays.github.io/linha-de-comando/)
+* [Linha de Comando](https://github.com/hlays/linha-de-comando/)
 
 
 ## Links Collection
-* [Links Collection](https://hlays.github.io/learning-front-end/notes/links/)
+* [Links Collection](https://github.com/hlays/learning-front-end/tree/master/notes/links)
 
 ## Learning Tracker
 * [Learning Tracker](https://hlays.github.io/learning-tracker/)

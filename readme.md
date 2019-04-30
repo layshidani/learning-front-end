@@ -13,11 +13,11 @@
 
 ## Links Collection
 * [Links Collection](https://hlays.github.io/learning-front-end/notes/links/)
----
+
 ## Learning Tracker
 * [Learning Tracker](https://hlays.github.io/learning-tracker/)
 
----
+
 
 ## Projetos
 Projetos desenvolvidos para aprendizado.

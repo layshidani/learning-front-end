@@ -2,13 +2,15 @@
 
 ## Learning Notes
 
-* [Configuração npm init, eslint, testes com mocha, chai, nyc](https://github.com/hlays/learning-front-end/tree/master/notes/config-npm-eslint-nyc-mocha/)
+* [Linha de Comando](https://github.com/hlays/linha-de-comando/)
+* [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
 * [Módulos - WebPack](https://github.com/hlays/learning-front-end/tree/master/notes/modules-webpack/)
 * [Import e Export - es6](https://github.com/hlays/learning-front-end/tree/master/notes/import-export/)
 * [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
 * [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css/)
-* [Git e GitHub](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
-* [Linha de Comando](https://github.com/hlays/linha-de-comando/)
+* [Biblioteca JS configuração: npm init, eslint, testes com mocha, nyc, chai, publicação no npm](https://github.com/hlays/learning-front-end/tree/master/notes/lib-js-config/)
+* [Testes](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/)
+  * [Testes Instalações](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/testes-instalacoes/)
 
 
 ## Links Collection

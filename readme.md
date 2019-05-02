@@ -9,8 +9,8 @@
 * [JavaScript](https://github.com/hlays/learning-front-end/tree/master/learning-js)
 * [CSS - Dicas, Arquitetura, SASS, Design Responsivo](https://github.com/hlays/learning-front-end/tree/master/learning-css/)
 * [Biblioteca JS configuração: npm init, eslint, testes com mocha, nyc, chai, publicação no npm](https://github.com/hlays/learning-front-end/tree/master/notes/lib-js-config/)
-* [Testes](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/)
-  * [Testes Instalações](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/testes-instalacoes/)
+* [Testes com mocha, chai e nyc](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/)
+  * [Testes Instalações Pacotes necessários](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/testes-instalacoes.md/)
 
 
 ## Links Collection

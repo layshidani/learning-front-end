@@ -310,7 +310,15 @@ describe('Chess lib', () => {
 ...
 *********
 ---
-Outra alternativa de testes:
+# Publicar a lib
+
+Quando todo o código estiver completo e funcionando adequadamente, podemos publicar a lib no npm. Certifique-se de ter se cadastrado corretamente no [site](https://www.npmjs.com/).
+
+## Configurar usuário do npm no projeto:
+
+`npm adduser`
+
+<!-- Outra alternativa de testes:
 
 # Testes com Jest
 Depois de configurar e instalar corretamente conforme explicado nas etapas abaixo, para rodar os testes digite na linha de comando:
@@ -367,4 +375,4 @@ Para execultar o teste, digite na linha de comando:
 
 `npm run test`
 
-o resultado será exibido no terminal.
+o resultado será exibido no terminal. -->

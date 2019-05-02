@@ -1,28 +1,28 @@
-# Configuração npm init, eslint, testes com mocha, nyc, chai
+# Biblioteca JS configuração: npm init, eslint, testes com mocha, nyc, chai, publicação no npm
 Requisitos: **Node** e **npm** instalados.
 Navegue com o terminal até a pasta principal do projeto para executar as instalações locais e/ou rodar os pacotes.
 
 ---
-Em todas as instalações a seguir, você poderá optar por instalar globalmente ou local:
+Em todas as instalações a seguir, você poderá optar por instalar globalmente e local, ou somente local:
 
 * global: `npm i -g nome-do-pacote`
 * local: `npm i nome-do-pacote --save-dev  // ou --save` 
 
   Onde:
-  * `--save-dev`: é usado para salvar o pacote para fins de desenvolvimento. Exemplo: testes unitários, minificação
+  * `--save-dev`: é usado para salvar o pacote para fins de desenvolvimento. Exemplo: testes unitários,minificação
   * `--save`: é usado para salvar o pacote necessário para o aplicativo ser executado.
 
 ***No caso de incluir `--save-dev` ou `--save`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json em devDependencies (--save-dev) e Dependencies (--save).***
 
 *salvar global (pc)/local(no próprio projeto)*
 
-?emconstrução add npm i | --production
+<!-- ?emconstrução add npm i | --production -->
 
 ## Verificar se pacote está instalado ou versão instalada
 
 `npm -v nome-do-pacote`
 
----
+
 
 ## criar arquivo .gitignore
 Há 2 opções:
@@ -46,7 +46,7 @@ Por exemplo, escolhemos o Node (para trabalhar com JS):
 para criar o arquivo gitignore, digite no terminal:
 `gitignore Node`
 
----
+
 
 ## iniciar npm
 `npm init`
@@ -69,12 +69,6 @@ Você pode rodar o comando local:
 
 `./node_modules/eslint/bin/eslint.js --init `
 
-ou 
-
-global: 
-
-`eslint --init`
-
 Em seguida,
 
 Responder todas as perguntas na linha de comando a respeito do seu projeto, ele irá criar automaticamente o arquivo **.eslintrc.js** para o seu projeto.
@@ -95,7 +89,7 @@ Local:
 `./node_modules/.bin/eslint seu-arquivo.js`
 
 #### Alias para rodar Eslint local
-Ao invés de ter que digitar o comando `./node_modules/.bin/eslint seu-arquivo.js` toda vez que quiser rodar o eslint, é possível gravas um *alias*. Basta incluir o comando em **scripts** em seu arquivo package.json: `"alias": instrução` 
+Ao invés de ter que digitar o comando `./node_modules/.bin/eslint seu-arquivo.js` toda vez que quiser rodar o eslint, é possível gravar um *alias*. Basta incluir o comando em **scripts** em seu arquivo package.json: `"alias": instrução` 
 
 ```
 "scripts": {
@@ -141,11 +135,11 @@ add configurações no arquivo:
   "singleQuote": true
 }
 ``` -->
----
-## Preparar/exportar arquivo principal
+
+## Preparar/exportar arquivo
 necessário para rodar no node e fazer os testes.
 
-### exportar a função principal (de teste) no arquivo index.js
+### exportar as funções (de teste) no arquivo index.js
 
 ```
 module.exports.nome-da-função = nome-da-função;
@@ -157,7 +151,7 @@ Ex:
 module.exports.cpfValidator = cpfValidator;
 ```
 
----
+
 # Testes com nyc e mocha
 Depois de configurar e instalar corretamente conforme explicado nas etapas abaixo, para rodar os testes digite na linha de comando:
 
@@ -172,21 +166,20 @@ o resultado será exibido no terminal.
 ## instalar mocha
 [mocha](https://www.npmjs.com/package/mocha)
 
-instalar global:
-
-`npm i -g mocha`
 
 instalar local:
 
 `npm i --save-dev mocha`
 
 ## instalar chai
-`npm i -g chai`
-
 > Chai is an assertion library, similar to Node's built-in assert. It makes testing much easier by giving you lots of assertions you can run against your code. [Chai](https://www.chaijs.com/)
 
+Para instalar:
 
-## instalar nyc
+`npm i --save-dev chai`
+
+
+## instalar nyc (teste de cobertura)
 O nyc vai mostrar a percentagem do seu código que está sendo coberta pelos testes que você desenvolveu.
 
 [nyc](https://www.npmjs.com/package/nyc)
@@ -195,8 +188,11 @@ instalar local:
 
 `npm i --save-dev nyc`
 
-## configurar seu arquivo package.json para os testes com nyc mocha
-* caso não tenha instalado com --save
+## Criar alias no arquivo package.json para os testes com nyc mocha
+Da mesma forma como fizemos com o eslint, também pode ser criado um alias para o teste:
+
+exemplo:
+
 Inclua este trecho *("test": "nyc mocha")* no seu package.json:
 ```
 "scripts": {
@@ -205,17 +201,20 @@ Inclua este trecho *("test": "nyc mocha")* no seu package.json:
 },
 ```
 
-### criar pasta **test** com o arquivo de teste 
+### criar pasta **tests** com o arquivo de teste 
 
-O arquivo deverá ter o mesmo nome do arquivo principal (index) adicionado `.spec.js`:
+O arquivo deverá ter a extensão: `.spec.js`.
+
+exemplo:
 
 `index.spec.js`
 
-Você poderá fazer os testes com **assert** ou com **expect**:
+Você poderá fazer os testes com **should**, **assert** ou com **expect**:
 
 ### testes com assert
+Temos que importar as funções que desejamos testar. 
 
-- No arquivo `index.spec.js` incluir o código:
+No arquivo de testes (ex `index.spec.js`) incluir o código:
 
 ```
 const { assert } = require('chai');
@@ -304,19 +303,48 @@ describe('Chess lib', () => {
 * Para rodar os testes, rode o comando `npm run test` ou `nyc mocha`. O resultado dos testes aparecerá no terminal.
 
 
-*********
+<!-- *********
 ## Hooks com Husky (opicional)
 
 ...
-*********
----
+********* -->
+
 # Publicar a lib
 
 Quando todo o código estiver completo e funcionando adequadamente, podemos publicar a lib no npm. Certifique-se de ter se cadastrado corretamente no [site](https://www.npmjs.com/).
 
+## Git e Github
+
+* o Projeto estando revisado e todo completo, faça o commit de tudo
+* (recomendado) adicione uma tag de versão com: `git tag versão` (ex: `git tag v1.0.0`)
+* faça push
+
 ## Configurar usuário do npm no projeto:
 
 `npm adduser`
+
+## Publicar
+
+`npm publish`
+
+* A biblioteca precisa ter um nome único (sem camelcase, pode usar hífen)
+
+Agora sua biblioteca está pronta e publicada no npm.
+
+## Novas versões
+Sempre que houverem alterações no código (até mesmo no readme), você terá que:
+
+* modificar a versão no arquivo **package.json**
+* fazer todos os passos de commitar, inserir tag, fazer push 
+* publicar novamente.
+
+## Sobre versões
+
+* Patch (v1.0.x): correção pequena, bug resolvido, etc
+* Minor (v1.x.0): implementação de feature menor/secundária
+* Major (vx.0.0): implementação de feature importante
+
+
 
 <!-- Outra alternativa de testes:
 

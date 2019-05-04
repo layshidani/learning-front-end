@@ -1,0 +1,15 @@
+{
+  "name": "projeto_trivia",
+  "version": "1.0.0",
+  "description": "Jogo de perguntas e respostas sobre JavaScript e CSS",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lays M. Hidani",
+  "license": "ISC"
+}

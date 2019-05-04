@@ -1,7 +1,14 @@
 # Testes com mocha, chai e nyc
 Confira neste [link](https://github.com/hlays/learning-front-end/tree/master/notes/testes-tdd/testes-instalacoes.md/) como instalar as bibliotecas necessárias e preparar os arquivos.
 
-## Resultado dos testes de cobertura
+# Mocha
+> O Mocha é uma estrutura de teste JavaScript rica em recursos em execução no Node.js e no navegador, tornando os testes assíncronos simples e divertidos. --[Mocha](https://mochajs.org/)
+
+[Getting Started](https://mochajs.org/#getting-started)
+
+
+
+## Nyc: Resultado dos testes de cobertura 
 > * **Stmts (statements)**: Cada declaração do programa foi executada?
 > * **Branch**: Cada ramificação (também chamada de DD-path) de cada estrutura de controle (como em if e case statements) foi executada? Por exemplo, dada uma instrução if, os dois ramos true e false foram executados? Outra maneira de dizer isso é que todas as arestas do programa foram executadas?
 > * **Funcs (Functions)**: Cada função (ou sub-rotina) do programa foi chamada?

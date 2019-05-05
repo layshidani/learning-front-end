@@ -8,11 +8,15 @@
 
 Por exemplo:
 
-`.container #box p`
+```css
+.container #box p
+```
 
 Poderia ser substituído por:
 
-`#box p`
+```css
+#box p
+```
 
 Pois a class `.container` é desnecessária neste caso.
 

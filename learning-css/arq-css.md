@@ -57,7 +57,7 @@ Neste exemplo abaixo, há muito código repetido desnecessáriamente, observa-se
 Ex:
 
 HTML:
-```
+```html
 <div class="green-circle"></div>
 <div class="yellow-circle"></div>
 <div class="blue-circle"></div>
@@ -65,7 +65,7 @@ HTML:
 
 CSS:
 
-```
+```css
 .green-circle {
   width: 100px;
   height: 100px;
@@ -91,7 +91,7 @@ CSS:
 Assim, podemos criar uma nova classe para centralizar esse estilo estrutural em comum, mantendo o estilo visual, no caso o `background-color` idependente para cada um deles:
 
 HTML:
-```
+```html
 <div class="circle green-circle"></div>
 <div class="circle yellow-circle"></div>
 <div class="circle blue-circle"></div>
@@ -99,7 +99,7 @@ HTML:
 
 CSS:
 
-```
+```css
 .circle {
   width: 100px;
   height: 100px;
@@ -174,16 +174,23 @@ Então utilizamos classes com o prefixo `is-`:
 
 Exemplo: 
 
-`.is-active`
+```css
+.is-active
 
-`.is-disabled`
+
+.is-disabled
+```
+
 
 ### Theme 
 Temas para o layout, como por exemplo, tema claro e tema escuro.
 
 Geralmente insere-se uma classe referente ao tema na tag `<body>`.
 
-ex: `<body class="theme-christmas">`
+ex: 
+```html
+<body class="theme-christmas">
+```
 
 ---
 
@@ -199,7 +206,7 @@ ex: `<body class="theme-christmas">`
 ![bem-blocos](img/bem-block.jpg)
 *[Img from smashmagazine](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
 
-```
+```css
 .bloco {
 
 }
@@ -215,7 +222,7 @@ Os blocos ainda poderão constituir-se de outros blocos.
 
 Utilizar dois _ (*underline*) para nomear 'filho' de um bloco.
 
-```
+```css
 .bloco__filho {
 
 }
@@ -232,7 +239,7 @@ Imagine uma aba ativa:
 
 Utilizar dois - (*traço*) para nomear modificadores do 'filho' de um bloco.
 
-```
+```css
 .bloco__filho--modificador {
 
 }

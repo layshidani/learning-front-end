@@ -46,37 +46,35 @@ Para verificar a versão instalada, ou se já tem instalada:
 
 > O comando --watch diz literalmente ao Sass para observar seu projeto em busca de mudanças. É o que converte seus arquivos Sass em CSS e auto-compila seu Sass toda vez que ele muda. --[Sobre o comando *watch*](http://sassbreak.com/watch-your-sass/)
 
-Sintaxe:
-```
+```bash
 sass --watch nome-do-arquivo-sass.scss:nome-do-arquivo-css.css
 ```
 
 Global:
 
-```
+```bash
 sass --watch scss:css
-
+```
 ou 
-
+```bash
 sass --watch .
-
 ```
 
 Exemplo:
 
-```
+```bash
 sass --watch style.scss:style.css
 ```
 
 Exemplo com pastas:
-```
+```bash
 sass --watch scss/style.scss:css/style.css
 ```
 
 ## Aninhamento
 
-```  
-// Aninhamento:
+```sass
+/* Aninhamento: */
 .navbar {
   ul {
     list-style: none;
@@ -88,7 +86,7 @@ sass --watch scss/style.scss:css/style.css
 ``` 
 
 É o mesmo que:
-```
+```css
 .navbar ul {
   list-style: none;
 }
@@ -101,11 +99,11 @@ sass --watch scss/style.scss:css/style.css
 
 **Exemplo 1:**
 
-```
+```sass
 a {
   text-decoration: none;
     
-// & referência à ascendente
+/* & referência à ascendente */
   &:hover {
     color: purple;
   }
@@ -113,7 +111,7 @@ a {
 ```
 
 Resultado da compilação:
-```
+```css
 a {
   text-decoration: none;
 }
@@ -124,7 +122,7 @@ a:hover {
 
 **Exemplo 2:**
 
-```
+```sass
 .seletor {
   color: blue;
   
@@ -135,7 +133,7 @@ a:hover {
 ```
 
 Resultado da compilação:
-```
+```css
 .seletor {
   color: blue;
 }
@@ -145,7 +143,7 @@ Resultado da compilação:
 ```
 
 **Funciona com BEM:**
-```
+```sass
 .seletor {
   color: blue;
   
@@ -157,7 +155,7 @@ Resultado da compilação:
 
 Resultado da compilação:
 
-```
+```css
 .seletor {
   color: blue;
 }
@@ -168,7 +166,7 @@ Resultado da compilação:
 
 ### Fazer aninhamento, porém com compilação na raíz (@at-root)
 
-```
+```sass
 div {
   background-color: blue;
   
@@ -181,7 +179,7 @@ div {
 ```
 
 Resultado da compilação:
-```
+```css
 div {
   background-color: blue;
 }
@@ -194,7 +192,7 @@ h1 {
 A mudança no valor altera automaticamente o valor onde foram atribuídas as variáveis:
 
 Exemplo
-```
+```sass
 $circle: 50%;
 $default-color: blue;
 
@@ -208,7 +206,7 @@ div {
 
 Resultado da compilação:
 
-```
+```css
 div {
   border-radius: 50%;
   color: blue;
@@ -218,7 +216,7 @@ div {
 ## Operadores
 Podemos usar operadores para fazer operações matemáticas:
 
-```
+```sass
 + 
 -
 *
@@ -229,7 +227,7 @@ Podemos usar operadores para fazer operações matemáticas:
 ## Mixins (@mixin e @include)
 Ex 1:
 
-```
+```sass
 @mixin bar {
   color: #000000;
 }
@@ -240,7 +238,7 @@ Ex 1:
 ```
 
 Resultado da compilação:
-```
+```css
 .foo {
   color: #000000;
 }
@@ -248,7 +246,7 @@ Resultado da compilação:
 
 Ex 2:
 
-```
+```sass
 @mixin bar($color) {
   color: $color;
 }
@@ -259,7 +257,7 @@ Ex 2:
 ```
 
 Resultado da compilação:
-```
+```css
 .foo {
   color: #FFFFFF;
 }
@@ -277,7 +275,7 @@ Ex: Suponhamos que queremos que queremos aplicar o estilo da classe `example` à
 
 Basta acrescentar `@extend` + os estilos que deseja aplicar à classe:
 
-```
+```css
 .example {
   font-family: Helvetica;
   border: 1px solid black;
@@ -300,7 +298,7 @@ Assim como no JavaScript, também podemos trabalhar com condições e loops no C
 
 Exemplo do [FreeCodeCamp](freecodecamp.org) utilizando **mixins**:
 
-```
+```html
 <style type='text/sass'>
   
   @mixin border-stroke($val) {
@@ -339,7 +337,7 @@ Exemplo:
 Vamos atribuir font-size às classes abaixo, começando em 2px e dobrando o valor até a última classe.
 
 HTML:
-```
+```html
 <p class="text-1">Olá</p>
 <p class="text-2">Olá</p>
 <p class="text-3">Olá</p>
@@ -347,8 +345,8 @@ HTML:
 <p class="text-5">Olá</p>
 ```
 
-CSS:
-```
+sass:
+```sass
 @for $i from 1 through 5 {
   .text-#{$i} {
     font-size: $i * 2px;
@@ -357,7 +355,7 @@ CSS:
 ```
 
 Resultado:
-```
+```css
 .text-1 {
   font-size: 2px;
 }
@@ -388,14 +386,14 @@ Exemplo:
 Queremos atribuir a cor da fonte correspondente a cada classe:
 
 HTML
-```
+```html
 <p class="green-text"></p>
 <p class="yellow-text"></p>
 <p class="blue-text"></p>
 ```
 
-CSS
-```
+SASS
+```sass
 @each $color in green, yellow, blue {
   .#{$color}-text {
     color: $color;
@@ -408,7 +406,7 @@ Primeiro declaramos uma variável color com **$**(`$color`) e listamos as cores.
 Para atribuir cada um dos elementos da lista à classe de forma dinâmica, usamos `#{$nome da var}`.
 
 Resultado:
-```
+```css
 .green-text {
   color: green;
 }
@@ -428,7 +426,7 @@ Resultado:
 Exemplo, aplicar tamanho de fonte às classes, font-size da classe `text-1` deve começar em 2px e ir dobrando:
 
 HTML:
-```
+```html
 <p class="text-1">Olá</p>
 <p class="text-2">Olá</p>
 <p class="text-3">Olá</p>
@@ -437,11 +435,11 @@ HTML:
 ```
 
 
-CSS:
+SASS:
 
 Primeiro declaramos uma variável através do simbolo de cifrão **$**, e atribuímos um valor à ela:
 
-```
+```sass
 $num: 1;
 @while $num <= 5 {
   .text-#{$num} {
@@ -457,7 +455,7 @@ Para acrescentar o valor corrente da variável utilizamos `#{$nome-da-variável}
 
 O código é o equivalente à:
 
-```
+```css
 .text-1 {
   font-size: 2px;
 }
@@ -480,7 +478,7 @@ O código é o equivalente à:
 ```
 
 ## Importar arquivos SASS (.scss) @Import
-``` 
+```sass
 @import 'nome-do-arquivo'
 ```
 
@@ -492,8 +490,9 @@ nome do arquivo: mixins.scss
 
 Estou no arquivo **mains.scss**, para importar o arquivo parcial acima basta incluir no topo do arquivo **mains.scss**:
 
-```
+```sass
 @import 'mixins'
 ```
 
-## _ importar arquivos Parciais ?em-construção
+## _ importar arquivos Parciais
+TODO

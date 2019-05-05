@@ -3,23 +3,23 @@ JavaScript Notes
 # -> O JS pode ser adicionado de 3 formas:
 - EXTERNO: linkado à um arquivo **.js** onde está todo o código. (é o modo mais recomendado, tendo em vista a maior facilidade de manutenção e tempo de carregamento da página).
   - exemplo linkado à um arquivo (as tags podem ser inseridas dentro das tags **head** ou **body**, sendo o mais recomendado como última linha dentro da tag **body**, pois melhora a velocidade de carregamento da página). Dentro de *src* inserir o nome do arquivo:
-  ```
+  ```html
   <script src="script.js"></script>
   ```
 
   ou se o arquivo estiver dentro de uma pasta além da pasta onde está o HTML, procedemos como no caso de imagens, acrescentando nome da pasta e \:
 
-  ```
+  ```html
   <script src="nomeDaPasta/script.js"></script>
   ```
 - INTERNO: no próprio HTML, com o código dentro das tags '**script**' que podem ser adicionadas tanto dentro da tag '**head**' quanto da tag '**body**' (em uma ou ambas dependendo da necessidade.)
-  ```
+  ```html
   <script>
     document.getElementById("sayHello").innerHTML = "Hello!";
   </script>
   ```
 - REFERÊNCIA EXTERNA: pode-se utilizar uma referência externa. Exemplo:
-  ```
+  ```html
   <script src="https://www.endereco.com/js/script.js"></script>
   ```
 
@@ -67,7 +67,7 @@ No exemplo abaixo, *document* referencia-se ao arquivo HTML, *getElementById* di
 
 Exemplo:
 
-```
+```html
 <script>
 document.getElementById("exemplo").innerHTML = "Olá!";
 </script>
@@ -87,7 +87,7 @@ Sintaxe:
 Array exemplo:
 
 *a, b e c* são elementos do array:
-```
+```js
 var myArray = [a, b, c];
 ```
 
@@ -98,9 +98,8 @@ assim os índices serão: 0, 1, 2, ...
 
 ### Verificar se é array
 
-```
+```js
 var arr = []
-
 
 Array.isArray(arr) // true
 ```
@@ -111,7 +110,7 @@ Array.isArray(arr) // true
 - acessar um item do array através do índice:
     
     *Utiliza-se notação de colchetes ([]) para acessar os item através de seus índices.*
-    ```
+    ```js
     arr = [1, 2, 3]
     arr[0] // retorna:  1
     arr[1] // retorna:  2
@@ -122,33 +121,35 @@ Array.isArray(arr) // true
 
 Considere: `let myArray = [1, 2, 3]`;
 
-```
+```js
 myArray.push(4); => [1, 2, 3, 4]
 ```
 
 - add no começo do array -> **unshift()**
-```
+```js
 myArray.unshift(0); => [0, 1, 2, 3, 4]
 ```
 
 - remover no final do array -> **pop()**
-```
+```js
 myArray.pop(); => [0, 1, 2, 3]
 ```
 
 - remover no começo do array -> **shift()**
-```
+```js
 myArray.shift(); => [1, 2, 3]
 ```
 
 ### Fazer cópia de array
 Em alguns momentos, podemos querer copiar um array, por exemplo, para manipular o array sem modificar seu estado original, pois alguns métodos modificam o array original (como é o caso de sort e reverse, que veremos a seguir).
 
-`[...arr]`
+```js
+[...arr]
+```
 
 ex
 
-```
+```js
 let myArr = [1, 2, 3]
 let newArr = [...myArr] // [1, 2, 3]
 let otherArr = [0, ...myArr, 4, 5, 6, 7, 8, 9, 10]
@@ -160,11 +161,13 @@ let otherArr = [0, ...myArr, 4, 5, 6, 7, 8, 9, 10]
 * ordena arrays em ordem crescente
 * para ordenar arrays em forma decrescente, use o método reverse()
 
-`arr.sort()`
+```js
+arr.sort()
+```
 
 Exemplo:
 
-```
+```js
 let array = [1, 5, 4, 2, 3]
 
 array.sort() 
@@ -174,7 +177,7 @@ array.sort()
 
 Exemplo com string:
 
-```
+```js
 let names = ["June", "Amora", "Ozzy", "Bob", "Scott"]
 
 names.sort()
@@ -187,7 +190,7 @@ names.sort()
 
 Exemplo: 
 
-```
+```js
 let names = ["June", "Amora", "Ozzy", "Bob", "Scott"]
 
 let namesSorted = [...names].sort()
@@ -195,10 +198,11 @@ let namesSorted = [...names].sort()
 ```
 Assim, names continua em seu estado original, e temos um novo array 'baseado' no primeiro, porém ordenado:
 
-```
-// resutado: names = ["June", "Amora", "Ozzy", "Bob", "Scott"]
+```js
+// resutado: 
+names = ["June", "Amora", "Ozzy", "Bob", "Scott"]
 
-// namesSorted = ["Amora", "Bob", "June", "Ozzy", "Scott"]
+namesSorted = ["Amora", "Bob", "June", "Ozzy", "Scott"]
 ```
 
 ### Trabalhando com sort(): arrays com objetos
@@ -206,7 +210,7 @@ Para ordenamos arrays com objetos, temos uma forma um pouco diferente de usarmos
 
 Considere o array abaixo:
 
-```
+```js
 let friends = [
   {name: "Rui", age: 21},
   {name: "Manoela", age: 32},
@@ -217,7 +221,7 @@ let friends = [
 
 #### Ordenando o array **friends** em ordem alfabética (nome)
 
-```
+```js
 let sortNames = friends.sort(function(a, b) {
   var nameA = a.name.toUpperCase();
   var nameB = b.name.toUpperCase();
@@ -245,7 +249,7 @@ console.log(sortNames);
 
 Considerando o mesmo array friends do exemplo anterior, vamos ordenar por idade ao invés de nomes:
 
-```
+```js
 let sortAges = friends.sort(function (a, b) {
   return a.age - b.age;
 });
@@ -267,7 +271,7 @@ console.log(sortAges);
 * modifica o array original
 
 Exemplo:
-```
+```js
 names = ["Amora", "Bob", "June", "Ozzy", "Scott"]
 
 names.reverse()
@@ -282,7 +286,7 @@ Transforma um array, retornando um array do mesmo tamanho.
 
 **sintaxe**
 
-```
+```js
 array.map(function(valorAtual, index, arr), thisValue)
 
 ```
@@ -291,7 +295,7 @@ onde, `index, arr, thisValue` são opcionais.
 
 
 **exemplo**
-```
+```js
 let persons = [
   {
     firstName: 'Lays',
@@ -314,16 +318,15 @@ Filtra itens de um array, seguindo algumas condições.
 *dica: bom para selecionar um subconjunto de um array*
 
 **sintaxe**
-```
+```js
 array.filter(function(valorAtual, index, arr), thisValue)
-
 ```
 
 onde, `index, arr, thisValue` são opcionais.
 
 
 **exemplo**
-```
+```js
 let pets = [
   {
     nome:  'June',
@@ -355,28 +358,26 @@ const filtro = pets.filter(pet => (pet.idade > 5))
 
 console.table(filtro)
 
-// resultado: 
 ```
+resultado: 
 ![filter exemplo](img/filter-ex.png)
 
 ## some()
 Verificação booleana. Retorna `true` se algum item do array responde à condição.
 
 **sintaxe**
-```
+```js
 array.some(function(valorAtual, index, arr), thisValue)
-
 ```
 
 onde, `index, arr, thisValue` são opcionais.
 
 
 
-```
+```js
 pets.some(pet => pet.cor === 'tigrado')
 
 // resultado: true
-
 ```
 
 ## every()
@@ -384,7 +385,7 @@ Verificação booleana. Retorna `true` se todos os itens do array responde à co
 
 
 **sintaxe**
-```
+```js
 array.every(function(valorAtual, index, arr), thisValue)
 
 ```
@@ -394,7 +395,7 @@ onde, `index, arr, thisValue` são opcionais.
 
 **exemplo**
 
-```
+```js
 pets.every(pet => pet.cor === 'marrom')
 
 // resultado: false
@@ -407,9 +408,8 @@ Procura um item no array.
 
 
 **sintaxe**
-```
+```js
 array.find(function(valorAtual, index, arr), thisValue)
-
 ```
 
 onde, `index, arr, thisValue` são opcionais.
@@ -417,7 +417,7 @@ onde, `index, arr, thisValue` são opcionais.
 
 **exemplo**
 
-```
+```js
 pets.find(pet => pet.cor === 'marrom')
 
 //resultado: {nome: "Ozzy", cor: "marrom", gender: "macho", idade: 12}
@@ -431,9 +431,8 @@ Itera o array para executar determinada ação. Boa substituta do loop `for`.
 
 
 **sintaxe**
-```
+```js
 array.forEach(function(valorAtual, index, arr), thisValue)
-
 ```
 
 onde, `index, arr, thisValue` são opcionais.
@@ -441,7 +440,7 @@ onde, `index, arr, thisValue` são opcionais.
 
 **exemplo**
 
-```
+```js
 var array = [0, 1, 2, 3, 4, 5];
 var total = 0;
  
@@ -453,7 +452,6 @@ array.forEach(sum);
 console.log(total);
 
 // resultado: 15
-
 ```
 
 
@@ -464,9 +462,8 @@ console.log(total);
 
 
 **sintaxe**
-```
+```js
 array.reduce(function(total, valorAtual, index, arr), valorInicial)
-
 ```
 
 onde, `index, arr, valorInicial` são opcionais.
@@ -474,7 +471,7 @@ onde, `index, arr, valorInicial` são opcionais.
 
 **exemplo**
 
-```
+```js
 let array = [1, 2, 3, 4, 5]
 
 let result = array.reduce((total, number) => total + number)
@@ -482,7 +479,6 @@ let result = array.reduce((total, number) => total + number)
 console.log(result)
 
 // resultado: 15
-
 ```
 
 ## Fatiar Array ou String slice()
@@ -491,15 +487,19 @@ console.log(result)
 
 **Sintaxe**
 
-`array.slice(indexInicial, indexFinal)`
+```js
+array.slice(indexInicial, indexFinal)
+```
 
 onde `indexFinal` se não indicado, considera até o final do array
 
 **Exemplo**
 
-`'Tudo bem?'.slice(5)`
-
+```js
+'Tudo bem?'.slice(5)
 // => resultado: "bem?"
+```
+
 
 ## Alterar conteúdo do array splice()
 
@@ -507,13 +507,15 @@ onde `indexFinal` se não indicado, considera até o final do array
 
 **Sintaxe**
 
-`array.splice(index, howmany, item1, ....., itemX)`
+```js
+array.splice(index, howmany, item1, ....., itemX)
+```
 
 onde `howmany` e `items` são opicionais.
 
 **Exemplo**
 
-```
+```js
 let numbers = ['zero', 'um', 2, 3, 4, 'cinco']
 
 numbers.splice(2, 3, 'dois', 'três', 'quatro') // retorna [2, 3, 4]
@@ -529,15 +531,13 @@ Ele irá nos retornar os elementos que foram removidos.
 
 Em seguida, podemos verificar essa substituição ao conferir os valores de numbers novamente.
 
-
-
 ---
 
 
 # Ternário (versão reduzida de uma condição)
 
 - if normal:
-```
+```js
 if ( x < 10 ) {
   console.log( x );
 } else {
@@ -545,7 +545,7 @@ if ( x < 10 ) {
 }
 ```
 - ternário
-```
+```js
 x < 10 ? console.log( x ) : console.log( y );
 ```
 
@@ -555,7 +555,7 @@ x < 10 ? console.log( x ) : console.log( y );
 # Objetos
 conjunto de pares chave/valor (key/value)
 
-```
+```js
 const obj = {
   chave: valor
 }
@@ -567,7 +567,7 @@ const obj = {
 
 ## Alguns Métodos
 
-```
+```js
 var myObj = {
     primeiroNome: 'Lays',
     ultimoNome: 'Hidani',
@@ -578,10 +578,9 @@ var myObj = {
 
 **-> Acessando valores**
 
-```
+```js
 myObj["idade"]
 // resultado: 28
-
 
 myObj.primeiroNome
 // resultado: "Lays"
@@ -589,7 +588,7 @@ myObj.primeiroNome
 
 **-> retorna array com todas as chaves (keys)**
 
-```
+```js
 Object.keys(myObj)
 ["primeiroNome", "ultimoNome", "idade", "pets"]
 
@@ -599,35 +598,34 @@ Object.getOwnPropertyNames(myObj)
 
 **-> retorna array com todos os valores (values)**
 
-```
+```js
 Object.values(myObj)
 // resultado: ["Lays", "Hidani", 28, Array(3)]
 ```
 
 **-> Verifica a existência de uma chave/propriedade no objeto**
 
-```
+```js
 myObj.hasOwnProperty('primeiroNome', idade)
 // resultado: true
 
 'primeiroNome' in myObj
 // resultado: true
-
 ```
-
 
 ---
 # Arrow function
 Sintaxe:
 
-`parametros => retorno`
+```js
+parametros => retorno
+```
 
 
 Exemplos:
 
 
-```
-
+```js
 const exemplo = (x, y) => x + y;
 
 const exemplo2 = () => 'Hello';
@@ -667,7 +665,7 @@ const exemplo3 = text => text
 - `/[^code]/` : busca por caracteres diferentes dos informados -> exemplo: `/[^aeiou]/` -> procura por caracteres que não sejam vogais
 - `/[code+]/` : busca por uma ou mais ocorrências -> exemplo: 
 
-    ```
+    ```js
       /[o+]/ 
 
       * ['ovo'] // => ['o', 'o']
@@ -689,7 +687,7 @@ const exemplo3 = text => text
 - n? : busca por 0 ou 1 ocorrência de n
 - n{X} : busca a ocorrência de uma sequência de 'X' vezes -> ex: '1000, 10, 100, 1000'.match(/\d{4}/g)
 
-...cont
+TODO...cont
 
 
 ## Caracteres especiais
@@ -697,59 +695,67 @@ const exemplo3 = text => text
 - \ : uma barra invertida que preceda um caractere não especial significa que o caractere seguinte é especial e não deve ser interpretado de forma literal. _(MDN)
 - ^: procura por todos os caracteres que não sejam os informadaos.
 
-...cont
+TODO...cont
 
 
 ## literal
 
-```
+```js
 /code/ 
-
 ```
 
 ex:
 
-```
+```js
 console.log(/comp/.test('computador')); // true
 ```
 
 ## Ou -> |
 
-```
+```js
 /code1 | code2 | code3/
 ```
 
 ex:
 
 
-```
-
+```js
 console.log(/ball | dog | cat/.test('I see a dog.'));  // false, pois considera o espaço em branco
 console.log(/ball|dog|cat/.test('I see a dog'));  // true
 ```
 
 ## Trecho
 
-`/.code/`
+```js
+/.code/
+```
 
 e
 
 
-`/code./`
+```js
+/code./
+`
 
 
 ex:
 
-`'brasileiro'.match(/br./)`
+```js
+'brasileiro'.match(/br./)
+```
 
 ## Procurar caracteres diferentes dos informados
-`/[^code]/`
+```js
+/[^code]/
+```
 
 ## Procurar por ocorrência no início (^)
-`/^code/`
+```js
+/^code/
+```
 
 ex: 
-
+FIXME
 ```
 let greeting = "Hello World!";
 let greetRegex = /^Hello/; 

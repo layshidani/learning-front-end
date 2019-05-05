@@ -43,7 +43,7 @@
 - [Fonts Awesome](https://fontawesome.com/icons?d=gallery): uma espécie de acervo de ícones. Funciona mais ou menos como o Boostrap, adiciona-se um link de referência (do mesmo jeito que o Google Fonts) em '<head>' e no corpo da página HTML, pode-se adicionar o ícone desejado. Exemplo: 
 
     - 1º link
-        ```
+        ```html
         <head>
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
         </head>
@@ -52,12 +52,13 @@
     - 2º escolha o ícone 
     
     - 3º copie o código do ícone escolhido:
-        ```
+        ```html
         <i class="fas fa-code-branch"></i>
         ```
 
     - 3º insira no seu HTML
     
-    ```
+    ```html
     <h1>Branch</h1>
     <i class="fas fa-code-branch"></i>
+    ```

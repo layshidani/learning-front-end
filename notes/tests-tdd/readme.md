@@ -14,6 +14,11 @@ Confira neste [link](https://github.com/hlays/learning-front-end/tree/master/not
     * [should style](#should-style)
     * [expect style](#expect-style)
     * [assert style](#assert-style)
+  * [Criando testes](#criando-testes)
+    * [Describe](#describe)
+    * [Context](#context)
+    * [It](#it)
+  * [Snipet de teste](#snipet-de-teste)
 
 # Mocha
 > O Mocha é uma estrutura de teste JavaScript rica em recursos em execução no Node.js e no navegador, tornando os testes assíncronos simples e divertidos. [<Mocha\>](https://mochajs.org/)
@@ -107,12 +112,33 @@ Utilizados para agrupamento (coleção de testes), podem ser aninhados dentro de
 ## Context
 Utilizado para separar os casos de teste...o contexto.
 
+```js
+  describe('Descrição', () => {
+    context('Contexto', () => {
+      // coleção de testes
+    });
+  });
+```
+
 ## It
 Lembre desta frase:
-<!-- TODO: this -->
-*"It should ..."*
+*"It should happen ... when/to ..."*
 
-Exemplo de teste:
+Ex:
+
+```js
+  describe('Descrição', () => {
+    context('Contexto', () => {
+      // coleção de testes
+      it('should happen ... when ...', () => {});
+      it('should happen ... when ...', () => {});
+      it('should happen ... when ...', () => {});
+    });
+  });
+```
+
+## Snipet de teste
+Abaixo um exemplo de teste para um validador de cartão de crédito:
 
 ```js
 const { assert } = require('chai');
@@ -120,13 +146,13 @@ const cardValidator = require('../index');
 
 describe('Validador de cartão de credito', () => {
   describe('Deve retornar true para cartoes validos:', () => {
-    it('Mastercard - Deve retornar true: 5374661040114189', () => {
+    it('Mastercard - Deve retornar true para 5374661040114189', () => {
       assert.equal(cardValidator('5374661040114189'), true);
     });
-    it('Visa - Deve retornar true: 4556398657023626', () => {
+    it('Visa - Deve retornar true para 4556398657023626', () => {
       assert.equal(cardValidator('4556398657023626'), true);
     });
-    it('Elo - Deve retornar true: 6363688326577129', () => {
+    it('Elo - Deve retornar true para 6363688326577129', () => {
       assert.equal(cardValidator('6363688326577129'), true);
     });
   });
@@ -135,12 +161,84 @@ describe('Validador de cartão de credito', () => {
     it('Vazio - Deve retornar false ', () => {
       assert.equal(cardValidator.cardValidator(''), false);
     });
-    it('Qtd de digitos inválida - Deve retornar false:  123456', () => {
+    it('Qtd de digitos inválida - Deve retornar false para 123456', () => {
       assert.equal(cardValidator.cardValidator('123456'), false);
     });
-    it('Numeros e letras - Deve retornar false: 1sd2d3456', () => {
+    it('Numeros e letras - Deve retornar false para 1sd2d3456', () => {
       assert.equal(cardValidator.cardValidator('1sd2d3456'), false);
     });
   });
 });
 ```
+
+## Reporters
+Há diversas formas de reportar os testes, visite a [documentação](https://mochajs.org/#reporters) para obter exemplos e lista completa.
+
+Lista de reporters:
+
+```bash
+mocha -- --reporters
+```
+
+Para rodar um reporter:
+```bash
+mocha -- --reporter=<nome-do-reporter>
+```
+
+ex reporter de gatinho:
+```bash
+mocha -- --reporter=nyan
+```
+
+### Reporter com coverage e html
+Um reporter muito útil é o html do nyc. Ele irá gerar um relatório detalhado em html que poderá ser acessado via browser:
+
+* [Alternative Reporters](https://istanbul.js.org/docs/advanced/alternative-reporters/)
+* [Nyc Mocha - documentação ](https://istanbul.js.org/docs/tutorials/mocha/)
+
+Alternativa 1:
+Automatize incluindo no **package.json** o alias direto no teste:
+
+```json
+{
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha"
+  }
+}
+```
+
+Então, toda vez que você rodar o comando:
+```bash
+npm test
+```
+
+Ele cria/atualiza uma pasta chamada **coverage** com todos os arquivos do reporter, basta abrir o html no seu navegador:
+![coverage html example](imgs/coverage.png)
+
+Existem diversas outras alternativas, que geram o mesmo resultado, tudo depende de como você deseja organizar seu código e seus testes. 
+
+Uma outra alternativa seria:
+
+```json
+"scripts": {
+  "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+  "test:coverage": "nyc npm test"
+},
+"nyc": {
+  "reporter": [
+    "html"
+  ],
+  "exclude": [
+    "tests/**"
+  ]
+},
+```
+
+Neste caso, temos um comando só para verificar a cobertura de testes.
+
+Rodamos: 
+```bash
+npm run test:coverage
+```
+
+e teremos os arquivos gerados/atualizados na pasta **coverage**.

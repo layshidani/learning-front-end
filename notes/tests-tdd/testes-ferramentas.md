@@ -1,4 +1,4 @@
-# Testes com mocha, chai e nyc
+# Ferramentas de Teste: mocha, chai e nyc
 Confira neste [link](https://github.com/hlays/learning-front-end/tree/master/notes/testes-tdd/testes-instalacoes.md/) como instalar os pacotes necessários e preparar os arquivos.
 
 * Mocha: estrutura de testes
@@ -242,3 +242,9 @@ npm run test:coverage
 ```
 
 e teremos os arquivos gerados/atualizados na pasta **coverage**.
+
+## Testes: comandos skip, only, bail
+TODO comandos
+
+## Testes: Hooks
+TODO hooks

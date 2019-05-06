@@ -314,8 +314,12 @@ Quando todo o código estiver completo e funcionando adequadamente, podemos publ
 
 
 ## Configurar usuário do npm no projeto:
+* Crie uma conta no npm, confirme o endereço de email.
+* Necessário apenas da primeira vez que for publicar este projeto:
 
 `npm adduser`
+
+responder, nome de usuário e senha.
 
 ## Publicar
 

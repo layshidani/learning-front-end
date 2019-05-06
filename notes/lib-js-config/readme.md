@@ -1,5 +1,5 @@
 # Biblioteca JS configuração: npm init, eslint, testes com mocha, nyc, chai, publicação no npm
-Requisitos: **Node** e **npm** instalados.
+Requisitos: **Node** instalado.
 Navegue com o terminal até a pasta principal do projeto para executar as instalações locais e/ou rodar os pacotes.
 
 ---

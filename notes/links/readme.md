@@ -14,13 +14,10 @@ Cursos, materiais, artigos.
 * ![github] [Guia para boas mensagens de commit](https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_pt-BR.md)
 
 # Webpack
-
 * ![video] [Papo reto sobre Webpack! - Flavio Vedovelli](https://www.youtube.com/watch?v=qywhDK1hzxY&list=WL&index=2&t=432s)
-
 * ![video] [Traversy Media](https://www.youtube.com/watch?v=lziuNMk_8eQ&list=WL&index=3&t=0s)
 
 # Node
-
 * ![video] [Node.js Tutorial for Beginners: Learn Node in 1 Hour | Mosh](https://youtu.be/TlB_eWDSMt4)
 * ![video] [Node Crash Course - Traversy Media](https://youtu.be/fBNz5xF-Kx4)
 

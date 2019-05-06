@@ -18,10 +18,19 @@ Em todas as instalações a seguir, você poderá optar por instalar globalmente
 
 <!-- ?emconstrução add npm i | --production -->
 
+
+## iniciar npm
+`npm init`
+
+responder todas as perguntas do terminal para que o npm crie o arquivo package.json com todas essas informações sobre o projeto.
+
+*caso queira pular essas perguntas e criar um arquivo package.json e configurar depois, inclua `-y` ao rodar o comando acima:* `npm init -y`
+
+*é possível editar ou inserir dados no próprio arquivo package.json manualmente depois a qualquer momento.*
+
 ## Verificar se pacote está instalado ou versão instalada
 
 `npm -v nome-do-pacote`
-
 
 
 ## criar arquivo .gitignore
@@ -46,16 +55,6 @@ Por exemplo, escolhemos o Node (para trabalhar com JS):
 para criar o arquivo gitignore, digite no terminal:
 `gitignore Node`
 
-
-
-## iniciar npm
-`npm init`
-
-responder todas as perguntas do terminal para que o npm crie o arquivo package.json com todas essas informações sobre o projeto.
-
-*caso queira pular essas perguntas e criar um arquivo package.json e configurar depois, inclua `-y` ao rodar o comando acima:* `npm init -y`
-
-*é possível editar ou inserir dados no próprio arquivo package.json manualmente depois a qualquer momento.*
 
 ## instalar eslint (local)
 [eslint](https://www.npmjs.com/package/eslint)
@@ -313,11 +312,6 @@ describe('Chess lib', () => {
 
 Quando todo o código estiver completo e funcionando adequadamente, podemos publicar a lib no npm. Certifique-se de ter se cadastrado corretamente no [site](https://www.npmjs.com/).
 
-## Git e Github
-
-* o Projeto estando revisado e todo completo, faça o commit de tudo
-* (recomendado) adicione uma tag de versão com: `git tag versão` (ex: `git tag v1.0.0`)
-* faça push
 
 ## Configurar usuário do npm no projeto:
 
@@ -332,17 +326,33 @@ Quando todo o código estiver completo e funcionando adequadamente, podemos publ
 Agora sua biblioteca está pronta e publicada no npm.
 
 ## Novas versões
-Sempre que houverem alterações no código (até mesmo no readme), você terá que:
+Sempre que houverem alterações no código (até mesmo no readme), você pode fazer isso manualmente ou via linha de comando
 
-* modificar a versão no arquivo **package.json**
-* fazer todos os passos de commitar, inserir tag, fazer push 
-* publicar novamente.
-
-## Sobre versões
-
+### Sobre versões
 * Patch (v1.0.x): correção pequena, bug resolvido, etc
 * Minor (v1.x.0): implementação de feature menor/secundária
 * Major (vx.0.0): implementação de feature importante
+
+**Pela linha de comando:**
+```bash
+npm version tipo-de-alteração
+```
+
+ex:
+```bash
+npm version patch
+```
+* o Projeto estando revisado e todo completo, faça o commit de tudo
+* feito todos os passos de commitar, inserir tag, fazer push 
+* publicar novamente com `npm publish`.
+
+**Manualmente, você terá que:**
+* modificar a versão no arquivo **package.json**
+* (recomendado) adicione uma tag de versão com: `git tag versão` (ex: `git tag v1.0.0`)
+* o Projeto estando revisado e todo completo, faça o commit de tudo
+* feito todos os passos de commitar, inserir tag, fazer push 
+* publicar novamente com `npm publish`.
+
 
 
 

@@ -325,24 +325,26 @@ Quando todo o código estiver completo e funcionando adequadamente, podemos publ
 
 Agora sua biblioteca está pronta e publicada no npm.
 
-## Novas versões
-Sempre que houverem alterações no código (até mesmo no readme), você pode fazer isso manualmente ou via linha de comando
-
 ### Sobre versões
 * Patch (v1.0.x): correção pequena, bug resolvido, etc
 * Minor (v1.x.0): implementação de feature menor/secundária
 * Major (vx.0.0): implementação de feature importante
 
-**Pela linha de comando:**
-```bash
-npm version tipo-de-alteração
-```
+## Novas versões
+Sempre que houverem alterações no código (até mesmo no readme), você pode fazer isso manualmente ou via linha de comando
 
-ex:
-```bash
-npm version patch
-```
+**Pela linha de comando:**
 * o Projeto estando revisado e todo completo, faça o commit de tudo
+* atualize a versão pela linha de comando:
+  ```bash
+  npm version tipo-de-alteração
+  ```
+
+  ex:
+  ```bash
+  npm version patch
+  ```
+  
 * feito todos os passos de commitar, inserir tag, fazer push 
 * publicar novamente com `npm publish`.
 

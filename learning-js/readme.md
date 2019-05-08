@@ -108,7 +108,7 @@ Array.isArray(arr) // true
 ### Manipulando arrays
 
 - acessar um item do array através do índice:
-    
+
     *Utiliza-se notação de colchetes ([]) para acessar os item através de seus índices.*
     ```js
     arr = [1, 2, 3]
@@ -157,7 +157,7 @@ let otherArr = [0, ...myArr, 4, 5, 6, 7, 8, 9, 10]
 
 ### Array em ordem crescente (sort())
 * sort altera o array principal!
-* funciona para números e strings 
+* funciona para números e strings
 * ordena arrays em ordem crescente
 * para ordenar arrays em forma decrescente, use o método reverse()
 
@@ -170,7 +170,7 @@ Exemplo:
 ```js
 let array = [1, 5, 4, 2, 3]
 
-array.sort() 
+array.sort()
 
 // resultado: array = [1, 2, 3, 4, 5]
 ```
@@ -188,7 +188,7 @@ names.sort()
 
 **Fazer uma cópia de array ajuda para ordenar um array sem necessáriamente alterar o array principal!**
 
-Exemplo: 
+Exemplo:
 
 ```js
 let names = ["June", "Amora", "Ozzy", "Bob", "Scott"]
@@ -199,7 +199,7 @@ let namesSorted = [...names].sort()
 Assim, names continua em seu estado original, e temos um novo array 'baseado' no primeiro, porém ordenado:
 
 ```js
-// resutado: 
+// resutado:
 names = ["June", "Amora", "Ozzy", "Bob", "Scott"]
 
 namesSorted = ["Amora", "Bob", "June", "Ozzy", "Scott"]
@@ -359,7 +359,7 @@ const filtro = pets.filter(pet => (pet.idade > 5))
 console.table(filtro)
 
 ```
-resultado: 
+resultado:
 ![filter exemplo](img/filter-ex.png)
 
 ## some()
@@ -443,11 +443,11 @@ onde, `index, arr, thisValue` são opcionais.
 ```js
 var array = [0, 1, 2, 3, 4, 5];
 var total = 0;
- 
+
 function sum(number) {
-  total += number; 
+  total += number;
 }
- 
+
 array.forEach(sum);
 console.log(total);
 
@@ -525,7 +525,7 @@ console.log(numbers)
 // Resultado: ["zero", "um", "dois", "três", "quatro", "cinco"]
 ```
 
-Neste exemplo, dissemos ao `splice(2, 3, 'dois', 'três', 'quatro')` para começar no **índice 2** do nosso array `numbers`, pegar os **3 elementos** a partir do índice 2, e substituí-los pelos elementos **'dois', 'três', 'quatro'**. 
+Neste exemplo, dissemos ao `splice(2, 3, 'dois', 'três', 'quatro')` para começar no **índice 2** do nosso array `numbers`, pegar os **3 elementos** a partir do índice 2, e substituí-los pelos elementos **'dois', 'três', 'quatro'**.
 
 Ele irá nos retornar os elementos que foram removidos.
 
@@ -663,10 +663,10 @@ const exemplo3 = text => text
 - `/[0-9]/` : busca por qualquer caracteres entre os números estipulados
 - `/[x|y]/` : busca por x ou y..
 - `/[^code]/` : busca por caracteres diferentes dos informados -> exemplo: `/[^aeiou]/` -> procura por caracteres que não sejam vogais
-- `/[code+]/` : busca por uma ou mais ocorrências -> exemplo: 
+- `/[code+]/` : busca por uma ou mais ocorrências -> exemplo:
 
     ```js
-      /[o+]/ 
+      /[o+]/
 
       * ['ovo'] // => ['o', 'o']
 
@@ -676,7 +676,7 @@ const exemplo3 = text => text
     ```
 - `/[code*]/` : busca por  ou mais ocorrências
 - `/[code]?/` : busca pela menor ocorrência (trecho)
-  
+
   exemplo
   `'economia'.match(/o[a-z]*?o/) => 'ono'`
 
@@ -701,7 +701,7 @@ TODO...cont
 ## literal
 
 ```js
-/code/ 
+/code/
 ```
 
 ex:
@@ -754,87 +754,116 @@ ex:
 /^code/
 ```
 
-ex: 
-FIXME
-```
+ex:
+
+```js
 let greeting = "Hello World!";
-let greetRegex = /^Hello/; 
+let greetRegex = /^Hello/;
 let result = greetRegex.test(greeting); => true
 
 ```
 
 ## Procurar por ocorrência no final ($)
-`/code$/`
-
-ex: 
-
+```js
+/code$/
 ```
+
+ex:
+
+```js
 let greeting = "Hello World!";
-let greetRegex = /World$/; 
+let greetRegex = /World$/;
 let result = greetRegex.test(greeting); => true
 
 ```
 
-## Procurar por mais de uma ocorrência seguida 
-`/code+/`
+## Procurar por mais de uma ocorrência seguida
+```js
+/code+/
+```
 
-Ex: `'voo'.match(/o+/g)` // => 'oo'
+Ex:
+```js
+'voo'.match(/o+/g)
+// => 'oo'
+```
 
 ## Atalho: procurar todas as letras (maiúsculas e minúsculas), números e _ (\w)
 
-`[A-Za-z0-9_] = /\w/g`
+```js
+[A-Za-z0-9_] = /\w/g
+```
 
 ## Atalho: procurar todos os símbolos menos as letras (maiúsculas e minúsculas), números e _ (\W)
 
- `[^A-Za-z0-9_] = /\W/g`
+ ```js
+ [^A-Za-z0-9_] = /\W/g
+ ```
 
 ## Atalho: procurar todas ocorrências de números (\d)
-
- `[0-9_] = /\d/g`
+```js
+[0-9_] = /\d/g
+```
 
  ex
 
- ```
+ ```js
 let numString = "Ganhamos um aumento de 10%";
 let noNumRegex = /\D/g; // Change this line
-let result = numString.match(noNumRegex).length; 
+let result = numString.match(noNumRegex).length;
 
 // => 24
  ```
 
 ## Atalho: procurar por espaços em branco (\s)
-`/\s/g`
+```js
+/\s/g
+```
 
 ## Atalho: procurar por caracteres que não são espaços em branco (\S)
-`/\S/g`
+```js
+/\S/g
+```
 
 ## Especificador de quantidade ({n,n})
 (Procura ocorrência entre quantidade de um nº ao outro de vezes)
 
-`/code{n,n}code/`
+```js
+/code{n,n}code/
+```
 
-`/code{n,}code/`
+```js
+/code{n,}code/
+```
 
 ex:
 
-`/ola{3,}a/.test('olaaaaa') // => true` 
+```js
+/ola{3,}a/.test('olaaaaa') // => true
+```
 
 ## Especificador exato de quantidade ({n})
-`/code{n}code/`
+```js
+/code{n}code/
+```
 
 ## Procurar 0 ou 1 ocorrência de caractére (?)
-`/code?/`
+```js
+/code?/
+```
 
 ex:
 
-```
+```js
 /ama?/.test('ama') // => true
 /ama?/.test('amar') // => true
 /ama?/.test('amora') // => false
 ```
 
 ## Positive lookahead (?=...)
-`/(?=code)/`
+```js
+/(?=code)/
+```
 
 ex: checar se a senha tem entre 3 e 6 caracteres e pelo menos um número.
 
@@ -845,17 +874,21 @@ checarSenha.test(senha); // => true
 ```
 
 ## Negative lookahead (?=!...)
-`/(?=!code)/`
+```js
+/(?=!code)/
+```
 
 
 ## Repetição de grupo (()\número de vezes)
 (funciona com .test e .match)
 
-`/(code)\número de vezes/`
+```js
+/(code)\número de vezes/
+```
 
 ex:
 
-```
+```js
 /(\w+)\s\1/;
 ```
 
@@ -863,7 +896,7 @@ ex:
 
 ex:
 
-```
+```js
 'Hello mundo!'.replace(/Hello/, 'Olá') // => "Olá mundo!"`
 
 `'bem tudo'.replace(/(\w+)\s(\w+)/, '$2 $1'); // => "tudo bem"`
@@ -883,7 +916,7 @@ ex:
 # DOM (document object model)
 
 ## Obter/selecionar elementos do HTML
-Há duas formas de selecionar elementos: 
+Há duas formas de selecionar elementos:
 - getElement
 - querySelector
 
@@ -906,11 +939,15 @@ Templates literals são strings que permitem expressões embutidas.
 Uma forma de misturar texto (string) comum e variáveis de JS, por exemplo.
 
 - Template Literals utiliza acentos graves (**`**) para indicar o início e o fim do código que deverá ser inserido.
-- podemos inserir expressões que serão substituídas por seu resultado dentro do Template Literals, utilizando **placeholders**: `${expressão}`.
+- podemos inserir expressões que serão substituídas por seu resultado dentro do Template Literals, utilizando **placeholders**:
+
+```js
+${expressão}
+```
 
 Exemplo:
 
-```
+```js
 let x = 100;
 let y = 50;
 
@@ -929,7 +966,7 @@ console.log(`O resultado de ${x} + ${y} = ${x + y}`)
 
 **HMTL**
 
-```
+```html
 <p>Bem vindo!</p>
 
 ```
@@ -939,18 +976,22 @@ console.log(`O resultado de ${x} + ${y} = ${x + y}`)
 (obtém o valor)
 Primeiro, seleciona o elemento do HTML. No caso, obtem-se a entrada/input do usuário através do prompt e guarda na variável `name`:
 
-`var name = prompt("Olá, qual é o seu nome?");`
+```js
+var name = prompt("Olá, qual é o seu nome?");
+```
 
 (diz onde quer inserir o valor)
 Em seguida, seleciona o elemento do HTML onde será inserida a variável `name`:
 
-`var welcome = document.querySelector("#user-name");`
+```js
+var welcome = document.querySelector("#user-name");
+```
 
 (insere o valor)
 Então, utiliza-se o `innerHTML`, para inserir no HTML o valor da variável `name`:
 
-```
-welcome.innerHTML = 
+```js
+welcome.innerHTML =
 `
 <p>
   Olá, ${name}.
@@ -964,12 +1005,15 @@ welcome.innerHTML =
 
 **HTML:**
 
-`<p id="hello"></p>`
+```html
+<p id="hello"></p>
+```
 
 **JS:**
 
 A frase abaixo, será inserida entre as tags `<p>` de id **hello**.
-```
+
+```js
 let getP = document.querySelector("#hello");
 
 p.textContent = `Olá, ${name}. Seja bem vindo!`;
@@ -984,17 +1028,21 @@ p.textContent = `Olá, ${name}. Seja bem vindo!`;
 
 HTML:
 
-`<input id="name"></input>`
+```html
+<input id="name"></input>
+```
 
 JS:
 
-`var $name = document.getElementById("name").value`
+```js
+var $name = document.getElementById("name").value
+```
 
 *o valor inserido no input com id `name` será armazenado na variável name*
 
 * Adicionar ação ao clicar:
 
-```
+```html
 <p onclick = "função ()">Clique aqui</p>
 ```
 
@@ -1007,7 +1055,7 @@ Usando `<select>` e `<option>`, para saber o valor selecionado, podemos inserir 
 
 HTML:
 
-```
+```html
 <select>
   <option value="A">A</option>
   <option value="B">B</option>
@@ -1021,7 +1069,7 @@ A propriedade selectedIndex define ou retorna o índice da opção selecionada e
 
 Imagine que queremos definir o valor do `value` de um `<select>` para que ele retorne à um padrão inicial:
 
-```
+```js
 typeMenu.selectedIndex = "type";
 ```
 
@@ -1031,13 +1079,15 @@ Como o próprio nome diz, esse método fica 'escutando' tudo o que acontece na p
 
 **sintaxe**
 
-`addEventListener(event, function, useCapture)`
+```js
+addEventListener(event, function, useCapture)
+```
 
 *useCapture é opcional, valor booleano*
 *false- Default. O manipulador de eventos é executado na fase de bubbling*
 *true - O manipulador de eventos é executado na fase de captura*
 
-### events types 
+### events types
 
 [Acesse MDN para lista completa](https://developer.mozilla.org/pt-BR/docs/Web/Events)
 
@@ -1049,11 +1099,12 @@ Mais comuns:
 
 **exemplo**
 
-```
+```html
 No HTML:
 <button id="btn"></button>
+```
 
-
+```js
 no JS:
 function hello() {
   console.log("Hello")
@@ -1069,7 +1120,7 @@ document.getElementById("btn").addEventListener("click", hello);
 ## Criar elementos (createElement)
 Sintaxe:
 
-```
+```js
 document.createElement(tagName)
 ```
 
@@ -1077,14 +1128,14 @@ Exemplo:
 
 Criamos um elemento de tag `<p>` e associamos à variável p.
 
-```
+```js
 let p = document.createElement("p");
 ```
 
 ## Definir um atributo (setAttribute)
 Sintaxe:
 
-```
+```js
 elemento.setAttribute("nomeDoAtributo", "valorDoAtributo")
 ```
 
@@ -1092,14 +1143,14 @@ Usando o exemplo anterior:
 
 Atribuímos uma classe css de valor "hello" à tag `<p>` criada anteriormente.
 
-```
+```js
 p.setAttribute("class", "hello");
-``` 
+```
 
 ## Remover um atributo (removeAttribute)
 Sintaxe:
 
-```
+```js
 elemento.removeAttribute("nomeDoAtributo", "valorDoAtributo")
 ```
 
@@ -1108,27 +1159,27 @@ elemento.removeAttribute("nomeDoAtributo", "valorDoAtributo")
 
 Outra forma de fazer o exemplo anterior seria:
 
-```
+```js
 p.classList.add("hello");
 ```
 
 ## Remover uma classe (classList.remove)
 Sintaxe:
 
-```
+```js
 p.classList.remove("hello");
 ```
 
 ## Anexar elementos à elementos já existentes (appendChild)
 
 Sintaxe:
-```
+```js
 document.parentName.appendChild(child);
 ```
 
 Exemplo:
 
-```
+```js
 document.body.appendChild("p");
 ```
 
@@ -1136,27 +1187,6 @@ document.body.appendChild("p");
 Da mesma forma que podemos anexar elementos filhos, também podemos removê-los:
 
 Sintaxe:
-```
+```js
 document.parentName.removeChild(child);
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

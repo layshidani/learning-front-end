@@ -33,9 +33,9 @@ Projetos desenvolvidos para aprendizado.
 
 /--------------------------------------------------------------------------\
 
-* [LAB] Libraries JS npm - Conversor de algarismos romanos para arábicos (e vice-versa) [<Visualizar\>](https://www.npmjs.com/package/lab-roman-int-converter)
-* [LAB] Libraries JS npm - Validador de Cartões de crédito [<Visualizar\>](https://www.npmjs.com/package/lab-credit-card-validator)
-* [LAB] Libraries JS npm - Validador de CPF [<Visualizar\>](https://www.npmjs.com/package/lab-cpf-validator)
+* [LAB] JS Library npm - Conversor de algarismos romanos para arábicos (e vice-versa)' [<Visualizar\>](https://www.npmjs.com/package/lab-roman-int-converter)
+* [LAB] JS Library npm - Validador de Cartões de crédito [<Visualizar\>](https://www.npmjs.com/package/lab-credit-card-validator)
+* [LAB] JS Library npm - Validador de CPF [<Visualizar\>](https://www.npmjs.com/package/lab-cpf-validator)
 * [LAB] Rede Social - SerView [<Visualizar\>](https://serview-2019.firebaseapp.com/)
 * [LAB] Data Lovers - Pokemon] [<Visualizar\>](https://hlays.github.io/data-lovers/)
 * [LAB] Twitter Feed] [<Visualizar\>](https://hlays.github.io/twitter-lab/)

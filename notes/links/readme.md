@@ -87,6 +87,7 @@ Minha recomendação de artigos:
 * ![tool] [SASS Meister](https://www.sassmeister.com/)
 
 # JavaScript
+* ![book] [You don't know JavaScript](https://github.com/hlays/You-Dont-Know-JS)
 * ![book] [JavaScript The Right Way](http://jstherightway.org/pt-br/)
 * ![book] [The Modern JavaScript Tutorial](http://javascript.info/)
 * ![tool] [Crubier - faça fluxograma a partir de código](https://crubier.github.io/code-to-graph/?code=Y29uc3QgbXlGdW5jdGlvbiA9ICh4KSA9PiB7CiAgaWYoeD4wKXsKICAgIHJldHVybiAib2siCiAgfSBlbHNlIHsKICAgIHRocm93ICJub3Qgb2siCiAgfQp9)

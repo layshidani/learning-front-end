@@ -18,7 +18,7 @@
 ## Projetos
 Projetos desenvolvidos para fins de aprendizado.
 
-* nota: a maioria dos projetos aqui listados está com o código em seu formato original quando feitos para aprendizado, preservando o conhecimento que eu tinha durante a aprendizagem. Futuramente pretende-se aprimorá-los, fazendo o refatoramento e aplicando novas técnicas aprendidas.
+*nota: a maioria dos projetos aqui listados está com o código em seu formato original quando feitos para aprendizado, preservando o conhecimento que eu tinha durante a aprendizagem. Futuramente pretende-se aprimorá-los, fazendo o refatoramento e aplicando novas técnicas aprendidas.*
 
 /-------------------------------------------------------------------------\
 
@@ -40,9 +40,9 @@ Projetos desenvolvidos para fins de aprendizado.
 
 * [LAB] Rede Social - SerView [:computer:](https://serview-2019.firebaseapp.com/)  [:octocat:](https://github.com/hlays/redesocial)
 
-* [LAB] Data Lovers - Pokemon] [:computer:](https://hlays.github.io/data-lovers/)  [:octocat:](https://github.com/hlays/data-lovers)
+* [LAB] Data Lovers - Pokemon [:computer:](https://hlays.github.io/data-lovers/)  [:octocat:](https://github.com/hlays/data-lovers)
 
-* [LAB] Twitter Feed] [:computer:](https://hlays.github.io/twitter-lab/)  [:octocat:](https://github.com/hlays/twitter-lab)
+* [LAB] Twitter Feed [:computer:](https://hlays.github.io/twitter-lab/)  [:octocat:](https://github.com/hlays/twitter-lab)
 
 * [JS30] Flex panels gallery [:computer:](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-flex-panels-gallery)
 

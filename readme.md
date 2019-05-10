@@ -25,41 +25,41 @@ Projetos desenvolvidos para fins de aprendizado.
 
 ### [Laboratoria](http://laboratoria.la/) curriculum projects
 
-* [LAB] JS Library npm - Conversor de algarismos romanos para arábicos (e vice-versa) [:computer:](https://www.npmjs.com/package/lab-roman-int-converter)  [:octocat:](https://github.com/hlays/lab-roman-int-converter)
+* JS Library npm - Conversor de algarismos romanos para arábicos (e vice-versa) [:computer:](https://www.npmjs.com/package/lab-roman-int-converter)  [:octocat:](https://github.com/hlays/lab-roman-int-converter)
 
-* [LAB] JS Library npm - Validador de Cartões de crédito [:computer:](https://www.npmjs.com/package/lab-credit-card-validator)  [:octocat:](https://github.com/hlays/lab-credit-card-validator)
+* JS Library npm - Validador de Cartões de crédito [:computer:](https://www.npmjs.com/package/lab-credit-card-validator)  [:octocat:](https://github.com/hlays/lab-credit-card-validator)
 
-* [LAB] JS Library npm - Validador de CPF [:computer:](https://www.npmjs.com/package/lab-cpf-validator)  [:octocat:](https://github.com/hlays/lab-cpf-validator)
+* JS Library npm - Validador de CPF [:computer:](https://www.npmjs.com/package/lab-cpf-validator)  [:octocat:](https://github.com/hlays/lab-cpf-validator)
 
-* [LAB] Rede Social - SerView [:computer:](https://serview-2019.firebaseapp.com/)  [:octocat:](https://github.com/hlays/redesocial)
+* Rede Social - SerView [:computer:](https://serview-2019.firebaseapp.com/)  [:octocat:](https://github.com/hlays/redesocial)
 
-* [LAB] Data Lovers - Pokemon [:computer:](https://hlays.github.io/data-lovers/)  [:octocat:](https://github.com/hlays/data-lovers)
+* Data Lovers - Pokemon [:computer:](https://hlays.github.io/data-lovers/)  [:octocat:](https://github.com/hlays/data-lovers)
 
-* [LAB] Twitter Feed [:computer:](https://hlays.github.io/twitter-lab/)  [:octocat:](https://github.com/hlays/twitter-lab)
+* Twitter Feed [:computer:](https://hlays.github.io/twitter-lab/)  [:octocat:](https://github.com/hlays/twitter-lab)
 
-* [LAB] Game Trivia (pt-br) [:computer:](https://hlays.github.io/learning-front-end/projects/Projeto_Trivia/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/Projeto_Trivia)
+* Cipher (pt-br) [:computer:](https://hlays.github.io/caesar-cipher/src/index.html)  [:octocat:](https://github.com/hlays/caesar-cipher)
 
-* [LAB] Cipher (pt-br) [:computer:](https://hlays.github.io/caesar-cipher/src/index.html)  [:octocat:](https://github.com/hlays/caesar-cipher)
+* Game Trivia (pt-br) [:computer:](https://hlays.github.io/learning-front-end/projects/Projeto_Trivia/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/Projeto_Trivia)
 
 ### [JavasCript30](https://javascript30.com/) curriculum projects
-* [JS30] Flex panels gallery [:computer:](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-flex-panels-gallery)
+* Flex panels gallery [:computer:](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-flex-panels-gallery)
 
-* [JS30] Playing with CSS variables with JS[:computer:](https://hlays.github.io/learning-front-end/projects/js30-playing-with-css-var/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-playing-with-css-var)
+* Playing with CSS variables with JS[:computer:](https://hlays.github.io/learning-front-end/projects/js30-playing-with-css-var/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-playing-with-css-var)
 
-* [JS30] Clock [:computer:](https://hlays.github.io/learning-front-end/projects/JS30-clock/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/JS30-clock)
+* Clock [:computer:](https://hlays.github.io/learning-front-end/projects/JS30-clock/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/JS30-clock)
 
-* [JS30] Drum (en) [:computer:](https://hlays.github.io/learning-front-end/projects/JS30-Drum/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/JS30-Drum)
+* Drum (en) [:computer:](https://hlays.github.io/learning-front-end/projects/JS30-Drum/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/JS30-Drum)
 
 ### [FreeCodeCamp](https://www.freecodecamp.org/) curriculum projects
-* [FCC] Personal-Portfolio-Webpage [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)  [:octocat:]()
+* Personal-Portfolio-Webpage [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)  [:octocat:]()
 
-*  [FCC] Technichal-Page [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC4-Technichal-Page)
+*  Technichal-Page [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC4-Technichal-Page)
 
-*  [FCC] Product-Landing-Page [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page)
+*  Product-Landing-Page [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC3-Product-Landing-Page)
 
-*  [FCC] Build-a-Survey-Form [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form)
+*  Build-a-Survey-Form [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC2-Build-a-Survey-Form)
 
-*  [FCC] TributePage-SebastiãoSalgado [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado)
+*  TributePage-SebastiãoSalgado [:computer:](https://hlays.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado/)  [:octocat:](https://github.com/hlays/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC1-TributePage-SebastiaoSalgado)
 
 ### Outros
 

@@ -17,11 +17,15 @@ Cursos, materiais, artigos.
 Minha recomendação de artigos:
 * [Pocket](https://getpocket.com/@785d0pePT1eb9gdK8fA99bOA6fg8T336a39Ff6q49dLe71B59d6a3r0VzcFKrf34)
 
-# Mestres
+# Onde encontrar bom conteúdo
+Boas referências:
 * [Willian Justen](https://willianjusten.com.br/)
 * [William Oliveira](https://woliveiras.com.br/)
 * [Brad Traversy](https://www.traversymedia.com/)
-* [Flávio Copes](https://flaviocopes.com)
+* [Flávio Copes](https://flaviocopes.com/)
+Canais:
+* [W3Schools](https://www.w3schools.com/)
+* [Medium](https://medium.com/)
 
 # Ambiente de desenvolvimento
 * ![tool] [CodePen](https://codepen.io/)

@@ -75,9 +75,9 @@ Minha recomendação de artigos:
 * ![game] [Super Markup Wolrd](http://supermarkupworld.com/)
 * ![game] [Super Markup Wolrd](http://supermarkupworld.com/)
 * ![tool] [AnimeJS animação CSS JS](https://animejs.com/documentation/#cssSelector)
+* ![tool] [Animate CSS](https://daneden.github.io/animate.css/)
 * ![cheatsheet] [GRID: A simple visual cheatsheetsheet for CSS Grid Layout](http://grid.malven.co/)
 * ![cheatsheet] [FLEX: A simple visual cheatsheetsheet for flexbox](http://flexbox.malven.co/)
-* [Animate CSS](https://daneden.github.io/animate.css/)
 
 ## Responsive Design
 * ![tool] [Responsive Design Checker](https://www.responsivedesignchecker.com/#home)

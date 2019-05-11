@@ -107,7 +107,3 @@ function playAgain() {
   `;
   document.getElementById('choice').scrollIntoView();
 }
-
-if (reload()) {
-  window.scrollTo(0, 0);
-}

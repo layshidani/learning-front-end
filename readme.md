@@ -44,7 +44,7 @@ Projetos desenvolvidos para fins de aprendizado.
 * Game Trivia [:computer:](https://hlays.github.io/learning-front-end/projects/Projeto_Trivia/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/Projeto_Trivia)
 
 ### <[JavasCript30](https://javascript30.com/) curriculum projects\>
-* Flex panels gallery (en) [:computer:](https://hlays.github.io/learning-front-end/js30-flex-panels-gallery/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-flex-panels-gallery)
+* Flex panels gallery (en) [:computer:](https://hlays.github.io/learning-front-end/projects/js30-flex-panels-gallery/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-flex-panels-gallery)
 
 * Playing with CSS variables with JS[:computer:](https://hlays.github.io/learning-front-end/projects/js30-playing-with-css-var/)  [:octocat:](https://github.com/hlays/learning-front-end/tree/master/projects/js30-playing-with-css-var)
 

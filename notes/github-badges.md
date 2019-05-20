@@ -38,8 +38,12 @@ No seu projeto:
 * Atualize o repositório no GitHub (push)
 * Confira no site Travis o building e testes, lá você também encontrará a badge com atualização dinâmica (com seu github) para colocar em seu README:
 
-[![Build Status](https://travis-ci.org/hlays/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/hlays/lab-cpf-validator)
+Código:
+```md
+![Build Status](https://travis-ci.org/hlays/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/hlays/lab-cpf-validator)
+```
 
+Resultado: [![Build Status](https://travis-ci.org/hlays/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/hlays/lab-cpf-validator)
 
 ## Coveralls
 > Coveralls is a web service to help you track your code coverage over time, and ensure that all your new code is fully covered.
@@ -79,8 +83,12 @@ Em seguida,
 
 * Confira no site Coveralls, lá você também encontrará a badge com atualização dinâmica (com seu github) dos testes de cobertura para colocar em seu README:
 
+Código:
+```md
 [![Coverage Status](https://coveralls.io/repos/github/hlays/lab-cpf-validator/badge.svg?branch=master)](https://coveralls.io/github/hlays/lab-cpf-validator?branch=master)
+```
 
+Resultado: [![Coverage Status](https://coveralls.io/repos/github/hlays/lab-cpf-validator/badge.svg?branch=master)](https://coveralls.io/github/hlays/lab-cpf-validator?branch=master)
 
 ## Badge de versão
 Você pode criar uma badge que acompanha as versões de publicação que estão em seu ***package.json***.
@@ -94,5 +102,5 @@ Vá até o site [Shields](https://shields.io/category/version), navegue até a o
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/hlays/lab-cpf-validator.svg)
 
-## Badges
+## Mais Badges
 No site [Shields](https://shields.io/category/version), você encontra diversas outras opções de badges estáticas e dinâmicas personalizáveis.

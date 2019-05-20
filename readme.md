@@ -11,7 +11,7 @@
 * [Biblioteca JS configuração: npm init, eslint, testes com mocha, nyc, chai, publicação no npm](https://github.com/hlays/learning-front-end/tree/master/notes/lib-js-config/)
 * [Testes com mocha, chai e nyc](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/)
   * [Testes Instalações Pacotes necessários](https://github.com/hlays/learning-front-end/tree/master/notes/tests-tdd/testes-instalacoes.md/)
-  * [GitHub Badges](https://github.com/hlays/learning-front-end/blob/master/notes/github-badges.md)
+* [GitHub Badges](https://github.com/hlays/learning-front-end/blob/master/notes/github-badges.md)
 
 ## My Learning Tracker
 * [Learning Tracker](https://hlays.github.io/learning-tracker/)

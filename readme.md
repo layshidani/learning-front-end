@@ -83,7 +83,3 @@ Projetos desenvolvidos para fins de aprendizado.
 ## Desafio: 100DaysOfCode
 
 I also enjoyed the #100daysofcode challenge. See [here](https://github.com/hlays/My-100-days-of-Code/blob/master/r1-log.md).
-
-
-## Coleção de links
-* [Links Collection](https://github.com/hlays/learning-front-end/tree/master/notes/links)

@@ -1,4 +1,4 @@
-# Drum [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/JS30-Drum/)
+# Drum [<Visualizar\>](https://layshidani.github.io/learning-front-end/projects/JS30-Drum/)
 
 Projeto do curso [JavaScript30 - Wes Bos](https://javascript30.com/)
 

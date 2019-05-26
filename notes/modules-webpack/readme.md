@@ -37,7 +37,7 @@ onde:
 * entry: é o arquivo de entrada, ou seja, o arquivo que deverá ser compilado.
   ```
   module.exports = {
-  // arquivo de entrada 
+  // arquivo de entrada
     entry: {
       filename: 'nome-do-arquivo.js',
     },
@@ -71,7 +71,7 @@ const webpack = require('webpack');
 
 // inicia a configuração
 module.exports = {
-  // arquivo de entrada 
+  // arquivo de entrada
   entry: {
     filename: './app.js'
   },
@@ -99,14 +99,14 @@ module.exports = {
 }
 ```
 
-## Importar e exportar 
+## Importar e exportar
 
 ver:
 
-[Import and export es6](https://hlays.github.io/learning-front-end/notes/import-export/)
+[Import and export es6](https://layshidani.github.io/learning-front-end/notes/import-export/)
 
 ## Rodar Webpack
-Quando rodar o webpack, todo o código que está no arquivo (entry) especificado no ***webpack.config.js*** será 
+Quando rodar o webpack, todo o código que está no arquivo (entry) especificado no ***webpack.config.js*** será
 compilado (termo correto?) para o arquivo de saída (output).
 
 Navegue com o terminal até o diretório do projeto:
@@ -172,7 +172,7 @@ plugins: [
   ]
 ```
 
-## Adicionar SourceMap 
+## Adicionar SourceMap
 Depois que minificamos nosso código, fica bem difícil encontrar onde exatamente estão os erros quando eles surgirem, para facilitar esse processo na hora de debugar nosso código, podemos adicionar os *sourcemaps* ao nosso **package.json**.
 
 ```

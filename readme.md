@@ -28,6 +28,8 @@ Projetos desenvolvidos para fins de aprendizado.
 
 ### <[Laboratoria](http://laboratoria.la/) curriculum projects\>
 
+* API Entreterimento: YeahCult! Conheça o mundo ao seu redor [:computer:](https://yeahcult-f7b18.firebaseapp.com/index.html)  [:octocat:](https://github.com/layshidani/yeahCult)
+
 * JS Library npm - Conversor de algarismos romanos para arábicos (e vice-versa) [:computer:](https://www.npmjs.com/package/lab-roman-int-converter)  [:octocat:](https://github.com/layshidani/lab-roman-int-converter)
 
 * JS Library npm - Validador de Cartões de crédito [:computer:](https://www.npmjs.com/package/lab-credit-card-validator)  [:octocat:](https://github.com/layshidani/lab-credit-card-validator)

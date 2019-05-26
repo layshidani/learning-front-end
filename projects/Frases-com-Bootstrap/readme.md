@@ -1,6 +1,6 @@
 # [Coleção de frases favoritas]
 Página com algumas frases (quotes) preferidas.
-Utilizando Bootstrap. __[<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Frases-com-Bootstrap/)__
+Utilizando Bootstrap. __[<Visualizar\>](https://layshidani.github.io/learning-front-end/projects/Frases-com-Bootstrap/)__
 
 ![sample](../img/sample/sample-Frases-com-Bootstrap.png)
 

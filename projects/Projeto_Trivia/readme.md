@@ -1,4 +1,4 @@
-# Lab - Game Trivia [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Projeto_Trivia/)
+# Lab - Game Trivia [<Visualizar\>](https://layshidani.github.io/learning-front-end/projects/Projeto_Trivia/)
 
 Game estilo trivia com perguntas via prompt de comando. BootCamp [Laboratoria](Laboratoria.la).
 

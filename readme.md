@@ -13,9 +13,6 @@
   * [Testes Instalações Pacotes necessários](https://github.com/layshidani/learning-front-end/tree/master/notes/tests-tdd/testes-instalacoes.md/)
   * [GitHub Badges](https://github.com/layshidani/learning-front-end/blob/master/notes/github-badges.md)
 
-## My Learning Tracker
-* [Learning Tracker](https://layshidani.github.io/learning-tracker/)
-
 ## Projetos
 Projetos desenvolvidos para fins de aprendizado.
 

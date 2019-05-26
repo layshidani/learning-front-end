@@ -1,4 +1,4 @@
-# [Notebook Git e GitHub ] [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
+# [Notebook Git e GitHub ] [<Visualizar\>](https://layshidani.github.io/learning-front-end/projects/Git-GitHub-MyNotebook/)
 
 Página com meu resumo sobre o conteúdo aprendido sobre Git e Github.  
 

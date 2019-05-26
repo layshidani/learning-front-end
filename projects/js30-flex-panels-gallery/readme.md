@@ -1,4 +1,4 @@
-# Flex Panels Gallery [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/js30-flex-panels-gallery/)
+# Flex Panels Gallery [<Visualizar\>](https://layshidani.github.io/learning-front-end/projects/js30-flex-panels-gallery/)
 
 Projeto do curso [JavaScript30 - Wes Bos](https://javascript30.com/)
 

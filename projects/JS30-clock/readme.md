@@ -1,4 +1,4 @@
-# Clock [<Visualizar\>](https://hlays.github.io/learning-front-end/projects/JS30-clock/)
+# Clock [<Visualizar\>](https://layshidani.github.io/learning-front-end/projects/JS30-clock/)
 
 Projeto do curso [JavaScript30 - Wes Bos](https://javascript30.com/)
 

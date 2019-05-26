@@ -16,9 +16,9 @@ Em todas as instalações a seguir, você poderá optar por instalar globalmente
 Instalação:
 * global: `npm install global <nome-do-pacote>`
   (ou utilizando flags: `npm i -g <nome-do-pacote>`)
-* local (desenvolvimento): `npm install <nome-do-pacote> --save-dev` 
+* local (desenvolvimento): `npm install <nome-do-pacote> --save-dev`
   (ou utilizando flags: `npm i -D <nome-do-pacote>`)
-* local (para execução): `npm install <nome-do-pacote> --save`  
+* local (para execução): `npm install <nome-do-pacote> --save`
   (ou utilizando flags: `npm i -S <nome-do-pacote>`)
 
 ***No caso de incluir `--save-dev` ou `--save`, as regras dos pacotes já serão automaticamente adicionadas no arquivo package.json em devDependencies (--save-dev) e Dependencies (--save).***
@@ -59,7 +59,7 @@ instalar local:
 `npm i -D nyc`
 
 ## Alias para rodar os testes
-Basta incluir o comando em **scripts** em seu arquivo package.json: 
+Basta incluir o comando em **scripts** em seu arquivo package.json:
 ```
 "scripts": {
     "alias": instrução,
@@ -76,12 +76,12 @@ exemplo:
 ```
 
 # Preparar arquivos para os testes
-* Criar pasta **tests** com os arquivos de testes 
+* Criar pasta **tests** com os arquivos de testes
 * Os arquivos de teste deverão ter a extensão `.spec.js` exemplo: `index.spec.js`
 * **exportar** as funções necessárias do seu __arquivo principal__
 * **importar** essas funções no seu __arquivo de testes__
 
-Para mais detalhes sobre como importar ou exportar acesse esse [link](https://github.com/hlays/learning-front-end/tree/master/notes/import-export/).
+Para mais detalhes sobre como importar ou exportar acesse esse [link](https://github.com/layshidani/learning-front-end/tree/master/notes/import-export/).
 
 
 

@@ -40,10 +40,10 @@ No seu projeto:
 
 Código:
 ```md
-![Build Status](https://travis-ci.org/hlays/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/hlays/lab-cpf-validator)
+![Build Status](https://travis-ci.org/layshidani/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/layshidani/lab-cpf-validator)
 ```
 
-Resultado: [![Build Status](https://travis-ci.org/hlays/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/hlays/lab-cpf-validator)
+Resultado: [![Build Status](https://travis-ci.org/layshidani/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/layshidani/lab-cpf-validator)
 
 ## Coveralls
 > Coveralls is a web service to help you track your code coverage over time, and ensure that all your new code is fully covered.
@@ -85,10 +85,10 @@ Em seguida,
 
 Código:
 ```md
-[![Coverage Status](https://coveralls.io/repos/github/hlays/lab-cpf-validator/badge.svg?branch=master)](https://coveralls.io/github/hlays/lab-cpf-validator?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/layshidani/lab-cpf-validator/badge.svg?branch=master)](https://coveralls.io/github/layshidani/lab-cpf-validator?branch=master)
 ```
 
-Resultado: [![Coverage Status](https://coveralls.io/repos/github/hlays/lab-cpf-validator/badge.svg?branch=master)](https://coveralls.io/github/hlays/lab-cpf-validator?branch=master)
+Resultado: [![Coverage Status](https://coveralls.io/repos/github/layshidani/lab-cpf-validator/badge.svg?branch=master)](https://coveralls.io/github/layshidani/lab-cpf-validator?branch=master)
 
 ## Badge de versão
 Você pode criar uma badge que acompanha as versões de publicação que estão em seu ***package.json***.
@@ -97,10 +97,10 @@ Vá até o site [Shields](https://shields.io/category/version), navegue até a o
 * Selecione em *Copy badge URL* logo abaixo a url em Markdown:
 
 ```md
-![GitHub package.json version](https://img.shields.io/github/package-json/v/hlays/lab-cpf-validator.svg)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/layshidani/lab-cpf-validator.svg)
 ```
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/hlays/lab-cpf-validator.svg)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/layshidani/lab-cpf-validator.svg)
 
 ## Mais Badges
 No site [Shields](https://shields.io/category/version), você encontra diversas outras opções de badges estáticas e dinâmicas personalizáveis.

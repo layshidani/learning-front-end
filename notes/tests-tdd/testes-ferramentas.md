@@ -1,5 +1,5 @@
 # Ferramentas de Teste: mocha, chai e nyc
-Confira neste [link](https://github.com/hlays/learning-front-end/tree/master/notes/testes-tdd/testes-instalacoes.md/) como instalar os pacotes necessários e preparar os arquivos.
+Confira neste [link](https://github.com/layshidani/learning-front-end/tree/master/notes/testes-tdd/testes-instalacoes.md/) como instalar os pacotes necessários e preparar os arquivos.
 
 * Mocha: estrutura de testes
 * Chai: biblioteca de assertações
@@ -25,7 +25,7 @@ Confira neste [link](https://github.com/hlays/learning-front-end/tree/master/not
 
 [Getting Started](https://mochajs.org/#getting-started)
 
-# Nyc (Istanbul) - teste de cobertura do código 
+# Nyc (Istanbul) - teste de cobertura do código
 > Istambul instrumenta seu código ES5 e ES2015 + JavaScript com contadores de linha, para que você possa acompanhar o desempenho de seus testes de unidade na sua base de código.
 >
 > O cliente de linha de comando ***nyc*** para Istambul funciona bem com a maioria das estruturas de teste JavaScript [<Istanbul\>](https://github.com/istanbuljs/nyc)
@@ -37,11 +37,11 @@ Confira neste [link](https://github.com/hlays/learning-front-end/tree/master/not
 > * **Funcs (Functions)**: Cada função (ou sub-rotina) do programa foi chamada?
 > * **Lines**: cada linha executável no arquivo de origem foi executada?
 >
-> Também fornece alguns códigos de cores: 
+> Também fornece alguns códigos de cores:
 > * Rosa: declarações não cobertas.
 > * Laranja: funções não cobertas.
 > * Amarelo: ramos não cobertos.
-> 
+>
 > [<stackoverflow\>](https://stackoverflow.com/questions/26618243/how-do-i-read-an-istanbul-coverage-report)
 
 # Chai
@@ -101,7 +101,7 @@ assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
 ```
 
 # Criando testes
-## Describe 
+## Describe
 
 Utilizados para agrupamento (coleção de testes), podem ser aninhados dentro de outros **describe**. Comumente utilizado para separar classes ou métodos.
   ```js
@@ -215,7 +215,7 @@ npm test
 Ele cria/atualiza uma pasta chamada **coverage** com todos os arquivos do reporter, basta abrir o html no seu navegador:
 ![coverage html example](imgs/coverage.png)
 
-Existem diversas outras alternativas, que geram o mesmo resultado, tudo depende de como você deseja organizar seu código e seus testes. 
+Existem diversas outras alternativas, que geram o mesmo resultado, tudo depende de como você deseja organizar seu código e seus testes.
 
 Uma outra alternativa seria:
 
@@ -236,7 +236,7 @@ Uma outra alternativa seria:
 
 Neste caso, temos um comando só para verificar a cobertura de testes.
 
-Rodamos: 
+Rodamos:
 ```bash
 npm run test:coverage
 ```

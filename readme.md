@@ -54,7 +54,7 @@ Projetos desenvolvidos para fins de aprendizado.
 * Drum (en) [:computer:](https://layshidani.github.io/learning-front-end/projects/JS30-Drum/)  [:octocat:](https://github.com/layshidani/learning-front-end/tree/master/projects/JS30-Drum)
 
 ### <[FreeCodeCamp](https://www.freecodecamp.org/) curriculum projects\>
-* Personal-Portfolio-Webpage (en) [:computer:](https://layshidani.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)  [:octocat:]()
+* Personal-Portfolio-Webpage (en) [:computer:](https://layshidani.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage/)  [:octocat:](https://github.com/layshidani/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC5-Personal-Portfolio-Webpage)
 
 *  Technichal-Page [:computer:](https://layshidani.github.io/FreeCodeCamp/Responsive-Web-Design-Projects/FCC4-Technichal-Page/)  [:octocat:](https://github.com/layshidani/FreeCodeCamp/tree/master/Responsive-Web-Design-Projects/FCC4-Technichal-Page)
 

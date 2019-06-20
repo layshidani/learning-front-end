@@ -35,7 +35,7 @@ Podemos realizar a instalação através da linha de comando:
 
 * Macs e PCs: `sudo gem install sass`
 
-* Linux (deverá ter Ruby já instalado e depois): `sudo su -c "gem install sass"`
+* Linux (deverá ter Ruby já instalado e depois): `npm i -g sass`
 
 
 Para verificar a versão instalada, ou se já tem instalada: 

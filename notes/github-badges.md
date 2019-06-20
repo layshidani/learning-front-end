@@ -40,7 +40,7 @@ No seu projeto:
 
 Código:
 ```md
-![Build Status](https://travis-ci.org/layshidani/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/layshidani/lab-cpf-validator)
+[![Build Status](https://travis-ci.org/layshidani/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/layshidani/lab-cpf-validator)
 ```
 
 Resultado: [![Build Status](https://travis-ci.org/layshidani/lab-cpf-validator.svg?branch=master)](https://travis-ci.org/layshidani/lab-cpf-validator)

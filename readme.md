@@ -39,7 +39,7 @@ Projetos desenvolvidos para fins de aprendizado.
 
 * Twitter Feed [:computer:](https://layshidani.github.io/twitter-lab/)  [:octocat:](https://github.com/layshidani/twitter-lab)
 
-* Cipher [:computer:](https://layshidani.github.io/caesar-cipher/src/index.html)  [:octocat:](https://github.com/layshidani/caesar-cipher)
+* Cipher [:computer:](https://layshidani.github.io/caesar-cipher/index.html)  [:octocat:](https://github.com/layshidani/caesar-cipher)
 
 * Game Trivia [:computer:](https://layshidani.github.io/learning-front-end/projects/Projeto_Trivia/)  [:octocat:](https://github.com/layshidani/learning-front-end/tree/master/projects/Projeto_Trivia)
 

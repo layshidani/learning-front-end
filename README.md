@@ -25,6 +25,8 @@ Projetos desenvolvidos para fins de aprendizado.
 
 ### <[Laboratoria](http://laboratoria.la/) curriculum projects\>
 
+* Burger Queen [:computer:](https://burguer-queen-f8f37.firebaseapp.com/)  [:octocat:](https://github.com/layshidani/burger-queen)
+
 * API Entreterimento: YeahCult! Conheça o mundo ao seu redor [:computer:](https://yeahcult-f7b18.firebaseapp.com/index.html)  [:octocat:](https://github.com/layshidani/yeahCult)
 
 * JS Library npm - Conversor de algarismos romanos para arábicos (e vice-versa) [:computer:](https://www.npmjs.com/package/lab-roman-int-converter)  [:octocat:](https://github.com/layshidani/lab-roman-int-converter)

@@ -23,7 +23,7 @@ Projetos desenvolvidos para fins de aprendizado.
 - :computer: Ver Projeto
 - :octocat: Acessar repositório
 
-### <[Laboratoria](http://laboratoria.la/) curriculum projects\>
+### <[@Laboratoria](http://laboratoria.la/) curriculum projects\>
 
 * Burger Queen [:computer:](https://burguer-queen-f8f37.firebaseapp.com/)  [:octocat:](https://github.com/layshidani/burger-queen)
 
@@ -40,6 +40,10 @@ Projetos desenvolvidos para fins de aprendizado.
 * Data Lovers - Pokemon [:computer:](https://layshidani.github.io/data-lovers/)  [:octocat:](https://github.com/layshidani/data-lovers)
 
 * Twitter Feed [:computer:](https://layshidani.github.io/twitter-lab/)  [:octocat:](https://github.com/layshidani/twitter-lab)
+
+* FreeLance Clone (CSS) [:computer:](https://layshidani.github.io/freelancer/)  [:octocat:](https://github.com/layshidani/freelancer/)
+
+* Lyft Clone (CSS) [:computer:](https://layshidani.github.io/lyft/)  [:octocat:](https://github.com/layshidani/lyft)
 
 * Cipher [:computer:](https://layshidani.github.io/caesar-cipher/index.html)  [:octocat:](https://github.com/layshidani/caesar-cipher)
 

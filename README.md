@@ -23,7 +23,7 @@ Projetos desenvolvidos para fins de aprendizado.
 - :computer: Ver Projeto
 - :octocat: Acessar repositório
 
-### <[@Laboratoria](http://laboratoria.la/) curriculum projects\>
+### <[Laboratoria](http://laboratoria.la/) curriculum projects\>
 
 * Burger Queen [:computer:](https://burguer-queen-f8f37.firebaseapp.com/)  [:octocat:](https://github.com/layshidani/burger-queen)
 

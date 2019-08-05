@@ -1,6 +1,5 @@
 # Learning Front-End
-
-
+[Minhas notas de aprendizado](https://github.com/layshidani/my-learning-notes)
 
 ## Projetos
 Projetos desenvolvidos para fins de aprendizado.
